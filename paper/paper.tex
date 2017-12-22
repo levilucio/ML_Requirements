@@ -1,0 +1,81 @@
+\documentclass{llncs}
+
+\usepackage{calc, amssymb, amstext, amsmath}
+\usepackage{boxedminipage, xspace, here, float}
+\usepackage{epsfig, graphics, graphicx, xcolor, color, setspace, tabularx, multirow}
+\usepackage[linewidth=1pt]{mdframed}
+\usepackage{chngcntr} 
+\usepackage[font={small}]{caption, subfig}
+
+\usepackage{hyperref, url}
+\pdfcompresslevel=9
+%\DeclareGraphicsExtensions{.png} 
+\graphicspath{{img/}{svg/}} 
+
+
+ 
+\usepackage{ifthen}
+\newboolean{showcomments}
+\setboolean{showcomments}{true} % toggle to show or hide comments
+\ifthenelse{\boolean{showcomments}}
+  {\newcommand{\nb}[2]{
+    \fcolorbox{gray}{yellow}{\bfseries\sffamily\scriptsize#1}  
+    {$\blacktriangleright$#2$\blacktriangleleft$}
+   }
+   \newcommand{\version}{\emph{\scriptsize$-$working$-$}}
+  } 
+  {\newcommand{\nb}[2]{}
+   \newcommand{\version}{} 
+  } 
+
+% for comments 
+\newcommand\levi[1]{\nb{Levi}{\textcolor{teal}{#1}}}
+\newcommand\tahira[1]{\nb{Tahira}{\textcolor{blue}{#1}}}
+\newcommand\parisa[1]{\nb{Parisa}{\textcolor{red}{#1}}} 
+\newcommand\saad[1]{\nb{Saad}{\textcolor{red}{#1}}} 
+
+%\setlength{\textwidth}{13cm}
+%\setlength{\textheight}{19cm}
+% \setlength{\oddsidemargin}{1.1cm}  
+% \setlength{\evensidemargin}{1.1cm}
+
+%\newcommand{\newpar}[1]{\noindent
+%\textbf{#1.}\hspace{0.3cm}
+%}
+
+\newcommand{\ML}{\textsc{Ml}\xspace}
+
+\usepackage{inputenc} 
+\inputencoding{utf8}
+
+\begin{document}
+\frontmatter          % for the preliminaries
+\mainmatter              % start of the contributions
+
+\title{A Survey on Machine Learning and Requirements} 
+
+\titlerunning{A Survey on Machine Learning and Requirements}                  
+% abbreviated title (for running head)
+                                   % also used for the TOC unless
+                                   % \toctitle is used
+ 
+\author{Author1 \and Author2 \and Authorn} \authorrunning{} % abbreviated author
+% list (for running head)
+%%%% list of authors for the TOC (use if author list has to be modified) 
+\tocauthor{Author, \ldots} 
+%
+\institute{
+fortiss GmbH. Guerickestra\ss e 25, 80805 M\"unchen \email{author@fortiss.org}
+}
+
+\maketitle              % typeset the title of the contribution 
+\begin{abstract}
+The abstract goes here\levi{you can use labels by using your name as command}.
+\end{abstract}
+%\input{text/introduction}  
+\input{text/introduction}
+ 
+\bibliographystyle{abbrv} 
+\bibliography{./ml_req} 
+
+\end{document}
