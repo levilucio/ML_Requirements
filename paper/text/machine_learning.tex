@@ -1,0 +1,87 @@
+\section{Machine Learning}
+
+Machine-Learning (\ML) \cite{mitchell:1997} is a range of algorithm to
+approximate functions and discover patterns in data.
+Historically, models and heuristics are human-built exhaustive prescriptions of
+how a system should behave. \ML is grounded on different premises:
+rather than relying on humans to input all the possible cases the system can
+handle, the field attempts to extrapolate patterns from a representative
+set of examples that illustrate the expected behaviors. The way in which a
+learning algorithm operates attempts to emulate the way in which humans learn:
+from a set of examples, a general model for a behavior is induced.
+
+Many learning algorithms exist, based on different visions of how learning
+happens in practice~\cite{Domingos:2015}. All these algorithms have in common
+the notion of \emph{features}. Features correspond to characteristics of what is
+being learned and provide the grounds for the algorithm to abstract from the
+complexities of the real world. Assume for example that an algorithm should
+learn, based on a brain scan of a medical patient, to decide whether that
+patient has brain cancer or not. A number of \emph{features} such as for example
+the ``number of irregular objects in the scan'', the ``color of such objects'',
+the ``disposition of such objects'' would be provided to the algorithm.
+Additionally, the algorithm is fed a number of brain scans together with
+decisions previously taken on them (cancer found / cancer not found) -- the
+\emph{training data}.
+The learning algorithm then undergoes a \emph{training phase}. It attempts to
+find an internal model that allows it to map the decisions to the brain scans,
+given the training data. The model obtained from the training step is useful if
+it performs well (generalizes) when applied to new data from outside the training
+set -- in our example, when it can accurately diagnose brain cancer for new
+brain scans. Such generalization is based on the premise that inputs that are
+``closer'', in terms of the given \emph{features}, should lead to ``closer''
+outputs.
+
+The formal notion of ``closeness'' is a characteristic of the learner
+algorithm being employed and determines how the algorithm generalizes the computation from
+the given examples. Achieving good generalizations is the cornerstone of
+machine learning and \emph{overfitting} (performing very well on training
+inputs but very poorly on new inputs) is one of its major challenges.\levi{cut
+these last couple of sentences}
+
+More formally, in textbooks, courses and articles, Machine Learning is often
+defined following the definition of Tom Mitchell~\cite{mitchell1997}:
+\begin{quote}
+	A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P if its performance at tasks in T, as measured by P, improves with experience E.
+\end{quote}
+Therefore, it is said that to classify some patients into classes (e.g healthy and unhealthy), the task T, one have to define an algorithm that provides a model, such as an artificial neural network. The quality of this model is quantified by a measure P, for instance its accuracy while predicting the classes. This measure is then sent back to the algorithm, a new experience E, in order to choose or improve the model.
+A machine learning tasks can be discussed and subdivided based on the elements
+of the following equation:
+\begin{equation*}
+	f(\mathsf{\bf X}) = \mathsf{\bf y} + \xi
+\end{equation*}
+where $\mathsf{\bf X}$ is the $n \times d$ input matrix, containing $n$ samples
+characterized by $d$ features, $\mathsf{\bf y}$ is the $n \times 1$ target
+vector containing the classes of the $n$ samples and $\xi$ is a $n \times 1$
+vector representing the noise. The goal is to approximate $f$ in order to
+provide the best mapping between $\mathsf{\bf X}$ and $\mathsf{\bf y}$, given
+some noise $\xi$. Indeed, the approximation has to map a $\mathsf{\bf X}$
+containing noise, to a $\mathsf{\bf y}$ which may contain noise too. For
+instance, uncontrolled conditions such as the room temperature and the exposure
+time to this temperature can induce variations in the information contained in 
+collected blood samples. Moreover, the $\xi$ term also contains the
+approximation error when, for example, one tries to approximate a non-linear
+function with a linear function.
+
+The problem presented by the above equation is called \emph{supervised learning}, and can be roughly subdivided
+in two popular problems: \emph{classification} and \emph{regression}.
+When the target vector ${\bf y}$ is composed of categorical values (i.e. classes), then we have a
+classification problem. The goal is to learn how to link instances or samples in
+${\bf X}$ to a certain class (e.g. healthy patient or unhealthy patient).
+However, if the target vector contains continuous values, we face a regression
+problem (e.g. predict the body temperature of a patient given some clinical features of the
+patient).
+
+In some cases, ${\bf y}$ is not given and we have to find patterns in ${\bf X}$
+``blindly.'' This is called an \emph{unsupervised} learning problem. Finding
+clusters in ${\bf X}$, i.e. finding a ${\bf y}$ that has never been given, is such a
+problem. For instance, one may want to group patients based on symptoms they have.
+
+\emph{Reinforcement Learning} can be seen as
+an intermediate problem where ${\bf y}$ is not given but the procedure is guided nevertheless. In RL, an agent has
+to find a sequence of actions leading to a success. The fact that the sequence
+leads to a success, i.e what would be in ${\bf y}$, is not known in advance, but
+rewards are given to the agent in order for him to know if it follows a path to
+success. In other words, the goal is, by providing rewards along the way, to
+find the sequence of actions leading to the desired state. Typical examples can
+be found in gaming, where an agent receives a reward when he wins the game. From
+the different chains of actions that led him to a reward, the agent must generalize to find how to win that game.
