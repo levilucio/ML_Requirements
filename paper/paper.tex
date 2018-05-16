@@ -17,7 +17,7 @@
 \usepackage{ifthen}
 \newboolean{showcomments}
 \setboolean{showcomments}{true} % toggle to show or hide comments
-\ifthenelse{\boolean{showcomments}}
+\ifthenelse{\boolean{showcomments}} 
   {\newcommand{\nb}[2]{
     \fcolorbox{gray}{yellow}{\bfseries\sffamily\scriptsize#1}  
     {$\blacktriangleright$#2$\blacktriangleleft$} 
@@ -81,7 +81,7 @@ The abstract goes here\levi{you can use labels by using your name as command}.
 \input{text/verification}
 \input{text/discussion}
 \input{text/threats_validity}
-\input{text/conclusion}
+\input{text/conclusion} 
 
 
 
