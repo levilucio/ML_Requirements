@@ -1,4 +1,4 @@
-\subsection{Requirements Analysis and Specification}
+\subsection{Requirements Specification and Analysis}
 
 \subsubsection{Non-Functional}
 
@@ -14,7 +14,28 @@
 
 \subsubsection{Security Requirements} 
 
-\cite{Jildal:2016}, \cite{Riaz:2014}, \cite{Knauss:2014} 
+Due to the orthogonal character of their impact on a system, \emph{security}
+requirements are notoriously difficult to identify, objectify and
+quantify~\cite{}. Also during requirement specification, it very often
+happens that security requirements are masked by functional requirements
+(but can be deduced from the context of the domain the system operates
+in)~\cite{Riaz:2014}. Because of this, it often happens in practice that
+security requirements are only marginally tackled during system
+construction~\cite{}, paving the way to potentially catastrophic consequences.
+Machine learning can be of use here by aiding in the identification of segments
+of text that describe security requirements. This is a \emph{classification}
+problem: given a text, identify which parts of it correspond to which
+type of security issues.\\
+
+Jindal\etal~\cite{Jildal:2016} automatically learn decision trees that can be
+used to classify security requirements as \emph{authentication}, \emph{access
+control}, \emph{encryption} or \emph{data integrity}. The \emph{features} used
+are relevant terms found in the text. Such relevant terms are obtained by the
+following sequence of actions: 1) removing stop words from the text; 2) stemming
+the remaining words; and 3) ranking the stemmed words by their \emph{info-gain}
+measure.
+
+\cite{Jildal:2016}, \cite{Riaz:2014}, \cite{Knauss:2011} 
 
 \subsubsection{Contextual Requirements} 
 
