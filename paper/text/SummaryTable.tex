@@ -1,0 +1,49 @@
+\newcommand\nocell[1]{\multicolumn{#1}{c|}{}}
+\begin{table*}%
+	\begin{scriptsize}
+\begin{center}
+	\begin{tabular}{|c|l|l|l|l|l|}
+		\cline{2-6}
+		\nocell{1} & \textbf{Themes} & \textbf{Contributions} & \textbf{ML Task} &
+		\textbf{\ML Model Types} & \textbf{Datasets
+		Used}\\
+		\cline{2-6}
+		\cline{1-6} 
+		\multirow{3}{*}{\rotatebox[origin=c]{90}{\textbf{E}}}
+			& Theme 1 & & & & \\
+			\cdashline{2-6}[.4pt/1pt]
+			& Theme 2 & & & & \\
+			\cdashline{2-6}[.4pt/1pt]
+			& Theme 3 & & & & \\
+		\hline
+		\multirow{3}{*}{\rotatebox[origin=c]{90}{\textbf{S}}} 
+			& Theme 1 & & & & \\
+			\cdashline{2-6}[.4pt/1pt]
+			& Theme 2 & & & & \\
+			\cdashline{2-6}[.4pt/1pt]
+			& Theme 3 & & & & \\
+		\hline
+		\multirow{3}{*}{\rotatebox[origin=c]{90}{\textbf{V}}} 
+			& Theme 1 & & & & \\
+			\cdashline{2-6}[.4pt/1pt]
+			& Theme 2 & & & & \\
+			\cdashline{2-6}[.4pt/1pt]
+			& Theme 3 & & & & \\		
+		\hline
+		\multirow{3}{*}{\rotatebox[origin=c]{90}{\textbf{M}}}
+			& Theme 1 & & & & \\
+			\cdashline{2-6}[.4pt/1pt]
+			& Theme 2 & & & & \\
+			\cdashline{2-6}[.4pt/1pt]
+			& Theme 3 & & & & \\
+		\hline
+	\end{tabular}
+\end{center}
+	\center{Legend: (+) improves the state of the art; (-) comparable to or worse
+	than state of the art; ($\circ$) no information on how the approach
+	relates to the state of the art}
+	\end{scriptsize}
+	\caption{Contributions and \ML tasks related to each theme within each \RE
+	approach.}
+	\label{tab:summary}
+\end{table*}
