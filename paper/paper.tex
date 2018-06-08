@@ -6,8 +6,11 @@
 \usepackage[linewidth=1pt]{mdframed}
 \usepackage{chngcntr} 
 \usepackage[font={small}]{caption, subfig}
+\usepackage{balance}
 
 \usepackage{hyperref, url}
+\usepackage{arydshln}
+
 \pdfcompresslevel=9
 %\DeclareGraphicsExtensions{.png} 
 \graphicspath{{img/}{svg/}} 
@@ -26,7 +29,7 @@
   } 
   {\newcommand{\nb}[2]{}
    \newcommand{\version}{} 
-  } 
+  }  
 
 % for comments 
 \newcommand\levi[1]{\nb{Levi}{\textcolor{teal}{#1}}}
@@ -35,6 +38,9 @@
 \newcommand\saad[1]{\nb{Saad}{\textcolor{red}{#1}}} 
 
 \newcommand{\etal}{\emph{et al.}\xspace}
+\newcommand{\RE}{\textsc{Re}\xspace}
+\newcommand{\ML}{\textsc{Ml}\xspace}
+
 
 %\setlength{\textwidth}{13cm}
 %\setlength{\textheight}{19cm}
@@ -44,8 +50,6 @@
 %\newcommand{\newpar}[1]{\noindent
 %\textbf{#1.}\hspace{0.3cm}
 %}
-
-\newcommand{\ML}{\textsc{Ml}\xspace}
 
 \usepackage{inputenc} 
 \inputencoding{utf8}
@@ -72,7 +76,7 @@ fortiss GmbH. Guerickestra\ss e 25, 80805 M\"unchen \email{author@fortiss.org}
 
 \maketitle              % typeset the title of the contribution 
 \begin{abstract}
-Machine learning (ML) has demonstrated practical impact in a variety of application domains. Software engineering is a fertile domain where ML is helping in automating  different tasks. In this paper, our focus is the intersection of software requirement engineering (RE) and ML.  To obtain an overview of how ML is helping RE and the research trends in this area, we have surveyed a large number of research articles. We found that the impact of ML can be observed in requirement elicitation, analysis and specification, validation and management. Furthermore, in these categories, we discuss the specific problem solved by ML, the features and ML algorithms used, and datasets, when available. We outline lessons learned and envision the possible future directions for the domain.
+Machine learning (ML) has demonstrated practical impact in a variety of application domains. Software engineering is a fertile domain where ML is helping in automating  different tasks. In this paper, our focus is the intersection of software requirement engineering (RE) and ML.  To obtain an overview of how ML is helping RE and the research trends in this area, we have surveyed a large number of research articles. We found that the impact of ML can be observed in requirement elicitation, analysis and specification, validation and management. Furthermore, in these categories, we discuss the specific problem solved by ML, the features and ML algorithms used, and datasets, when available. We outline lessons learned and envision possible future directions for the domain.
 \end{abstract}
 %\input{text/introduction}  
 \input{text/introduction} 
@@ -84,12 +88,6 @@ Machine learning (ML) has demonstrated practical impact in a variety of applicat
 \input{text/discussion}
 \input{text/threats_validity}
 \input{text/conclusion} 
-
-
-
-
-
-
  
 \bibliographystyle{abbrv} 
 \bibliography{./ml_req} 
