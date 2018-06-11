@@ -43,8 +43,7 @@ from Software Requirements Specifications and grouping them into different
 categories is a machine learning classification task\cite{7949577}. \\
 
 Wang \etal~\cite{7949577} applied a combination of machine learning, natural
-language processing, and semantic analysis methods for automatically extract
-non-functional requirements\levi{should non-functional be here?} and classify
+language processing, and semantic analysis methods for automatically extract functional requirements and classify
 them into 10 different cases: Agentive, Action, Objective, Agent mode, Objmod, Locational, Temporal, Manner, Goal,
 Constraint. Their framework has four steps: corpus construction,  NLP 
 preprocessing, feature extraction and  EFRF (Extended Functional Requirements
@@ -70,46 +69,7 @@ Mengmeng Lu \etal~ \cite{Lu:2017} automatically classify the user review text in
 \cite{Casamayor:2010}, \cite{Wang:2016}, \cite{Hussain:2012}, \cite{Jiang:2014},
 \cite{Jha:2017}, \cite{Pinquie:2015}
 
-\subsubsection{Security Requirements} 
-
-Due to the orthogonal character of their impact on a system, \emph{security}
-requirements are notoriously difficult to identify, objectify and
-quantify~\cite{}. Also during requirement specification, it very often happens
-that security requirements are masked by functional requirements (but can be
-deduced from the context of the domain the system operates in)~\cite{Riaz:2014}.
-Because of this, it often happens in practice that security requirements are
-only marginally tackled during system construction~\cite{}, paving the way to
-potentially catastrophic consequences.
-Machine learning can be of use here by aiding in the identification of segments
-of text that describe security requirements. This is a \emph{classification}
-problem: given a text, identify which parts of it correspond to which type of
-security issues.\\
-
-Jindal\etal~\cite{Jildal:2016} automatically learn decision trees that can be
-used to classify security requirements as \emph{authentication}, \emph{access
-control}, \emph{encryption} or \emph{data integrity}. The \emph{features} used
-are relevant terms found in the text. Such relevant terms are obtained by the
-following sequence of actions: 1) removing stop words from the text; 2) stemming
-the remaining words; and 3) ranking the stemmed words by their \emph{info-gain}
-measure.
-
-Riaz and her colleagues~\cite{Riaz:2014} use the k-nearest neighbors algoritm to
-classify sentences in requirements documents as \emph{confidentiality},
-\emph{integrity}, \emph{authentication}, \emph{availability},
-\emph{accountability} or \emph{privacy} requirements. In order to find adequate
-sentences and provide context to the classifier, the authors start by finding a
-type for each sentence among the possibilities \emph{title}, \emph{list start},
-\emph{list element} or \emph{normal sentence}. For the classification the
-authors use a modified version of the Levenshein distance~\cite{} based
-on the number of word transformations needed to go from one term in one sentence to a term in
-another sentence. The classifier is trained using requirements sentences from
-the healthcare domain that are manually classified. A particularity of the
-approach is that each security requirement type is associated to a template that
-helps in translating the security requirements into functional requirements in
-order to ease during the implementation of the final system.
-
-
-\cite{Knauss:2011} 
+\input{text/analysis_security}
 
 \subsubsection{Contextual Requirements} 
 
