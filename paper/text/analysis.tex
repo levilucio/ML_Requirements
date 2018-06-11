@@ -58,50 +58,11 @@ dataset can be used to extract semantic information from the requirements of
 automaker systems.
 
 \subsubsection{Functional and Non functional Requirements}
+The success of a system does not solely depend on its functional requirements. Like functional requirements, it also significantly depends upon the adherence to non-functional requirements. However, the primary focus is generally more towards identification and specification of FRs. NFRs are usually identified and specified in later development stages that can increase the risks in development life cycle. FRs tend to be more straightforward e.g. store and retrieve transaction. On the other side, NFRs are complicated and challenging to implement e.g., making the design to meet NFRs or design test case for them. Different types of requirements analyzed in a different way, and it is useful to have a separate division to look at one particular division. That is why it is necessary to distinguish between FR and NFR and categorize NFRs into subcategories. This distinction helps to manage changes in requirements. The manual division is difficult and time consuming. Machine learning can be used for reducing the effort and categorizing the requirements based on the text segment analysis. This is ML classification task: give the set of requirements and identifying its category.\\ 
+Mengmeng Lu \etal~ \cite{Lu:2017} automatically classify the user review text into FR, NFR, and others. It further classified NFRs into four categories including reliability, usability, portability, and performance. It used supervised machine learning algorithm (bagging) for training the classifier. The text trimming used stopwords elimination, lemmatization, stemming, and sentences split. Word2vec was used for augmenting the user review, which is a two layer neural network model to process text for finding the word embedding. Deoxadez \etal~\cite{Deocadez:2017}performed semi-supervised classification techniques for automated classification of FRs and NFRs in user reviews from the app store. This study dealt with two problems: 1) minimize annotation effort or label the big dataset of user reviews, and 2) classification of FRs and NFRs. The proposed solution to solve the first problem used semi-supervised self-labeling algorithm. Self-labeling algorithms required a small amount of dataset to get comparable results as supervised techniques. Naïve Bayes algorithm was selected because of high performance results for classification problem. Features were obtained by applying standard text mining technique and additional attribute embellishment. For text mining technique, included features were Inverse Document Frequency (IDF) transform, Term Frequency (TF) transform, lowercase transformation, minimum term frequency, stemmer, and number of words. The second stage involved removing numbers, 2- letter words and other symbolic characters. Kutranvoic \etal ~ \cite {Kurtanovic:2017}performed automated analysis on software requirements and performed classification on FRs, NFRs and subcategories of NFRs using supervised machine learning algorithm(support vector machine). The additional dataset of user comments from Amazon was integrated into the main dataset to avoid the data imbalance problem in NFR. The predictor used text-preprocessing techniques such as removal of punctuations, removal of stop words, and lemmatization for feature extraction. Abad                       
+\etal ~ \cite{Abad:2017} learnt decision tree to classify the FRs and NFRs and improved results from ~89\% to 95\% by analyzing the requirements in natural language. For NFRs subclassifcation, Binarized Naïve Bayes (BNB) achieved highest results. The preprocessing of text involved, Part of Speech (POS) tagging, entity tagging, and temporal tagging. Garzoli \cite {Garzoli:2013} classified requirements in natural language into five types: FRs, NFRs, design and construction constraints, operator requirements, performance requirements. However, the primary goal was to come up with a general architecture for large-scale and adaptive requirement analysis. They used multi vector space model for this classification.\\
 
-The success of system solely not depends on functional requirements. Just as
-functional requirements, it also significantly depends upon the adherence to
-non-functional requirements. In general, the primary focus is more for
-identification and specification of the FR.  NFRs usually identified and
-specified in the late development process that can increase the risks. FRs tend
-to be more straightforward e.g. store and retrieve transaction. On the other
-side, NFRs are complicated and challenging to implement e.g., making the design
-to meet NFRs or design test case for them. Different types of requirements
-analyzed in different way and it is useful to have separate division to look at
-one particular class. That is why it is necessary to distinguish between FR and
-NFR and categorize NFRs into subcategories. This distinction help to manage
-changes in requirements. The manual distribution is difficult and time
-consuming. Machine learning can be used for reducing the effort and categorizing
-the requirements based on the text segment analysis. This is ML classification
-task: give the set of requirements and identifying its category. \\
 
-\levi{name of first author here} \etal~\cite{} Automatically classify the user
-review text into FR, NFR and others. It further classify the NFR into four
-categories as reliability, usability, portability, and performance. It used
-supervised machine learning algorithm (bagging) for training the classifier. The
-text was trimmed by stop words elimination, lemmatization, stemming, and
-sentences split. For augmenting the user review word2vec\levi{add ref} used.
-Word2Vec is actually a two layer neural network to process text for finding the
-word embedding. \levi{name of first author here} \etal~\cite {Deocadez:2017}
-performed semi-supervised classification techniques for automated classification
-of FR and NFR in user reviews from the app store. This study deals with two
-problems: 1) minimize annotate or label the big dataset of user reviews 2)
-classification of FR and NFR. First problem solved by using semi-supervised
-self-labeling algorithm. Self-labelling algorithms needs only small amount of
-dataset to get the comparable results with supervised techniques. For
-classification problem Naïve Bayes algorithm used. Features are obtained by
-applying standard text mining technique and additional attribute embellishment.
-For text mining technique following features used:  Inverse Document Frequency
-(IDF)\levi{only introduce acronyms if they are used further ahead in the text}
-Transform, Term Frequency (TF) Transform, Lowercase transformation, Minimum term
-frequency, Stemmer, Number of words. The second stage involved removing numbers,
-2- letter words and other symbolic
-characters.\etal~\cite{Kurtanovic:2017} performed automated analysis of number
-of software requirements and performed classification on FR, NFR and its different
-categories using supervised machine learning algorithm(support vector machine).
-Additional dataset of user comments from Amazon used to overcome the data
-imbalance problem in NFR. For feature extraction text preprocessing techniques
-used such as removal of punctuations, removal of stop words, and lemmatization.
 
 \cite{Deocadez:2017}, \cite{Kurtanovic:2017}, \cite{Guzman:2017},
 \cite{Abad:2017}, \cite{Dekhtyar:2017}, \cite{Rashwan:2012}, \cite{Lu:2017},
