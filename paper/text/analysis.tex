@@ -2,22 +2,98 @@
 
 \subsubsection{Non-Functional}
 
-Non-functional requirements may not be explicitly mentioned in a formal specification requirements documents even though, all systems have them~\cite{Slankas:2013}. Moreover, freeform documents like interview notes, meeting minutes and scattered requirements specifications include non-functional requirements which need to be detected and classified. In order to support analyst in the error-prone task of manually discovering and classifying NFRs machine learning can be useful. Automatic detection can be used to quickly and more effectively analyze large and complex documents for searching the NFRs\cite{Cleland-Huang2007}. This is a classification problem as from a set of requirements we want to decide a class membership. \\
+Non-functional requirements may not be explicitly mentioned in a formal
+specification requirements documents even though, all systems have
+them~\cite{Slankas:2013}. Moreover, freeform documents like interview notes,
+meeting minutes and scattered requirements specifications include non-functional
+requirements which need to be detected and classified. In order to support
+analyst in the error-prone task of manually discovering and classifying NFRs
+machine learning can be useful. Automatic detection can be used to quickly and
+more effectively analyze large and complex documents for searching the
+NFRs\cite{Cleland-Huang2007}. This is a classification problem as from a set of
+requirements we want to decide a class membership. \\
 
-One of the studies is by Slankas \etal~\cite{Slankas:2013} where they automatically identified and classified sentences in natural language from use agreements, install manuals, regulations, request for proposals, requirements specifications, and user manuals output into 14 different NFRs categories: Access Control (AC), Audit (AU), Availability (AV), Legal (LG), Look and Feel (LF), Maintenance (MT), Operational (OP), Privacy (PR), Recoverability (RC), Performance and Scalability (PS), Reliability (RL), Security (SC), Usability (US). Their two-step process: 1) parse natural language and turn sentences into graphs 2) classify sentences into categories led them into finding 20 keywords for each category of NFRs. \newline
-Cleland-Huang \etal~\cite{Cleland-Huang2007} provided the same approach and used supervised classification for grouping non-functional requirements: availability, look-and-feel, legal, maintainability, operational, performance, scalability, security, and usability.
+One of the studies is by Slankas \etal~\cite{Slankas:2013} where they
+automatically identified and classified sentences in natural language from use
+agreements, install manuals, regulations, request for proposals, requirements
+specifications, and user manuals output into 14 different NFRs categories:
+Access Control (AC), Audit (AU), Availability (AV), Legal (LG), Look and Feel
+(LF), Maintenance (MT), Operational (OP), Privacy (PR), Recoverability (RC),
+Performance and Scalability (PS), Reliability (RL), Security (SC), Usability
+(US). Their two-step process: 1) parse natural language and turn sentences into
+graphs 2) classify sentences into categories led them into finding 20 keywords
+for each category of NFRs. \newline Cleland-Huang \etal~\cite{Cleland-Huang2007}
+provided the same approach and used supervised classification for grouping
+non-functional requirements: availability, look-and-feel, legal,
+maintainability, operational, performance, scalability, security, and usability.
 
 \subsubsection{Functional}
 
-Software requirements specifications are usually stated in informal, imprecise and ambiguous natural language, thus analyzing them is a challenging task. However, for requirements reuse in Software Product Line analyzing is a vital task. Automatically extract structured information of functional requirements from Software Requirements Specifications and grouping them into different categories is a machine learning classification task\cite{7949577}. \\
+Software requirements specifications are usually stated in informal, imprecise
+and ambiguous natural language, thus analyzing them is a challenging task.
+However, for requirements reuse in Software Product Line analyzing is a vital
+task. Automatically extract structured information of functional requirements
+from Software Requirements Specifications and grouping them into different
+categories is a machine learning classification task\cite{7949577}. \\
 
-Wang \etal~\cite{7949577} applied a combination of machine learning, natural language processing, and semantic analysis methods for automatically extract non-functional requirements and classify them into 10 different cases: Agentive, Action, Objective, Agent mode, Objmod, Locational, Temporal, Manner, Goal, Constraint. Their framework has four steps: corpus construction,  NLP  preprocessing, feature extraction and  EFRF (Extended Functional Requirements Frame) functional cases extraction. which for NLP processing they did tokenization,   lemmatization, part-of-speech tagging (POS  tagging) and dependency parsing. Ultimately, they showed that their trained model on E-commerce requirements dataset can be used to extract semantic information from the requirements of automaker systems.
+Wang \etal~\cite{7949577} applied a combination of machine learning, natural
+language processing, and semantic analysis methods for automatically extract
+non-functional requirements\levi{should non-functional be here?} and classify
+them into 10 different cases:
+Agentive, Action, Objective, Agent mode, Objmod, Locational, Temporal, Manner, Goal,
+Constraint. Their framework has four steps: corpus construction,  NLP 
+preprocessing, feature extraction and  EFRF (Extended Functional Requirements
+Frame) functional cases extraction. which for NLP processing they did
+tokenization,   lemmatization, part-of-speech tagging (POS  tagging) and
+dependency parsing. Ultimately, they showed that their trained model on
+E-commerce requirements dataset can be used to extract semantic information from
+the requirements of automaker systems.
 
 \subsubsection{Functional and Non functional Requirements}
 
-The success of system solely not depends on functional requirements. Just as functional requirements, it also significantly depends upon the adherence to non-functional requirements. In general, the primary focus is more for identification and specification of the FR.  NFRs usually identified and specified in the late development process that can increase the risks. FRs tend to be more straightforward e.g. store and retrieve transaction. On the other side, NFRs are complicated and challenging to implement e.g., making the design to meet NFRs or design test case for them. Different types of requirements analyzed in different way and it is useful to have separate division to look at one particular class. That is why it is necessary to distinguish between FR and NFR and categorize NFRs into subcategories. This distinction help to manage changes in requirements. The manual distribution is difficult and time consuming. Machine learning can be used for reducing the effort and categorizing the requirements based on the text segment analysis. This is ML classification task: give the set of requirements and identifying its category. \\
+The success of system solely not depends on functional requirements. Just as
+functional requirements, it also significantly depends upon the adherence to
+non-functional requirements. In general, the primary focus is more for
+identification and specification of the FR.  NFRs usually identified and
+specified in the late development process that can increase the risks. FRs tend
+to be more straightforward e.g. store and retrieve transaction. On the other
+side, NFRs are complicated and challenging to implement e.g., making the design
+to meet NFRs or design test case for them. Different types of requirements
+analyzed in different way and it is useful to have separate division to look at
+one particular class. That is why it is necessary to distinguish between FR and
+NFR and categorize NFRs into subcategories. This distinction help to manage
+changes in requirements. The manual distribution is difficult and time
+consuming. Machine learning can be used for reducing the effort and categorizing
+the requirements based on the text segment analysis. This is ML classification
+task: give the set of requirements and identifying its category. \\
 
-\etal~\cite{} Automatically classify the user review text into FR, NFR and others. It further classify the NFR into four categories as reliability, usability, portability, and performance. It used supervised machine learning algorithm (bagging) for training the classifier. The text was trimmed by stop words elimination, lemmatization, stemming, and sentences split. For augmenting the user review word2vec used. Word2Vec is actually a two layer neural network to process text for finding the word embedding. \etal~\cite {Deocadez:2017} performed semi-supervised classification techniques for automated classification of FR and NFR in user reviews from the app store. This study deals with two problems: 1) minimize annotate or label the big dataset of user reviews 2) classification of FR and NFR. First problem solved by using semi-supervised self-labeling algorithm. Self-labelling algorithms needs only small amount of dataset to get the comparable results with supervised techniques. For classification problem Naïve Bayes algorithm used. Features are obtained by applying standard text mining technique and additional attribute embellishment. For text mining technique following features used:  Inverse Document Frequency (IDF) Transform, Term Frequency (TF) Transform, Lowercase transformation, Minimum term frequency, Stemmer, Number of words. The second stage involved removing numbers, 2- letter words and other symbolic characters.\etal~\cite{Kurtanovic:2017}performed automated analysis of number of software requirements and performed classification on FR, NFR and its different categories using supervised machine learning algorithm(support vector machine). Additional dataset of user comments from Amazon used to overcome the data imbalance problem in NFR. For feature extraction text preprocessing techniques used such as removal of punctuations, removal of stop words, and lemmatization. 
+\levi{name of first author here} \etal~\cite{} Automatically classify the user
+review text into FR, NFR and others. It further classify the NFR into four
+categories as reliability, usability, portability, and performance. It used
+supervised machine learning algorithm (bagging) for training the classifier. The
+text was trimmed by stop words elimination, lemmatization, stemming, and
+sentences split. For augmenting the user review word2vec\levi{add ref} used.
+Word2Vec is actually a two layer neural network to process text for finding the
+word embedding. \levi{name of first author here} \etal~\cite {Deocadez:2017}
+performed semi-supervised classification techniques for automated classification
+of FR and NFR in user reviews from the app store. This study deals with two
+problems: 1) minimize annotate or label the big dataset of user reviews 2)
+classification of FR and NFR. First problem solved by using semi-supervised
+self-labeling algorithm. Self-labelling algorithms needs only small amount of
+dataset to get the comparable results with supervised techniques. For
+classification problem Naïve Bayes algorithm used. Features are obtained by
+applying standard text mining technique and additional attribute embellishment.
+For text mining technique following features used:  Inverse Document Frequency
+(IDF)\levi{only introduce acronyms if they are used further ahead in the text}
+Transform, Term Frequency (TF) Transform, Lowercase transformation, Minimum term
+frequency, Stemmer, Number of words. The second stage involved removing numbers,
+2- letter words and other symbolic
+characters.\etal~\cite{Kurtanovic:2017} performed automated analysis of number
+of software requirements and performed classification on FR, NFR and its different
+categories using supervised machine learning algorithm(support vector machine).
+Additional dataset of user comments from Amazon used to overcome the data
+imbalance problem in NFR. For feature extraction text preprocessing techniques
+used such as removal of punctuations, removal of stop words, and lemmatization.
 
 \cite{Deocadez:2017}, \cite{Kurtanovic:2017}, \cite{Guzman:2017},
 \cite{Abad:2017}, \cite{Dekhtyar:2017}, \cite{Rashwan:2012}, \cite{Lu:2017},
@@ -29,16 +105,16 @@ The success of system solely not depends on functional requirements. Just as fun
 
 Due to the orthogonal character of their impact on a system, \emph{security}
 requirements are notoriously difficult to identify, objectify and
-quantify~\cite{}. Also during requirement specification, it very often
-happens that security requirements are masked by functional requirements
-(but can be deduced from the context of the domain the system operates
-in)~\cite{Riaz:2014}. Because of this, it often happens in practice that
-security requirements are only marginally tackled during system
-construction~\cite{}, paving the way to potentially catastrophic consequences.
+quantify~\cite{}. Also during requirement specification, it very often happens
+that security requirements are masked by functional requirements (but can be
+deduced from the context of the domain the system operates in)~\cite{Riaz:2014}.
+Because of this, it often happens in practice that security requirements are
+only marginally tackled during system construction~\cite{}, paving the way to
+potentially catastrophic consequences.
 Machine learning can be of use here by aiding in the identification of segments
 of text that describe security requirements. This is a \emph{classification}
-problem: given a text, identify which parts of it correspond to which
-type of security issues.\\
+problem: given a text, identify which parts of it correspond to which type of
+security issues.\\
 
 Jindal\etal~\cite{Jildal:2016} automatically learn decision trees that can be
 used to classify security requirements as \emph{authentication}, \emph{access
@@ -51,17 +127,17 @@ measure.
 Riaz and her colleagues~\cite{Riaz:2014} use the k-nearest neighbors algoritm to
 classify sentences in requirements documents as \emph{confidentiality},
 \emph{integrity}, \emph{authentication}, \emph{availability},
-\emph{accountability} or \emph{privacy} requirements. In order to find
-adequate sentences and provide context to the classifier, the authors start by
-finding a type for each sentence among the possibilities \emph{title}, \emph{list start}, \emph{list
-element} or \emph{normal sentence}. For the classification the authors use a
-modified version of the Levenshein distance based on the number of word transformations needed to go
-from one term in one sentence to a term in another sentence. The classifier is
-trained using requirements sentences from the healthcare domain that are
-manually classified. A particularity of the approach is that each security
-requirement type is associated to a template that helps in translating the
-security requirements into functional requirements in order to ease during the
-implementation of the final system. 
+\emph{accountability} or \emph{privacy} requirements. In order to find adequate
+sentences and provide context to the classifier, the authors start by finding a
+type for each sentence among the possibilities \emph{title}, \emph{list start},
+\emph{list element} or \emph{normal sentence}. For the classification the
+authors use a modified version of the Levenshein distance~\cite{} based
+on the number of word transformations needed to go from one term in one sentence to a term in
+another sentence. The classifier is trained using requirements sentences from
+the healthcare domain that are manually classified. A particularity of the
+approach is that each security requirement type is associated to a template that
+helps in translating the security requirements into functional requirements in
+order to ease during the implementation of the final system.
 
 
 \cite{Knauss:2011} 
