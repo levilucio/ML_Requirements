@@ -1,17 +1,63 @@
-l\subsection{Requirements Elicitation and Discovery}
-The manual process of requirement elicitation is time consuming and required efforts. The project success majorly depends upon right identification of stakeholder expectations and requirements. The latest trend for identification of user requirement is mining social media like twitter, google store, and app store data. These user reviews are not structured requirement and contained other information too such as praise, dislikes, bug report etc. The manual analysis of these large user reviews dataset and identify the user requirements hard. The automated analysis of requirement elicitation is helpful and can significantly reduce time and cost. This is ML classification task: give the set of information and identifying it as requirement or not.\\
-
-
-
-
+l\subsection{Requirements Elicitation and Discovery} The manual process of
+requirement elicitation is time consuming and required efforts. The project
+success majorly depends upon right identification of stakeholder expectations
+and requirements. The latest trend for identification of user requirement is
+mining social media like twitter, google store, and app store data. These user
+reviews are not structured requirement and contained other information too such
+as praise, dislikes, bug report etc. The manual analysis of these large user
+reviews dataset and identify the user requirements hard. The automated analysis
+of requirement elicitation is helpful and can significantly reduce time and
+cost. This is ML classification task: give the set of information and
+identifying it as requirement or not.\levi{we need to speak about other
+sources of requirements other than social media}\\
 
 \cite{Cleland-Huang:2008}, \cite{Kaiya:2010}, \cite{Castro-Herrera:2009}
-\subsubsection{Internal vs External}
-Guzman ~etal \cite{Guzman:2017} proposed ALERTme approach for classifying, grouping and ranking tweets in software evolution process. For identification of evolutionary requirement supervised classification performed on tweets as improvement request or not using Naïve Bayes algorithm. It was the first kind of this study that finds user requirements from tweets for software. Williams ~etal \cite{Williams:2017} performed a similar study on tweets for classifying as user requirement or not. The study gave state of the art results using Naïve Bayes and VSM algorithm. Different techniques were implemented for feature extraction that includes stopword removing, sentimental, stemming, and Bag of words. However, results showed that software tweets are natural and sentiment analysis did not influence ML algorithm.\\
+\subsubsection{Internal vs External\levi{internal vs external is not explained}}
 
-Research on mining user reviews in mobile application (app) stores has remarkably advanced in the past few years. Jiang ~etal \cite{Jiang:2014} presented an optimized method for discovering the evolutionary requirements for developers. This method clustered opinion expressions in form of a macro network topology, and combine polarized sentimental analysis with the economic factors to decide evolutionary requirements. The dataset used POS tagger and parser with additional defined rules for feature extraction. Douglas S. ~etal \cite{Douglas:S2008} mapped software requirement elicitation process to an existing military tool skiweb that used for making the decision. The proposed methodology used supervised Naive Bayes to classify text document to find related requirements. Furthermore, recommendation system used topic modeling to identify the key stakeholder for which that requirement is important and allow for the analysis. Jha ~etal \cite{Jha:2017} Classified application store reviews and discover user requirement as feature request. The data was classified into three categories bugs, features, and junk. For classification, SVM and Naïve Bayes algorithm was used. The study used frame semantic analysis for feature identification, this technique produced slower dimensional model with smaller number of features. [47]. \\
+Guzman ~etal \cite{Guzman:2017} proposed ALERTme approach for classifying,
+grouping and ranking tweets in software evolution process. For identification of
+evolutionary requirement supervised classification performed on tweets as
+improvement request or not using Naïve Bayes algorithm. It was the first kind of
+this study that finds user requirements from tweets for software. Williams ~etal
+\levi{use the \etal command} \cite{Williams:2017} performed a similar study on
+tweets for classifying as user requirement or not. The study gave state of the art results using Naïve Bayes
+and VSM algorithm. Different techniques were implemented for feature extraction
+that includes stopword removing, sentimental, stemming, and Bag of words.
+However, results showed that software tweets are natural \levi{what does
+``natural'' mean?} and sentiment analysis did not influence ML algorithm.\\
+
+Research on mining user reviews in mobile application (app) stores has
+remarkably advanced in the past few years. Jiang ~etal \cite{Jiang:2014}
+presented an optimized method for discovering the evolutionary requirements for
+developers. This method clustered opinion expressions in form of a macro network
+topology, and combine polarized sentimental analysis with the economic factors
+to decide evolutionary requirements. The dataset used POS tagger and parser with
+additional defined rules for feature extraction. Douglas S. ~etal
+\cite{Douglas:S2008} mapped software requirement elicitation process to an
+existing military tool skiweb that used for making the decision. The proposed
+methodology used supervised Naive Bayes to classify text document to find
+related requirements. Furthermore, recommendation system used topic modeling to
+identify the key stakeholder for which that requirement is important and allow
+for the analysis. Jha ~etal \cite{Jha:2017} Classified application store reviews
+and discover user requirement as feature request. The data was classified into
+three categories bugs, features, and junk. For classification, SVM and Naïve
+Bayes algorithm was used. The study used frame semantic analysis for feature
+identification, this technique produced slower \levi{slower?} dimensional model
+with smaller number of features. [47]. \\
 
 \subsubsection{Prioritization of Requirements} 
 
-\subsubsection{Text mining}
-Kaiya ~etal \cite {Kaiya:2010} proposed a tool to improve the ontology of domain knowledge for requirement elicitation by using web mining and NLP technique. It helped to mine the general concepts to ontology for elicited requirements. Hollis ~etal               \cite{Hollis2017} proposed an initial study to automate requirement elicitation in Agile environment. By providing the list of words and loosely formatted list of requirements. The proposed methodology applied text mining technique on recorded conversation of the stakeholder and developer conversation. Dong ~etal \cite{dong2010}  also applied text mining on different form of  document and resources from internet for  gathering requirement. The system applied data preprocessing as word segmentation and stop words removal before building up the VSM model.
+\subsubsection{Text mining} 
+\levi{don't understand this sentence} Kaiya ~etal \cite {Kaiya:2010} proposed a
+tool to improve the ontology of domain knowledge for requirement elicitation by using web mining and NLP
+technique. It helped to mine the general
+concepts to ontology for elicited requirements.
+Hollis ~etal               \cite{Hollis2017} proposed an initial study to
+automate requirement elicitation in Agile environment. By providing the list of
+words and loosely formatted list of requirements. The proposed methodology
+applied text mining technique on recorded conversation of the stakeholder and
+developer conversation. Dong ~etal \cite{dong2010}  also applied text mining on
+different form of  document and resources from internet for  gathering
+requirement. The system applied data preprocessing as word segmentation and stop
+words removal before building up the VSM model. \levi{not clear what the \ML
+contribution is here. Model, features and instances are missing.}
