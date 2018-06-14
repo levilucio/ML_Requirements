@@ -2,13 +2,44 @@
 
 \subsubsection{Visualization}
 
-Natural language requirement documents can be hard to comprehend and analyze. Similarly, stakeholders have to review and understand requirements for large and complex systems.  In these scenarios, basic information visualizations, like charts and graphs have been used in requirements engineering. These visualizations are usually applied to improve textual requirements with summarization that combined large amounts of information into a single representation for quick consumption by stakeholders\cite{Reddivari:2012}. Machine learning is of great value in discovering visualized groups of large numbers of requirements artifacts.\\
+Natural language requirement documents can be hard to comprehend and analyze.
+Similarly, stakeholders have to review and understand requirements for large and
+complex systems.  In these scenarios, basic information visualizations, like
+charts and graphs have been used in requirements engineering.
+These visualizations are usually applied to improve textual requirements with
+summarization that combined large amounts of information into a single
+representation for quick consumption by stakeholders\cite{Reddivari:2012}.
+Machine learning is of great value in discovering visualized groups of large
+numbers of requirements artifacts\levi{I think you mean ``machine learning
+is useful in grouping requirements for visualization purposes''}.\levi{which
+kind of machine learning taks? Clustering?}\\
 
-ReCVisu (Requirements Clustering Visualization) tool is presented in Reddivari \etal~\cite{Reddivari:2012} paper. ReCVisu, an exploration tool based on quantitative visualizations helps requirements engineers understand the nature of the requirements in a visual form. In ReCVisu, the dependence graph consists of requirements artifacts as nodes and the textual similarities as edges. The automatic grouping of requirements into clusters can help in areas such as uncovering the requirements structure, navigating around the requirements space, modularizing crosscutting concerns, and understanding requirements interactions and evolution.\newline
+ReCVisu (Requirements Clustering Visualization) tool is presented in Reddivari
+\etal~\cite{Reddivari:2012} paper. ReCVisu, an exploration tool based on
+quantitative visualizations helps requirements engineers understand the nature
+of the requirements in a visual form. In ReCVisu, the dependence graph consists
+of requirements artifacts as nodes and the textual similarities as edges. The
+automatic grouping of requirements into clusters can help in areas such as
+uncovering the requirements structure, navigating around the requirements space,
+modularizing crosscutting concerns, and understanding requirements interactions
+and evolution.\newline
 
-Pinqui \etal~\cite{Pinqui:2015} recognize the enormous volume of requirements as big data with which companies struggle to make strategic decisions early on. Therefore, they built a complete visual framework to filter requirements from stakeholders in a way that architects can make better insightful decisions. They suggest training a multi-class SVM model from domain-specific (mechanics, electronics, etc.) dictionaries and handbooks. Overall, the paper proposes a framework to go from management-oriented requirements to architecture-oriented requirements in which SVM is only applied in a small part of it. \newline
+Pinqui \etal~\cite{Pinqui:2015} recognize the enormous volume of requirements as
+big data with which companies struggle to make strategic decisions early on.
+Therefore, they built a complete visual framework to filter requirements from
+stakeholders in a way that architects can make better insightful decisions. They
+suggest training a multi-class SVM model from domain-specific (mechanics,
+electronics, etc.) dictionaries and handbooks. Overall, the paper proposes a
+framework to go from management-oriented requirements to architecture-oriented
+requirements in which SVM is only applied in a small part of it. \newline
 
-Software requirements are mostly stated in natural text notations such as user stories which is making it hard for people to develop an accurate mental image of the most relevant entities and relationships. Lucassen \etal~\cite{Lucassen:2016} introduced an automated method for visualizing requirements at different levels of granularity. Their visualization method from user stories consists of 1) the generation of an overview which provides a general context for understanding the dataset: 
+Software requirements are mostly stated in natural text notations such as user
+stories which is making it hard for people to develop an accurate mental image
+of the most relevant entities and relationships. Lucassen
+\etal~\cite{Lucassen:2016} introduced an automated method for visualizing
+requirements at different levels of granularity. Their visualization method from
+user stories consists of 1) the generation of an overview which provides a
+general context for understanding the dataset:
 \begin{itemize}
 \item Extract a set of relevant concepts from the user stories and their relationships 
 \item Calculate the semantic similarity by using skip-gram implementation word2vec
@@ -17,10 +48,24 @@ Software requirements are mostly stated in natural text notations such as user s
 \item Generate inter-cluster relationships matrix
 \item Visualization Drawing
 \end{itemize}
-2) zooming in and out mechanisms and 3) filtering techniques to reduce the complexity of the data presentation. Possible anticipated applications of this visualization are: discovering missing relationships between clusters that may result in further user stories, teaching system functionality by exploring simplified, manageable chunks, and analyzing expected system changes after introducing new sets of user stories. 
+2) zooming in and out mechanisms and 3) filtering techniques to reduce the
+complexity of the data presentation. Possible anticipated applications of this
+visualization are: discovering missing relationships between clusters that may
+result in further user stories, teaching system functionality by exploring
+simplified, manageable chunks, and analyzing expected system changes after
+introducing new sets of user stories.
 
-\subsubsection{Structuring Documents}
+\subsubsection{Structuring Documents} 
 
-test
-test
-final test
+Requirements of the system are usually presented in natural language documents. These documents require to be properly structured for a better overall understanding of the requirements. For this purpose, the document should be organized with independent sections which each one contains conceptually connected requirements\cite{Ferrari:2013}. Moreover, technical review is a usual way to guarantee the quality in natural language specifications. However, extensive and comprehensive specifications make it problematic for reviewers to find defects, especially consistency or completeness ones. Therefore, use of machine learning algorithms can support reviewers with their work by automatically classifying and clustering the information that is spread over many sections of many documents \cite{Ott:2013}.
+
+
+\cite{Ferrari:2013}
+
+\cite{Rauf:2011}
+
+\cite{Ott:2013}
+
+\cite{Winkler:2016}
+
+\cite{Duan:2007}
