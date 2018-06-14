@@ -1,10 +1,10 @@
-l\subsection{Requirements Elicitation and Discovery} The manual process of
+\subsection{Requirements Elicitation and Discovery} The manual process of
 requirement elicitation is time consuming and required efforts. The project
 success majorly depends upon right identification of stakeholder expectations
 and requirements. The latest trend for identification of user requirement is
-mining social media like twitter, google store, and app store data. These user
-reviews are not structured requirement and contained other information too such
-as praise, dislikes, bug report etc. The manual analysis of these large user
+mining social media like twitter, google store, and app store data.\levi{add
+citation} These user reviews are not structured requirement and contained other
+information too such as praise, dislikes, bug report etc. The manual analysis of these large user
 reviews dataset and identify the user requirements hard. The automated analysis
 of requirement elicitation is helpful and can significantly reduce time and
 cost. This is ML classification task: give the set of information and
@@ -60,7 +60,6 @@ of requirements other than social media}\\
 % system applied data preprocessing as word segmentation and stop words removal
 % before building up the VSM model.
 % =======
-\subsubsection{Internal vs External\levi{internal vs external is not explained}}
 
 Guzman ~etal \cite{Guzman:2017} proposed ALERTme approach for classifying,
 grouping and ranking tweets in software evolution process. For identification of
@@ -70,9 +69,10 @@ this study that finds user requirements from tweets for software. Williams ~etal
 \levi{use the \etal command} \cite{Williams:2017} performed a similar study on
 tweets for classifying as user requirement or not. The study gave state of the art results using Naïve Bayes
 and VSM algorithm. Different techniques were implemented for feature extraction
-that includes stopword removing, sentimental, stemming, and Bag of words.
-However, results showed that software tweets are natural \levi{what does
-``natural'' mean?} and sentiment analysis did not influence ML algorithm.\\
+that includes stopword removing, sentimental analysis, stemming\levi{bring to
+machine learning section}, and Bag of words. However, results showed that
+software tweets are neutral in nature and sentiment analysis did not influence ML algorithm.\levi{instances are manually
+classified tweets}\\
 
 Research on mining user reviews in mobile application (app) stores has
 remarkably advanced in the past few years. Jiang ~etal \cite{Jiang:2014}
