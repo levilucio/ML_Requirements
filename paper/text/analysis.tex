@@ -34,27 +34,9 @@ as term projects by master students at DePaul University.
 
 \subsubsection{Functional}
 
-Software requirements specifications are usually stated in informal, imprecise
-and ambiguous natural language, thus analyzing them is a challenging task.
-However, for requirements reuse in Software Product Line \levi{why do you
-introduce SPLs here?} analyzing them zis a vital task. Automatically extract
-structured information of functional requirements from Software Requirements Specifications and grouping them into different
-categories is a machine learning classification task\cite{7949577}. \\ 
+Software requirements specifications are usually stated in informal, imprecise and ambiguous natural language, thus analyzing them is a challenging task. However, for requirements reuse analyzing them is a vital task. Automatically extract structured information of functional requirements from Software Requirements Specifications and grouping them into different categories is a machine learning classification task\cite{7949577}. \\ 
 
-Wang \etal~\cite{7949577} applied a combination of machine learning, natural
-language processing, and semantic analysis methods for automatically extract functional requirements and classify
-them into 10 different cases: Agentive, Action, Objective, Agent mode, Objmod, Locational, Temporal, Manner, Goal,
-Constraint \levi{the class names are not informative}. Their framework has four
-steps:
-corpus construction, NLP preprocessing, feature extraction and  EFRF (Extended Functional Requirements
-Frame) functional cases extraction. which for NLP processing they did
-tokenization,   lemmatization, part-of-speech tagging (POS  tagging) and
-dependency parsing. They trained their bi-directional LSTM-CRF network which is
-a variant of Recurrent Neural Networks(RNN) architecture model with E-commerce
-requirements dataset and test it on requirements of automaker systems.
-Ultimately, they showed that their trained model on E-commerce requirements
-dataset can be used to extract semantic information from the requirements of
-automaker systems \levi{which kind of semantic information?}.
+Wang \etal~\cite{7949577} applied a combination of machine learning, natural language processing, and semantic analysis methods for automatically extract functional requirements and classify them into 10 different cases: Agentive(The main participant of activities), Action(The main functional operation), Objective(The objects affected by the Action), Agent mode(The modifier or property of the Agentive), Objmod(The modifier or property of the Agentive), Locational(The location or destination of an Action), Temporal(The occurrence time or frequency of an Action), Manner(The way or tool by which an Action is performed), Goal(The purpose to be achieved through the Action), Constraint(The conditions or constraints of the Action). Their framework has four steps: corpus construction, NLP preprocessing, feature extraction and  EFRF (Extended Functional Requirements Frame) functional cases extraction. which for NLP processing they did tokenization,   lemmatization, part-of-speech tagging (POS  tagging) and dependency parsing. They trained their bi-directional LSTM-CRF network which is a variant of Recurrent Neural Networks(RNN) architecture model with E-commerce requirements dataset and test it on requirements of automaker systems. Ultimately, they showed that their trained model on E-commerce requirements dataset can be used to extract semantic information from the requirements of automaker systems \levi{which kind of semantic information?}.
 
 \subsubsection{Functional and Non functional Requirements}
 The success of a system does not solely depend on its functional requirements.
