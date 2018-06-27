@@ -104,7 +104,8 @@ performance requirements.The datset was taken from combat management system of a
 Naval Combat System in generall complex system domain. However, the primary goal
 was to come up with a general architecture for large-scale and adaptive
 requirement analysis. For classification multi VSM model used and for lexical
-and grammatical features BoW + N-words + N-POS achieved highest accuracy.
+and grammatical features BoW + N-words + N-POS achieved highest accuracy. 
+Wieloch \etal~\cite{Wieloch:2013} introduced methods that enhance the accuracy of tracing (classifying) requirements which occur frequently across multiple projects and/or domains. In the paper, they present Trace by  Classification (TBC),  a machine learning approach in which a classifier is trained to identify and classify requirements and/or other kinds of software artifacts which occur relatively frequently across different projects (they call this process generating trace links for software artifacts in their research). The first step in their approach is preprocessing which is to eliminate common stop words. Then, there is training phase that a set of indicator terms is identified for each NFR category and the classifier will be trained by the set of identified weighted indicator terms that can then be used for the last step which is to classify additional artifacts into functional and non-functional (e.g. look-and-feel, performance, security, etc). A probability value represents the possibility that the new requirement belongs to a certain artifact type is computed as a function of the occurrence of indicator terms of that type in the requirement. 
 
 
 \cite{Deocadez:2017}, \cite{Kurtanovic:2017}, \cite{Guzman:2017},

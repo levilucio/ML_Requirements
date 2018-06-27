@@ -20,20 +20,7 @@ maintaining the links between those artifacts. That is why many research has
 tried to apply machine learning and automated tools for facilitating the
 establishment of links\cite{Gervasi:2011}.
 Traceability tackled in the research mainly by the use of machine learning
-classification methods\levi{only classification?}.\\
-
-Wieloch \etal~\cite{Wieloch:2013} introduced the hurdle of traceability methods
-that enhance the accuracy of tracing requirements which occur frequently across
-multiple projects and/or domains. In the paper, they present Trace by 
-Classification (TBC),  a machine learning approach in which a classifier is
-trained to generate\levi{a classifier cannot \emph{generate}} trace links for
-requirements and/or other kinds of software artifacts which occur relatively frequently across different projects. The first
-step in their approach is preprocessing which is to eliminate common stop words.
-Then, there is training phase that a set of indicator terms is identified for
-each NFR category and the classifier will be trained by the set of identified
-weighted indicator terms that can then be used for the last step which is to
-classify target documents into specific types\levi{didn't get this or
-the relation with traceability}.\newline
+classification and reinforcement learning methods.\\
 
 Gervasi \etal~\cite{Gervasi:2011} investigate what can be learned from links
 that are already established. They build classifiers as a mean to develop models
@@ -52,9 +39,7 @@ Bayesian classifier and the J48 decision-tree classifier.\newline
 
 Sultanov \etal~\cite{Sultanov:2013} finds traceability candidates from
 high-level to low-level requirements by the use of reinforcement
-learning\levi{so there is some reinforcement learning going on in
-traceability. This should also be mentioned at the top of the section\ldots}.
-They used textual high and low-level requirements documents as an input and try to
+learning. They used textual high and low-level requirements documents as an input and try to
 find the candidate traces. Their technique demonstrated statistically
 significantly better results than the Information Retrieval technique.
 
