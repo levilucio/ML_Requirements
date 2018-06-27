@@ -104,7 +104,16 @@ performance requirements.The datset was taken from combat management system of a
 Naval Combat System in generall complex system domain. However, the primary goal
 was to come up with a general architecture for large-scale and adaptive
 requirement analysis. For classification multi VSM model used and for lexical
-and grammatical features BoW + N-words + N-POS achieved highest accuracy.
+and grammatical features BoW + N-words + N-POS achieved highest accuracy.\\
+
+\subsection{Requirement Prioritization}
+Complex software system generally has thousands of requirements with multiple stakeholders and customers. Each one of them has their own set of requirements and opinions and wants their requirements implementation accordingly. However, several factors make implementation process of all the requirements infeasible and hard. For example project resources, time, budget, different opinion among stakeholders, etc. all factors affect the implementation process. Therefore, it is important to make a proper decision for prioritizing requirements considering all the factors for the success of the project. Different models exist in the literature for prioritization of software requirements such as analytical hierarchical process (AHP) \cite{saaty2008}, Goal oriented \cite{VanLamsweerde:2001}, cost value approach \cite{Karlsson:1997} etc.In these techniques, human input is majorly involved.  Ml can be used for automated analysis of these large set of software requirements prioritization, and it can also help to improve the existing techniques.\\
+
+ Dhingra \etal  \cite{S. Dhingra } predict the most appropriate technique for software requirement prioritization process. The input from the user is taken as the characteristic value and output the most appropriate requirement prioritization method such as AGORA, AHP, etc. Fuzzy interface technique was used for prediction of prioritization method based on certain rules. The proposed system framework has three phases: training phase, fuzzing inference process, testing phase. The drawback of fuzzy approach was the wrong prediction for boundary values. It was overcome by adopting decision tree. It learned a model using the training dataset. The training dataset was gathered from the literature to obtain attributes. These attributes list included consistency,
+traceability, priority basis, rigorous/systematic, distributed stakeholder,
+cognitive aspects, and human experience.  DT learned from the dataset and predicted the prioritization technique. Out of the 45 test samples,
+the framework was able to classify 43 tests accurately.
+
 
 
 \cite{Deocadez:2017}, \cite{Kurtanovic:2017}, \cite{Guzman:2017},
