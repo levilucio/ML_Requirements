@@ -2,17 +2,7 @@
 
 \subsubsection{Visualization}
 
-Natural language requirement documents can be hard to comprehend and analyze.
-Similarly, stakeholders have to review and understand requirements for large and
-complex systems.  In these scenarios, basic information visualizations, like
-charts and graphs have been used in requirements engineering.
-These visualizations are usually applied to improve textual requirements with
-summarization that combined large amounts of information into a single
-representation for quick consumption by stakeholders\cite{Reddivari:2012}.
-Machine learning is of great value in discovering visualized groups of large
-numbers of requirements artifacts\levi{I think you mean ``machine learning
-is useful in grouping requirements for visualization purposes''}.\levi{which
-kind of machine learning taks? Clustering?}\\
+Natural language requirement documents can be hard to comprehend and analyze. Similarly, stakeholders have to review and understand requirements for large and complex systems.  In these scenarios, basic information visualizations, like charts and graphs have been used in requirements engineering. These visualizations are usually applied to improve textual requirements with summarization that combined large amounts of information into a single representation for quick consumption by stakeholders\cite{Reddivari:2012}. Machine learning is useful in discovering visualized groups of large numbers of requirements. In research both clustering and classification methods were used for this purpose.\\
 
 ReCVisu (Requirements Clustering Visualization) tool is presented in Reddivari
 \etal~\cite{Reddivari:2012} paper. ReCVisu, an exploration tool based on
@@ -39,7 +29,7 @@ of the most relevant entities and relationships. Lucassen
 \etal~\cite{Lucassen:2016} introduced an automated method for visualizing
 requirements at different levels of granularity. Their visualization method from
 user stories consists of 1) the generation of an overview which provides a
-general context for understanding the dataset:
+general context for understanding the dataset:\parisa{suggestions for which part to remove for summarizing it?!} 
 \begin{itemize}
 \item Extract a set of relevant concepts from the user stories and their relationships 
 \item Calculate the semantic similarity by using skip-gram implementation word2vec
@@ -47,7 +37,7 @@ general context for understanding the dataset:
 \item Identify the concept which is most similar to the collection of concepts in a cluster
 \item Generate inter-cluster relationships matrix
 \item Visualization Drawing
-\end{itemize}
+\end{itemize} 
 2) zooming in and out mechanisms and 3) filtering techniques to reduce the
 complexity of the data presentation. Possible anticipated applications of this
 visualization are: discovering missing relationships between clusters that may
