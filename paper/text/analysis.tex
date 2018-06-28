@@ -66,7 +66,8 @@ usually corresponding to the “Precondition”. Ultimately, they showed that th
 trained model on E-commerce requirements dataset can be used to extract semantic
 information from the requirements of automaker systems.
 
-\subsubsection{Distinguishing Functional from Non functional Requirements} 
+\subsubsection{Distinguishing Functional from Non functional Requirements}
+
 The success of a system does not solely depend on its functional requirements.
 Like functional requirements, it also significantly depends upon the adherence
 to non-functional requirements. However, the primary focus is generally more
@@ -83,15 +84,16 @@ manual division is difficult and time consuming. Machine learning can be used
 for reducing the effort and categorizing the requirements based on the text
 segment analysis. This is ML classification task: give the set of requirements
 and identifying its category.\\
+
 Mengmeng Lu \etal~ \cite{Lu:2017} automatically classify the user review text
 mobile from application (app) stores  into FR, NFR, and others. It further
 classified NFRs into four categories including reliability, usability,
 portability, and performance. It used supervised machine learning algorithm
 (bagging) for training the classifier. The text trimming used stopwords
-elimination, lemmatization, stemming, and sentences split. Word2vec\levi{what
-is word2vec?} was used for augmenting the user review, which is a two layer
-neural network model to process text for finding the word embedding. Deoxadez
-\etal~\cite{Deocadez:2017}performed semi-supervised classification techniques
+elimination, lemmatization, stemming, and sentences split. Word2vec was used for augmenting the user review, 
+which is a two layer neural network model to process text for finding the word embedding.\\
+
+Deoxadez \etal~\cite{Deocadez:2017}performed semi-supervised classification techniques
 for automated classification of FRs and NFRs on user reviews from the app store.
 This study dealt with two problems: 1) minimize annotation effort or label the
 big dataset of user reviews, and 2) classification of FRs and NFRs. The proposed
@@ -104,7 +106,8 @@ embellishment\levi{what is attribute embellishment?}. For text mining technique,
 included features were Inverse Document Frequency (IDF) transform, Term Frequency (TF) transform, lowercase
 transformation, minimum term frequency, stemmer, and number of words\levi{are
 these features?}. The second stage involved removing numbers, 2- letter words
-and other symbolic characters.
+and other symbolic characters.\\
+
 Kutranvoic \etal ~ \cite {Kurtanovic:2017}performed automated analysis on
 software requirements and performed classification on FRs, NFRs and
 subcategories of NFRs using supervised machine learning algorithm(support vector
@@ -113,46 +116,49 @@ ignored. The additional dataset of user comments from Amazon was integrated into
 the main dataset to avoid the data imbalance problem in NFR. The predictor used
 text-preprocessing techniques such as removal of punctuations, removal of stop
 words, and lemmatization for feature extraction.All experiments were performed
-on dataset given by RE datatrack.
+on dataset given by RE datatrack.\\
+
  Abad \etal ~ \cite{Abad:2017} targeted two problems: first is classification of
  FR and NFR and second classification of NFR into categories. Preprocessing of
  text performed by applying: POS tagging, Entity tagging and temporal tagging
- .Fas a next step feature co-occurrence and regular expression used to increase
+ .As a next step feature co-occurrence and regular expression used to increase
  the weight of influential words in the datset\levi{don't get it, too much
- detail}.
- J.48 DT used for the classifying the FR and NFR. For achieving second goal topic Modeling unsupervised algorithm
+ detail}. 
+J.48 DT used for the classifying the FR and NFR. For achieving second goal topic Modeling unsupervised algorithm
  LDA and BTM applied. For topic generation differnt algorithms such as
  clustering, k-means, hybrid clustering and k-means, BNB were applied.The
  results showed BNB worked better out of clustering, k-means, LDA, BTM.
-learnt decision tree to classify the FRs and NFRs and improved results from
-~89\% to 95\% by analyzing the requirements in natural language. For NFRs
+learnt decision tree to classify the FRs and NFRs and improved results from 
+\emph{~89\% to 95\%} by analyzing the requirements in natural language. For NFRs
 subclassifcation, Binarized Naïve Bayes (BNB) achieved highest results. The
 preprocessing of text involved, Part of Speech (POS) tagging, entity tagging,
-and temporal tagging.Garzoli \cite {Garzoli:2013} classified data into five
+and temporal tagging.\\
+
+Garzoli \cite {Garzoli:2013} classified data into five
 types: FRs, NFRs, design and construction constraints, operator requirements,
 performance requirements.The datset was taken from combat management system of a
 Naval Combat System in generall complex system domain. However, the primary goal
 was to come up with a general architecture for large-scale and adaptive
 requirement analysis. For classification multi VSM model used and for lexical
-and grammatical features BoW + N-words + N-POS achieved highest accuracy.
+and grammatical features BoW + N-words + N-POS achieved highest accuracy.\\
+
 Wieloch \etal~\cite{Wieloch:2013} introduced methods that enhance the accuracy
-of tracing (classifying) requirements which occur frequently across multiple
-projects and/or domains. In the paper, they present Trace by  Classification
+of tracing (classifying) requirements which occured frequently across multiple
+projects and/or domains. In the paper, they presented Trace by  Classification
 (TBC),  a machine learning approach in which a classifier is trained to identify
 and classify requirements and/or other kinds of software artifacts which occur
 relatively frequently across different projects (they call this process
 generating trace links for software artifacts in their research). The first step
-in their approach is preprocessing which is to eliminate common stop words.
-Then, there is training phase that a set of indicator terms is identified for
-each NFR category and the classifier will be trained by the set of identified
-weighted indicator terms that can then be used for the last step which is to
+in their approach was preprocessing to eliminate common stop words.
+Then training phase identified set of indicator terms for each NFR category and the classifier trained by the set of identified
+weighted indicator terms that can be used for the last step which is to
 classify additional artifacts into functional and non-functional (e.g.
-look-and-feel, performance, security, etc). A probability value represents the
-possibility that the new requirement belongs to a certain artifact type is
+look-and-feel, performance, security, etc). A probability value represented the
+possibility that the new requirement belonged to a certain artifact type
 computed as a function of the occurrence of indicator terms of that type in the
-requirement.
+requirement.\\
 
-\subsection{Requirement Prioritization}
+\subsubsection{Requirement Prioritization}
 \levi{Is this supposed to be a section by itself?}
 Complex software system generally has thousands of requirements with multiple
 stakeholders and customers. Each one of them has their own set of requirements
@@ -167,10 +173,10 @@ hierarchical process (AHP) \cite{saaty2008}, Goal oriented
 \cite{VanLamsweerde:2001}, cost value approach \cite{Karlsson:1997} etc.In these
 techniques, human input is majorly involved. Qaddoura \etal \cite{RQaddoura}
 reviewed the prioritization techniques and also shed light on the ML
-contribution. Ml can be used for automated analysis of these large set of
+contribution. ML can be used for automated analysis of these large set of
 software requirements prioritization, and it can also help to improve the existing techniques.
 
-Dhingra \etal  \cite{S.Dhingra} predicted the most appropriate technique for
+Dhingra \etal  \cite{SDhingra} predicted the most appropriate technique for
 software requirement prioritization process. The input from the user is taken as
 the characteristic value\levi{what is the characteristic value?} and output the
 most appropriate requirement prioritization method such as AGORA, AHP, etc. Fuzzy interface technique was
@@ -181,10 +187,11 @@ for boundary values. It was overcome by adopting decision tree. It learned a
 model using the training dataset. The training dataset was gathered from the
 literature to obtain attributes. These attributes list included consistency,
 traceability, priority basis, rigorous/systematic, distributed stakeholder,
-cognitive aspects, and human experience.  DT learned from the dataset and
+cognitive aspects, and human experience. DT learned from the dataset and
 predicted the prioritization technique. Out of the 45 test samples, the
-framework was able to classify 43 tests accurately. Avesani \etal
-\cite{PAvesani} presented the study that dealt with the scalability problems
+framework was able to classify 43 tests accurately.\\
+
+Avesani \etal\cite{PAvesani} presented the study that dealt with the scalability problems
 that arises in managing the prioritization of a large number of requirements
 specified in AHP technique.  The existing solution to scalability issues used
 heuristics. It helped to decide when to stop the pairwise elicitation process.
@@ -193,14 +200,15 @@ the final ranking within a limited elicitation effort. It used rank-based
 learning algorithm and produced a ranking of all requirements. This technique
 builds up the solution by looking at examples. The input for the learning
 algorithm are a finite set of requirements, the ranking criteria, initial user
-preferences and density function.
+preferences and density function.\\
+
 The similar study was performed in \cite{7320432}from the same group
 \cite{PAvesani} for identification of decision-making issues related to the
 management of risks in Open Source Software adoption in medium and large
 organizations. A  semi-automated system was proposed that used case based
 ranking classification algorithm. The input was priority elicitation of goals by
 the decision maker and risk goal ranking function(predefined ranking criteria
-ordering the goal). As an output, it ranked the final risk-based goals.
+ordering the goal). As an output, it ranked the final risk-based goals.\\
 
 \input{text/analysis_security}
 
