@@ -1,9 +1,22 @@
 
 \subsection{Requirements Elicitation and Discovery}
 
-The manual process of requirement elicitation is time-consuming and required efforts, and sources. The project
-success majorly depends upon the precise identification of stakeholder expectations and requirements for their desired system. Poor elicitation can lead to over budget and time issues. Requirements elicitation can be done by mining the available dataset e.g., social media, documents, and gathering and analyzing information available on the internet, publically or privately available data. In short, gathering data from different means and analyze them for requirements elicitation.  The latest trend for identification of user requirement is mining social media like twitter, google store, and app store data. These user reviews are not structured requirement and contained other information too such as praise, dislikes, bug report etc.  The unstructured, extra information and noise presence in the above-described sources makes the manual process difficult and challenging. The automated analysis of requirement elicitation is helpful and can significantly reduce time, effort, and cost. This is ML classification task: give the set of information and
-identifying it as a requirement or not.
+The manual process of requirement elicitation is time-consuming and required
+efforts, and sources. The project success majorly depends upon the precise
+identification of stakeholder expectations and requirements for their desired
+system. Poor elicitation can lead to over budget and time issues. Requirements
+elicitation can be done by mining the available dataset e.g., social media,
+documents, and gathering and analyzing information available on the internet,
+publically or privately available data. In short, gathering data from different
+means and analyze them for requirements elicitation.  The latest trend for
+identification of user requirement is mining social media like twitter, google
+store, and app store data. These user reviews are not structured requirement and
+contained other information too such as praise, dislikes, bug report etc.  The
+unstructured, extra information and noise presence in the above-described
+sources makes the manual process difficult and challenging. The automated
+analysis of requirement elicitation is helpful and can significantly reduce
+time, effort, and cost. This is ML classification task: give the set of
+information and identifying it as a requirement or not.
 \\
 
 \subsubsection{Internal vs External}
@@ -13,11 +26,13 @@ evolutionary requirement supervised classification performed on tweets as
 improvement request or not using Naïve Bayes algorithm. It was the first kind of
 this study that finds user requirements from tweets for software. Williams \etal
  \cite{Williams:2017} performed a similar study on
-tweets for classifying as user requirement or not. The study gave state of the art results using Naïve Bayes
-and VSM algorithm. Different techniques were implemented for feature extraction
-that includes stopword removing, sentimental analysis, stemming\levi{bring to
-machine learning section}, and Bag of words. For learning process maually annotated tweets were used. However, results showed that
-software tweets are neutral in nature and sentiment analysis did not influence ML algorithm.\\
+tweets for classifying as user requirement or not. The study gave state of the
+art results using Naïve Bayes and VSM\levi{introduce VSM?} algorithm. Different
+techniques were implemented for feature extraction that includes stopword removing, sentimental
+analysis, stemming\levi{bring to machine learning section}, and Bag of words.
+For learning process maually annotated tweets were used. However, results showed
+that software tweets are neutral in nature and sentiment analysis did not
+influence ML algorithm.\\
 
 Research on mining user reviews in mobile application (app) stores has
 remarkably advanced in the past few years. Jiang \etal \cite{Jiang:2014}
@@ -34,14 +49,21 @@ identify the key stakeholder for which that requirement is important and allow
 for the analysis. Jha \etal \cite{Jha:2017} Classified application store reviews
 and discover user requirement as feature request. The data was classified into
 three categories bugs, features, and junk. For classification, SVM and Naïve
-Bayes algorithm was used. The study used frame semantic analysis that genralize more abstract contexts. This technique produced slower dimensional model
-with smaller number of features, that help to enhance the prediction capabilities.Herrera\etal \cite{Castro-Herrera:2009} proposed a tool to scale up the support 
-for large-scale systems requirements processes in comparison to traditional requirements elicitation process. The large oftware systems are complex due to this 
-it is hard to manage stakeholders and identify the relevant stakeholders for further discussions.
-The proposed recommender framework used feature requests of different projects in form of natural language statements. 
-An unsupervised clustering techniques used to identify cohesive themes out of these features. Then tool constructed user
-profiles according to the interests of the stakeholders in each of these themes for recommender system. Stakeholders needs (features) are initially preprocessed by
-removing common (stop) terms, and computation of tf-id for each term. \\
+Bayes algorithm was used. The study used frame semantic analysis that genralize
+more abstract contexts. This technique produced slower dimensional model with
+smaller number of features, that help to enhance the prediction
+capabilities.Herrera\etal \cite{Castro-Herrera:2009} proposed a tool to scale up
+the support for large-scale systems requirements processes in comparison to
+traditional requirements elicitation process. The large oftware systems are
+complex due to this it is hard to manage stakeholders and identify the relevant
+stakeholders for further discussions.
+The proposed recommender framework used feature requests of different projects
+in form of natural language statements.
+An unsupervised clustering techniques used to identify cohesive themes out of
+these features. Then tool constructed user profiles according to the interests
+of the stakeholders in each of these themes for recommender system. Stakeholders
+needs (features) are initially preprocessed by removing common (stop) terms, and
+computation of tf-id for each term. \\
 
 
 
