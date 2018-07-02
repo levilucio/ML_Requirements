@@ -85,7 +85,7 @@ for reducing the effort and categorizing the requirements based on the text
 segment analysis. This is ML classification task: give the set of requirements
 and identifying its category.\\
 
-Mengmeng Lu \etal~ \cite{Lu:2017} automatically classify the user review text
+	Mengmeng Lu \etal~ \cite{Lu:2017} automatically classify the user review text
 mobile from application (app) stores  into FR, NFR, and others. It further
 classified NFRs into four categories including reliability, usability,
 portability, and performance. It used supervised machine learning algorithm
@@ -93,7 +93,7 @@ portability, and performance. It used supervised machine learning algorithm
 elimination, lemmatization, stemming, and sentences split. Word2vec was used for augmenting the user review, 
 which is a two layer neural network model to process text for finding the word embedding.\\
 
-Deoxadez \etal~\cite{Deocadez:2017}performed semi-supervised classification techniques
+	Deoxadez \etal~\cite{Deocadez:2017}performed semi-supervised classification techniques
 for automated classification of FRs and NFRs on user reviews from the app store.
 This study dealt with two problems: 1) minimize annotation effort or label the
 big dataset of user reviews, and 2) classification of FRs and NFRs. The proposed
@@ -102,13 +102,11 @@ algorithm. Self-labeling algorithms required a small amount of dataset to get
 comparable results as supervised techniques. Naïve Bayes algorithm was selected
 because of high performance results for classification problem. Features were
 obtained by applying standard text mining technique and additional attribute
-embellishment\levi{what is attribute embellishment?}. For text mining technique,
-included features were Inverse Document Frequency (IDF) transform, Term Frequency (TF) transform, lowercase
-transformation, minimum term frequency, stemmer, and number of words\levi{are
-these features?}. The second stage involved removing numbers, 2- letter words
+embellishment\levi{what is attribute embellishment?}. For text mining technique Inverse Document Frequency (IDF) transform, Term Frequency (TF) transform, lowercase
+transformation, minimum term frequency, stemmer, and number of words were used. The second stage involved removing numbers, 2- letter words
 and other symbolic characters.\\
 
-Kutranvoic \etal ~ \cite {Kurtanovic:2017}performed automated analysis on
+	Kutranvoic \etal ~ \cite {Kurtanovic:2017}performed automated analysis on
 software requirements and performed classification on FRs, NFRs and
 subcategories of NFRs using supervised machine learning algorithm(support vector
 machine). Some NFR had negligble requiremtnst in dataset due to this they were
@@ -118,7 +116,7 @@ text-preprocessing techniques such as removal of punctuations, removal of stop
 words, and lemmatization for feature extraction.All experiments were performed
 on dataset given by RE datatrack.\\
 
- Abad \etal ~ \cite{Abad:2017} targeted two problems: first is classification of
+ 	Abad \etal ~ \cite{Abad:2017} targeted two problems: first is classification of
  FR and NFR and second classification of NFR into categories. Preprocessing of
  text performed by applying: POS tagging, Entity tagging and temporal tagging
  .As a next step feature co-occurrence and regular expression used to increase
@@ -134,7 +132,7 @@ subclassifcation, Binarized Naïve Bayes (BNB) achieved highest results. The
 preprocessing of text involved, Part of Speech (POS) tagging, entity tagging,
 and temporal tagging.\\
 
-Garzoli \cite {Garzoli:2013} classified data into five
+	Garzoli \cite {Garzoli:2013} classified data into five
 types: FRs, NFRs, design and construction constraints, operator requirements,
 performance requirements.The datset was taken from combat management system of a
 Naval Combat System in generall complex system domain. However, the primary goal
@@ -142,7 +140,7 @@ was to come up with a general architecture for large-scale and adaptive
 requirement analysis. For classification multi VSM model used and for lexical
 and grammatical features BoW + N-words + N-POS achieved highest accuracy.\\
 
-Wieloch \etal~\cite{Wieloch:2013} introduced methods that enhance the accuracy
+	Wieloch \etal~\cite{Wieloch:2013} introduced methods that enhance the accuracy
 of tracing (classifying) requirements which occured frequently across multiple
 projects and/or domains. In the paper, they presented Trace by  Classification
 (TBC),  a machine learning approach in which a classifier is trained to identify
@@ -159,7 +157,6 @@ computed as a function of the occurrence of indicator terms of that type in the
 requirement.\\
 
 \subsubsection{Requirement Prioritization}
-\levi{Is this supposed to be a section by itself?}
 Complex software system generally has thousands of requirements with multiple
 stakeholders and customers. Each one of them has their own set of requirements
 and opinions and wants their requirements implementation accordingly. However,
@@ -174,9 +171,9 @@ hierarchical process (AHP) \cite{saaty2008}, Goal oriented
 techniques, human input is majorly involved. Qaddoura \etal \cite{RQaddoura}
 reviewed the prioritization techniques and also shed light on the ML
 contribution. ML can be used for automated analysis of these large set of
-software requirements prioritization, and it can also help to improve the existing techniques.
+software requirements prioritization, and it can also help to improve the existing techniques.\\
 
-Dhingra \etal  \cite{SDhingra} predicted the most appropriate technique for
+	Dhingra \etal  \cite{SDhingra} predicted the most appropriate technique for
 software requirement prioritization process. The input from the user is taken as
 the characteristic value\levi{what is the characteristic value?} and output the
 most appropriate requirement prioritization method such as AGORA, AHP, etc. Fuzzy interface technique was
@@ -191,7 +188,7 @@ cognitive aspects, and human experience. DT learned from the dataset and
 predicted the prioritization technique. Out of the 45 test samples, the
 framework was able to classify 43 tests accurately.\\
 
-Avesani \etal\cite{PAvesani} presented the study that dealt with the scalability problems
+	Avesani \etal\cite{PAvesani} presented the study that dealt with the scalability problems
 that arises in managing the prioritization of a large number of requirements
 specified in AHP technique.  The existing solution to scalability issues used
 heuristics. It helped to decide when to stop the pairwise elicitation process.
@@ -202,7 +199,7 @@ builds up the solution by looking at examples. The input for the learning
 algorithm are a finite set of requirements, the ranking criteria, initial user
 preferences and density function.\\
 
-The similar study was performed in \cite{7320432}from the same group
+	The similar study was performed in \cite{7320432}from the same group
 \cite{PAvesani} for identification of decision-making issues related to the
 management of risks in Open Source Software adoption in medium and large
 organizations. A  semi-automated system was proposed that used case based
