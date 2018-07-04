@@ -25,7 +25,8 @@ classifying, grouping and ranking tweets in\levi{during the?} software evolution
 process. For identifying evolutionary requirement supervised classification
 has been performed on tweets to classify them as improvement requests or not,
 using the Naïve Bayes algorithm. This was the first this study of its kind
-performed on software tweets.\levi{features, datasets?}\\
+performed on software tweets. For tweets preprocessing tokenization, conversion of all the texts into lower case, extracting n-gram with a one to three words length, removing stopwords and stemming were applied. 
+After this classifier was trained with following steps: 1) conversion of preprocessed tweets into a VSM model, 2) train a classifier on a set of manually annotated tweets, 3) predict the tweets categories using a trained classifier.\levi{features, datasets?}\\
 
 Williams \etal \cite{Williams:2017} performed a similar study on tweets for
 classifying them as user requirements or not. The study gave state of the art
