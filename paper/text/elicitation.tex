@@ -2,86 +2,72 @@
 \subsection{Requirements Elicitation and Discovery}
 
 The manual process of requirement elicitation is time-consuming and requires
-efforts, and sources\levi{which sources?}. A project's success majorly depends
+efforts and resources. A project's success majorly depends
 upon the precise identification of stakeholder expectations and requirements for their desired
 system. Poor elicitation can lead to over budget and time issues.
-\levi{A possibibility to do?} Requirements elicitation can be done by mining
-available datasets e.g., social media, documents, and gathering and analyzing information available on the internet,
-publically or privately available data. In short, gathering data from different
-means and analyzing it for requirements elicitation.  The latest trend for
-identifiying of user requirement is to mine social media coming from the likes
-if twitter, google store, and app stores. These user reviews are not
+A possibility to do requirements elicitation can be mining
+available datasets e.g. social media, documents. Also, gathering and analyzing information available on the internet,
+publically or privately available dataset. In short, gathering data from different
+sources and analyzing it for requirements elicitation.  The latest trend for
+identifying user requirement is to mine social media coming from the twitter, google store, and app stores. These user reviews are not
 structured requirements and contain other information too such as praise,
 dislikes or bug reports. The unstructured, extra information and noise
 presence in the above-described sources makes manual requirements
 elicitation difficult and challenging. Automated requirement elicitation
 is helpful in these cases and can significantly reduce time, effort, and cost.
-This is ML classification task \emph{what about clustering?}: give the set of
-information and identifying it as a requirement or not.
-\\
+This is ML classification and clustering task give the set of
+information and identifying it as a requirement or not.\\
 
 Guzman \etal \cite{Guzman:2017} have proposed the ALERTme approach for
-classifying, grouping and ranking tweets in\levi{during the?} software evolution
+classifying, grouping and ranking tweets during the software evolution
 process. For identifying evolutionary requirement supervised classification
 has been performed on tweets to classify them as improvement requests or not,
-using the Naïve Bayes algorithm. This was the first this study of its kind
+using the Naïve Bayes algorithm. It was the first this study of its kind
 performed on software tweets. For tweets preprocessing tokenization, conversion of all the texts into lower case, extracting n-gram with a one to three words length, removing stopwords and stemming were applied. 
-After this classifier was trained with following steps: 1) conversion of preprocessed tweets into a VSM model, 2) train a classifier on a set of manually annotated tweets, 3) predict the tweets categories using a trained classifier.\levi{features, datasets?}\\
+After this classifier was trained with following steps:  1) conversion of preprocessed tweets into a VSM model, 2) train a classifier on a set of manually annotated tweets, 3) predict the tweets categories using a trained classifier. A data set of 68108 tweets i.e. collection of two-month software tweets of Spotify, Dropbox, and Slack was used.
 
 Williams \etal \cite{Williams:2017} performed a similar study on tweets for
-classifying them as user requirements or not. The study gave state of the art
-results\levi{what does this mean?} using Naïve Bayes and VSM
-algorithm\levi{explain what VSM is}.
-Different techniques were implemented for feature extraction that includes stopword removing, sentimental analysis,
+classifying them as user requirements or not. The study improved
+results in comparison to the existing studies using Naïve Bayes and VSM
+algorithm. Different techniques were implemented for feature extraction that includes stopword removing, sentimental analysis,
 stemming\levi{bring to machine learning section}, and Bag of words.
-For learning process maually annotated tweets were used. However, results showed
+For the learning process, manually annotated tweets were used. However, results showed
 that software tweets are neutral in nature and sentiment analysis did not
-influence ML algorithm.\\
+influence the ML algorithm. It used 4000 randomly selected tweets from ten different software.\\
 
-Research on mining user reviews in mobile application (app) stores has
-remarkably advanced in the past few years.\levi{remove} Jiang \etal
-\cite{Jiang:2014} presented an optimized method\emph{what is optimized?} for
-discovering the evolutionary requirements for developers. This method clustered opinion expressions in form of a macro network
+ Jiang \etal \cite{Jiang:2014} presented a study on mining user reviews in mobile application (app) stores for
+discovering the evolutionary requirements for developers. This method clustered opinion expressions in the form of a macro network
 topology, and combine polarized sentimental analysis with the economic factors
-to decide evolutionary requirements. \levi{bring to common section: The dataset
-used POS tagger and parser with additional defined rules for feature extraction.}\\
+to decide evolutionary requirements. It used two datasets of online reviews one was from software package Karplersky internet security 2011 from Amazon with 380 reviews, and mobile app of TuneIn Radio Pro V3.6 from the app store with 461 reviews.\\
 
-Douglas.S \etal\cite{Douglas:S2008} mapped software requirement elicitation process to an
+Lange \etal\cite{Douglas:S2008} mapped software requirement elicitation process to an
 existing military tool skiweb that used for making the decision. The proposed
-methodology used the supervised Naive Bayes algorithm to classify text document
-to find related requirements. Furthermore, recommendation system used topic modeling to
+methodology used the supervised Naive Bayes algorithm to classify the text document
+to find related requirements. Furthermore, the recommender system used topic modeling to
 identify the key stakeholder for which that requirement is important and allow
-for the analysis.\levi{features, datasets?}\\
+for the analysis. This study used internal organizational dataset Skiweb Data i.e. wiki, blogs etc.\\
 
-Jha \etal \cite{Jha:2017} classified application store reviews and discover user
-requirement as feature request\levi{discovered user requirements by mining
-feature requests?}. The data was classified into three categories bugs,
-features, and junk. For classification, SVM and Naïve Bayes algorithm was used.
-The study used frame semantic analysis that genralize more abstract contexts.
-This technique produced slower dimensional model with smaller number of
-features, that help to enhance the prediction capabilities.\levi{features,
-datasets?}\\
+Jha \etal \cite{Jha:2017} discovered user requirements by mining
+feature requests from the app store. The data were classified into three categories bugs,
+features, and junk. For classification, SVM and Naïve Bayes algorithm were used.
+The study used frame semantic analysis that generalize more general contexts.
+This technique produced a slower dimensional model with a smaller number of
+features which help to enhance the prediction capabilities. It combined the existing dataset from the past studies and iOS apps reviews including CreditKarma, FitBit, and Gmail.
+
+Maalej \cite{Maalej} presented a classification study of app reviews into bug reports, feature requests, user experiences, and
+ratings. The binary classifier Naive Bayes performed best than other algorithms also it showed binary classifier are suitable for predicting the than multi-class classifiers. Different review feature such as ratings, tense, sentiment scores, and length enhanced the classification performance. A dataset of 4400 manually annotated reviews from Google Play and the Apple app store was used. \\
+
+Herrera \etal \cite{Castro-Herrera:2009} builded a semi-automated recommender system
+to manage broad stakeholder participation in the requirements elicitation
+and prioritization process. On these forums, stakeholders can work collaboratively to transform statements of
+need into sets of articulated and prioritized requirements. The proposed system analyzed online dataset i.e. gathered
+from stakeholders and automatically generated highly specialized topics for generating different forums. User profiles are created as a next step that depicts stakeholders interest. These profiles also help to create recommendations according to the interests of a community of similar stakeholders. For topics
+identification, an unsupervised clustering technique is applied to unstructured or semi-structured data. 
+For the evaluation dataset was a collection of feature requests. 36 graduate-level students created these requests for an Amazon-like student web-portal system.\\
 
 
 \subsubsection{Text mining}\levi{add to preprocessing}
 
- 
-Herrera \etal \cite{Castro-Herrera:2009} provide semi-automatically\levi{provide
-what?} manage broad stakeholder participation in the requirements elicitation
-and prioritization process. The proposed system analyzed datset i.e. gathered
-from stakeholders and automatically generated highly specialized topical forums
-i.e. themes identification, and assign it to stakeholders accordingly.\levi{?}
-On these forums stakeholders can work collaboratively to transform statements of
-need into sets of articulated and prioritized requirements. For theme
-identification unsupervised clustering techniques are applied to massive
-amounts\emph{why massive?} of unstructured or semi-structured data. The tool
-then builds user profiles according to the interests of the stakeholders in each
-of these themes for recommender system.\levi{?} Stakeholders needs
-(features)\levi{features in this case are just words} are initially preprocessed
-by removing common (stop) terms, and computation of tf-id \levi{explain tf–idf,
-maybe extract it to a common section, in general explain that features are
-words and the instances are tweets/reviews/\ldots} for each term.
-The dataset was small collection of feature requests created by 36 graduate level students for an Amazon-like student web-portal system.\\
 
 Hollis \etal \cite{Hollis2017} proposed an initial study to automate requirement
 elicitation in Agile environment by providing the list of words and loosely
