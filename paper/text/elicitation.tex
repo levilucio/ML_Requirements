@@ -6,11 +6,9 @@ effort and resources. A project's success majorly depends
 on the precise identification of stakeholder's expectations and requirements for
 the system they desired.
 A possibility to do requirements elicitation is to mine available datasets e.g.
-social media, documents\levi{which documents?}. Also, gathering and analyzing
-information available on the internet, publically or privately available
-dataset.\levi{redundant sentence} In short, gathering data from different
-sources and analyzing it for requirements elicitation. The latest trend for
-identifying user requirements is to mine social media coming from e.g. twitter,
+social media, requirment documents, app stores reviews \levi{which documents?}. In short, gathering data from different
+sources and analyz it for requirements elicitation. The latest trend for
+identifying user requirements is to mine social media coming from e.g. twitter or
 google store or app stores. These user reviews are not structured requirements
 and contain information such as praise, dislikes or bug reports. The
 unstructured, extra information and noise present in the above-described
@@ -23,31 +21,26 @@ tasks.\\
 
 Guzman \etal \cite{Guzman:2017} have proposed the ALERTme approach for
 classifying, grouping and ranking tweets during the software
-evolution\levi{development?} process. For identifying evolutionary
+evolution development. For identifying evolutionary
 requirements\levi{introduce evolutionalry requirements} supervised
 classification has been performed on tweets to classify them as being
-improvement requests or not, using Naïve Bayes. This was the first this study of
-its kind performed on software tweets. \levi{\textbf{Extract to preprocessing
-section}: For tweets preprocessing tokenization, conversion of all the texts
-into lower case, extracting n-gram with a one to three words length, removing stopwords and stemming were applied.}
+improvement requests or not, using \emph{Naïve Bayes} algorithm. This was the first study of
+its kind performed on software tweets. 
 The classifier was trained with following steps: 1) conversion of
-preprocessed tweets into a VSM\levi{introduce VSM} model, 2) train a classifier
+preprocessed tweets into a VSM model, 2) train a classifier
 on a set of manually annotated tweets, 3) predict the tweets categories using the trained classifier.
 As data set, 68108 tweets (a collection of two-month software tweets) from
 Spotify, Dropbox, and Slack was used.
 
 Williams \etal \cite{Williams:2017} performed a similar study on tweets in order
 to classify them as user requirements or not. The study improved results in
-comparison to the existing studies using Naïve Bayes and VSM algorithm.\levi{as
-compared to the previous study?} \levi{bring to preprocessing section: Different
-techniques were implemented for feature extraction that includes stopword
-removing, sentimental analysis, stemming, and Bag of words.} For the learning
+comparison to the existing studies using Naïve Bayes and VSM algorithm. For the learning
 process, manually annotated tweets were used\levi{annotated how, which ML
 algorithm was used?}. The authors claim that their results demonstrate that
 software tweets are neutral in nature, meaning sentiment analysis did not
 influence the outcome of the ML algorithm.
 The study used 4000 randomly selected tweets from ten different
-software\levi{software what?}.\\
+software including Android, Apple Support, Call of Duty,Google Chrome, Instagram,Minecraft,Snapchat, Visual Studio,WhatsApp,Windows 10\levi{software what?}.\\
 
 Jiang \etal \cite{Jiang:2014} studied mining user reviews in mobile application
 (app) stores for discovering evolutionary requirements. The author's method
@@ -60,12 +53,12 @@ reviews; the other one  comprising 461 reviews for the  TuneIn Radio Pro V3.6
 mobile app (from the app store).\\
 
 Lange \etal\cite{Douglas:S2008} mapped the software requirement elicitation
-process onto an military tool \emph{skiweb} in order to make the
+process onto an military tool \emph{skiweb} in order to make their organizational 
 decision\levi{which decision?}. The proposed methodology used the supervised
-Naive Bayes algorithm to classify the text document to find related
-requirements\levi{related to what?}. Furthermore, the recommender
+\emph{Naive Bayes} algorithm to classify the text document to find related
+requirements to the topic \levi{related to what?}. Furthermore, this recommender
 system\levi{which recommender system?} used topic modeling to identify the key
-stakeholder for whom that requirement is important and allow for the
+stakeholder for whom that requirement is important and allow for further
 analysis\levi{which analysis?}. This study used an internal organizational
 dataset Skiweb Data i.e. wiki, blogs etc.\\
 
@@ -81,11 +74,9 @@ FitBit, and Gmail.
 
 Maalej presents in \cite{Maalej} a study on how to classify app reviews as bug
 reports, feature requests, user experiences, and ratings. The binary classifier
-Naive Bayes performed better than other algorithms also it showed binary
-classifier are suitable for predicting the than multi-class
-classifiers\levi{don't get this sentence. Also, explain what a binary classifier
-is}. Different review feature\levi{are these ML features? Also, you say
-previously that software tweets are neutral in nature\ldots} such as ratings,
+\emph{Naive Bayes} performed better than other algorithms also it showed binary
+classifier are suitable than multi-class
+classifiers. A binary classifier only consider boolean value i.e. yes or no. Different reviews feature such as ratings,
 tense, sentiment scores, and length enhanced the classification performance. A
 dataset of 4400 manually annotated reviews from Google Play and the Apple app
 store was used for the study.\\
@@ -97,7 +88,7 @@ stakeholders can work collaboratively to transform statements of need into sets
 of articulated and prioritized requirements. The proposed system analyzes online
 datasets\levi{which datasets?} gathered from stakeholders and automatically
 generates specialized topics for building discussion forums. User profiles are
-created as a next step that depicts stakeholders interest.\levi{don't get this
+created as a next step, that depicts stakeholders interest.\levi{don't get this
 sentence} These profiles also help to create recommendations according to the
 interests of a community of similar stakeholders.\levi{is this the recommender
 part?} For identifying topics, an unsupervised clustering technique is
