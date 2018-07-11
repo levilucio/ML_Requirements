@@ -143,44 +143,49 @@ text-preprocessing techniques such as removal of punctuations, removal of stop w
 extraction.} The experiments were performed on a dataset provided by the RE
 datatrack, i.e. 12 classes and 625 requirements in total.\\
 
- Abad \etal ~ \cite{Abad:2017} targeted two problems: first is classification of
- FR and NFR and second classification of NFR into categories. Preprocessing of
- text performed by applying: POS tagging, Entity tagging and temporal tagging
- .As a next step feature co-occurrence and regular expression used to increase
- the weight of influential words in the datset\levi{don't get it, too much
- detail}. J.48 DT used for the classifying the FR and NFR. For achieving second
- goal topic Modeling unsupervised algorithm LDA and BTM applied. For topic generation differnt algorithms such as
- clustering, k-means, hybrid clustering and k-means, BNB were applied.The
- results showed BNB worked better out of clustering, k-means, LDA, BTM.
-learnt decision tree to classify the FRs and NFRs and improved results from 
-\emph{~89\% to 95\%} by analyzing the requirements in natural language. For NFRs
-subclassifcation, Binarized Naïve Bayes (BNB) achieved highest results. The
-preprocessing of text involved, Part of Speech (POS) tagging, entity tagging,
-and temporal tagging.\\
+ Abad \etal ~ \cite{Abad:2017} targeted two problems: the first one is the
+ classification of FR and NFR and second classification of NFR into categories.
+\levi{Preprocessing of text performed by applying: POS tagging, Entity tagging
+and temporal tagging. As a next step feature co-occurrence and regular
+expression used to increase the weight of influential words in the
+datset\levi{don't get it, too much
+ detail}. J.48 DT used for the classifying the FR and NFR.} For achieving the
+ second goal topic Modeling unsupervised algorithm LDA and BTM
+ applied\levi{unclear}. For topic\levi{which topic?} generation different
+ algorithms such as clustering, k-means, hybrid clustering and k-means, BNB were
+ applied. The results showed BNB worked better out of clustering, k-means, LDA,
+ BTM\levi{what are all the acronyms?}. learnt decision tree to classify the FRs
+ and NFRs and improved results from 89\% to 95\% by analyzing the requirements in natural language. For NFRs
+subclassifcation, Binarized Naïve Bayes (BNB) achieved highest results.
+\levi{Move to preprocessing: The preprocessing of text involved, Part of Speech
+(POS) tagging, entity tagging, and temporal tagging.}\\
 
-Garzoli \cite {Garzoli:2013} classified data into five
-types: FRs, NFRs, design and construction constraints, operator requirements,
-performance requirements.The datset was taken from combat management system of a
-Naval Combat System in general a complex system domain. However, the primary goal
-was to come up with a general architecture for large-scale and adaptive
-requirement analysis. For classification multi VSM model used and for lexical
-and grammatical features BoW + N-words + N-POS achieved highest accuracy.\\
+Garzoli \cite {Garzoli:2013} classified data\levi{which data?} into five types:
+FRs, NFRs, \emph{design and construction constraints}, \emph{operator
+requirements} and \emph{performance requirements}. The dataset was taken from
+the combat management system of a Naval Combat System.\levi{what does the
+dataset consist of?} The goal of the study was to come up with a general
+architecture for large-scale and adaptive requirement analysis. For
+classification the multi VSM\levi{is this ML?} model was used and for lexical
+and grammatical features BoW + N-words + N-POS achieved the highest accuracy.\\
 
 Wieloch \etal~\cite{Wieloch:2013} introduced methods that enhance the accuracy
 of tracing (classifying) requirements which occured frequently across multiple
-projects and/or domains. In the paper, they presented Trace by  Classification
-(TBC),  a machine learning approach in which a classifier is trained to identify
+projects and/or domains. In the paper, they presented Trace by Classification
+(TBC), a machine learning approach in which a classifier is trained to identify
 and classify requirements and/or other kinds of software artifacts which occur
 relatively frequently across different projects (they call this process
-generating trace links for software artifacts in their research). The first step
-in their approach was preprocessing to eliminate common stop words.
-Then training phase identified set of indicator terms for each NFR category and the classifier trained by the set of identified
-weighted indicator terms that can be used for the last step which is to
-classify additional artifacts into functional and non-functional (e.g.
+generating trace links for software artifacts in their research). \levi{Trivial
+preprocessing step, put in preprocessing section:
+The first step in their approach was preprocessing to eliminate common stop
+words.} Then the training phase identified a set of indicator
+terms\levi{features?} for each NFR category and the classifier trained by the
+set of identified weighted indicator terms that can be used for the last step which is to classify additional
+artifacts into functional and non-functional (e.g.
 look-and-feel, performance, security, etc). A probability value represented the
 possibility that the new requirement belonged to a certain artifact type
 computed as a function of the occurrence of indicator terms of that type in the
-requirement.\\
+requirement.\levi{shouldn't this go to the verification/traceability section?}\\
 
 \subsubsection{Requirement Prioritization}
 Complex software system generally has thousands of requirements with multiple
