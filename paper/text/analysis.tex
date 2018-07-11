@@ -3,34 +3,38 @@
 \subsubsection{Identifying Non-Functional Requirements}
 
 Non-functional requirements may not be explicitly mentioned in a formal
-specification requirements documents even though, all systems have
-them~\cite{Slankas:2013}. Moreover, freeform documents like interview notes,
+specification requirements documents even though they exist for all
+systems~\cite{Slankas:2013}. Moreover, freeform documents like interview notes,
 meeting minutes and scattered requirements specifications include non-functional
-requirements which need to be detected and classified. In order to support
-analyst in the error-prone task of manually discovering and classifying NFRs
-machine learning can be useful. Automatic detection can be used to quickly and
-more effectively analyze large and complex documents for searching the
-NFRs\cite{Cleland-Huang2007}. This is a classification problem as from a set of
-requirements we want to decide a class membership. \\
+requirements which need to be detected and classified. Machine learning can be
+useful to support analysts in the error-prone task of manually discovering and
+classifying NFRs. Automatic detection can be used to quickly and effectively
+identifying NFRs in large and complex documents \cite{Cleland-Huang2007}. This
+is a classification problem as from a set of requirements we want to decide
+whether or not requirements belong to a certain class. \\
 
-One of the studies is by Slankas \etal~\cite{Slankas:2013} where they
-automatically identified and classified sentences in natural language from use
-agreements, install manuals, regulations, request for proposals, requirements
-specifications, and user manuals output into 14 different NFRs categories:
-Access Control, Audit, Availability, Legal, Look and Feel, Maintenance, Operational, Privacy, Recoverability,
-Performance and Scalability, Reliability, Security, Usability.
-Their two-step process:
-1) parse natural language and turn sentences into graphs 2) classify sentences into categories with k-nearest neighbor algorithm
-led them into finding 20 keywords for each category of NFRs for their
-classifier. They trained the NFR classifier with a wide variety of open and
-closed source EHRs (Electronic Health Record), various industry standards (HL7,
-CCHIT), governmental regulations, and other document sources exist to elicit
-documentation.\newline Cleland-Huang \etal~\cite{Cleland-Huang2007} provided the
-same approach and used k-nearest neighbor classification for grouping
-non-functional requirements: availability, look-and-feel, legal,
-maintainability, operational, performance, scalability, security, and usability.
-For training their classifier they used 15 requirements specifications developed
-as term projects by master students at DePaul University.
+In a study by Slankas \etal~\cite{Slankas:2013} the authors automatically
+identify and classify sentences in natural language from use agreements, install
+manuals, regulations, requests for proposals\emph{proposals of what?},
+requirements specifications, and user manuals into 14 different NFRs categories:
+\emph{Access Control}, \emph{Audit}, \emph{Availability}, \emph{Legal},
+\emph{Look and Feel}, \emph{Maintenance}, \emph{Operational}, \emph{Privacy},
+\emph{Recoverability}, \emph{Performance and Scalability}, \emph{Reliability},
+\emph{Security} and \emph{Usability}.
+Their two-step process: 1) parse natural language and turn sentences into graphs
+2) classify sentences into categories with k-nearest neighbor algorithm led them
+into finding 20 keywords for each category of NFRs for their
+classifier\levi{keywords are the features, no?}. They trained the NFR classifier
+with a wide variety of open and closed source EHRs (Electronic Health Record),
+various industry standards (HL7, CCHIT), governmental regulations, and other
+document sources exist to elicit documentation.\\
+
+Cleland-Huang \etal~\cite{Cleland-Huang2007} explored a similar approach and
+used the k-nearest neighbor classifier for grouping non-functional requirements:
+\emph{availability}, \emph{look-and-feel}, \emph{legal}, \emph{maintainability},
+\emph{operational}, \emph{performance}, \emph{scalability}, \emph{security}, and
+\emph{usability}. For training their classifier they used 15 requirements
+specifications developed as term projects by master students at DePaul University.
 
 \subsubsection{Identifying Functional Requirements}
 
