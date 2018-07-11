@@ -1,69 +1,109 @@
 
 \subsection{Requirements Elicitation and Discovery}
 
-The manual process of requirement elicitation is time-consuming and requires
-efforts and resources. A project's success majorly depends
-upon the precise identification of stakeholder expectations and requirements for their desired
-system. Poor elicitation can lead to over budget and time issues.
-A possibility to do requirements elicitation can be mining
-available datasets e.g. social media, documents. Also, gathering and analyzing information available on the internet,
-publically or privately available dataset. In short, gathering data from different
-sources and analyzing it for requirements elicitation.  The latest trend for
-identifying user requirement is to mine social media coming from the twitter, google store, and app stores. These user reviews are not
-structured requirements and contain other information too such as praise,
-dislikes or bug reports. The unstructured, extra information and noise
-presence in the above-described sources makes manual requirements
-elicitation difficult and challenging. Automated requirement elicitation
-is helpful in these cases and can significantly reduce time, effort, and cost.
-This is ML classification and clustering task give the set of
-information and identifying it as a requirement or not.\\
+The manual process of requirement elicitation is expensive in terms of
+effort and resources. A project's success majorly depends
+on the precise identification of stakeholder's expectations and requirements for
+the system they desired.
+A possibility to do requirements elicitation is to mine available datasets e.g.
+social media, documents\levi{which documents?}. Also, gathering and analyzing
+information available on the internet, publically or privately available
+dataset.\levi{redundant sentence} In short, gathering data from different
+sources and analyzing it for requirements elicitation. The latest trend for
+identifying user requirements is to mine social media coming from e.g. twitter,
+google store or app stores. These user reviews are not structured requirements
+and contain information such as praise, dislikes or bug reports. The
+unstructured, extra information and noise present in the above-described
+sources makes manual requirements elicitation difficult and challenging.
+Automated requirement elicitation is helpful in these cases and can
+significantly reduce time, effort, and cost. This is mainly an ML
+\emph{classification} task: give the set of information and identifying it as a
+requirement or not. Sometimes \emph{clustering} is also used for auxiliary
+tasks.\\
 
 Guzman \etal \cite{Guzman:2017} have proposed the ALERTme approach for
-classifying, grouping and ranking tweets during the software evolution
-process. For identifying evolutionary requirement supervised classification
-has been performed on tweets to classify them as improvement requests or not,
-using the Naïve Bayes algorithm. It was the first this study of its kind
-performed on software tweets. For tweets preprocessing tokenization, conversion of all the texts into lower case, extracting n-gram with a one to three words length, removing stopwords and stemming were applied. 
-After this classifier was trained with following steps:  1) conversion of preprocessed tweets into a VSM model, 2) train a classifier on a set of manually annotated tweets, 3) predict the tweets categories using a trained classifier. A data set of 68108 tweets i.e. collection of two-month software tweets of Spotify, Dropbox, and Slack was used.
+classifying, grouping and ranking tweets during the software
+evolution\levi{development?} process. For identifying evolutionary
+requirements\levi{introduce evolutionalry requirements} supervised
+classification has been performed on tweets to classify them as being
+improvement requests or not, using Naïve Bayes. This was the first this study of
+its kind performed on software tweets. \levi{\textbf{Extract to preprocessing
+section}: For tweets preprocessing tokenization, conversion of all the texts
+into lower case, extracting n-gram with a one to three words length, removing stopwords and stemming were applied.}
+The classifier was trained with following steps: 1) conversion of
+preprocessed tweets into a VSM\levi{introduce VSM} model, 2) train a classifier
+on a set of manually annotated tweets, 3) predict the tweets categories using the trained classifier.
+As data set, 68108 tweets (a collection of two-month software tweets) from
+Spotify, Dropbox, and Slack was used.
 
-Williams \etal \cite{Williams:2017} performed a similar study on tweets for
-classifying them as user requirements or not. The study improved
-results in comparison to the existing studies using Naïve Bayes and VSM
-algorithm. Different techniques were implemented for feature extraction that includes stopword removing, sentimental analysis,
-stemming\levi{bring to machine learning section}, and Bag of words.
-For the learning process, manually annotated tweets were used. However, results showed
-that software tweets are neutral in nature and sentiment analysis did not
-influence the ML algorithm. It used 4000 randomly selected tweets from ten different software.\\
+Williams \etal \cite{Williams:2017} performed a similar study on tweets in order
+to classify them as user requirements or not. The study improved results in
+comparison to the existing studies using Naïve Bayes and VSM algorithm.\levi{as
+compared to the previous study?} \levi{bring to preprocessing section: Different
+techniques were implemented for feature extraction that includes stopword
+removing, sentimental analysis, stemming, and Bag of words.} For the learning
+process, manually annotated tweets were used\levi{annotated how, which ML
+algorithm was used?}. The authors claim that their results demonstrate that
+software tweets are neutral in nature, meaning sentiment analysis did not
+influence the outcome of the ML algorithm.
+The study used 4000 randomly selected tweets from ten different
+software\levi{software what?}.\\
 
- Jiang \etal \cite{Jiang:2014} presented a study on mining user reviews in mobile application (app) stores for
-discovering the evolutionary requirements for developers. This method clustered opinion expressions in the form of a macro network
-topology, and combine polarized sentimental analysis with the economic factors
-to decide evolutionary requirements. It used two datasets of online reviews one was from software package Karplersky internet security 2011 from Amazon with 380 reviews, and mobile app of TuneIn Radio Pro V3.6 from the app store with 461 reviews.\\
+Jiang \etal \cite{Jiang:2014} studied mining user reviews in mobile application
+(app) stores for discovering evolutionary requirements. The author's method
+clustered opinion expressions in the form of a macro network
+topology\levi{explain what kind of clustering}, and combines polarized
+sentimental analysis with economic factors to decide evolutionary
+requirements.\levi{explain} It used two datasets of online reviews: one from the
+Karplersky internet security 2011 software package (from Amazon) with 380
+reviews; the other one  comprising 461 reviews for the  TuneIn Radio Pro V3.6
+mobile app (from the app store).\\
 
-Lange \etal\cite{Douglas:S2008} mapped software requirement elicitation process to an
-existing military tool skiweb that used for making the decision. The proposed
-methodology used the supervised Naive Bayes algorithm to classify the text document
-to find related requirements. Furthermore, the recommender system used topic modeling to
-identify the key stakeholder for which that requirement is important and allow
-for the analysis. This study used internal organizational dataset Skiweb Data i.e. wiki, blogs etc.\\
+Lange \etal\cite{Douglas:S2008} mapped the software requirement elicitation
+process onto an military tool \emph{skiweb} in order to make the
+decision\levi{which decision?}. The proposed methodology used the supervised
+Naive Bayes algorithm to classify the text document to find related
+requirements\levi{related to what?}. Furthermore, the recommender
+system\levi{which recommender system?} used topic modeling to identify the key
+stakeholder for whom that requirement is important and allow for the
+analysis\levi{which analysis?}. This study used an internal organizational
+dataset Skiweb Data i.e. wiki, blogs etc.\\
 
-Jha \etal \cite{Jha:2017} discovered user requirements by mining
-feature requests from the app store. The data were classified into three categories bugs,
-features, and junk. For classification, SVM and Naïve Bayes algorithm were used.
-The study used frame semantic analysis that generalize more general contexts.
-This technique produced a slower dimensional model with a smaller number of
-features which help to enhance the prediction capabilities. It combined the existing dataset from the past studies and iOS apps reviews including CreditKarma, FitBit, and Gmail.
+Jha \etal \cite{Jha:2017} discover user requirements by mining feature requests
+submitted to the app store. The requests were classified into three categories:
+\emph{bugs}, \emph{features}, and \emph{junk}. The authors have used SVM and
+Naïve Bayes as classifiers. The study used frame semantic analysis that
+generalize more general contexts\emph{explain frame semantics}. This technique
+produced a slower dimensional model\levi{why slower?} with a smaller number of
+features which help to enhance the prediction capabilities. It combined existing
+datasets from past studies and reviews for iOS apps including CreditKarma,
+FitBit, and Gmail.
 
-Maalej \cite{Maalej} presented a classification study of app reviews into bug reports, feature requests, user experiences, and
-ratings. The binary classifier Naive Bayes performed best than other algorithms also it showed binary classifier are suitable for predicting the than multi-class classifiers. Different review feature such as ratings, tense, sentiment scores, and length enhanced the classification performance. A dataset of 4400 manually annotated reviews from Google Play and the Apple app store was used. \\
+Maalej presents in \cite{Maalej} a study on how to classify app reviews as bug
+reports, feature requests, user experiences, and ratings. The binary classifier
+Naive Bayes performed better than other algorithms also it showed binary
+classifier are suitable for predicting the than multi-class
+classifiers\levi{don't get this sentence. Also, explain what a binary classifier
+is}. Different review feature\levi{are these ML features? Also, you say
+previously that software tweets are neutral in nature\ldots} such as ratings,
+tense, sentiment scores, and length enhanced the classification performance. A
+dataset of 4400 manually annotated reviews from Google Play and the Apple app
+store was used for the study.\\
 
-Herrera \etal \cite{Castro-Herrera:2009} builded a semi-automated recommender system
-to manage broad stakeholder participation in the requirements elicitation
-and prioritization process. On these forums, stakeholders can work collaboratively to transform statements of
-need into sets of articulated and prioritized requirements. The proposed system analyzed online dataset i.e. gathered
-from stakeholders and automatically generated highly specialized topics for generating different forums. User profiles are created as a next step that depicts stakeholders interest. These profiles also help to create recommendations according to the interests of a community of similar stakeholders. For topics
-identification, an unsupervised clustering technique is applied to unstructured or semi-structured data. 
-For the evaluation dataset was a collection of feature requests. 36 graduate-level students created these requests for an Amazon-like student web-portal system.\\
+Herrera \etal \cite{Castro-Herrera:2009} have built a semi-automated\levi{why
+semi-automated?} recommender system to manage broad stakeholder participation in
+the requirements elicitation and prioritization process. On these forums,
+stakeholders can work collaboratively to transform statements of need into sets
+of articulated and prioritized requirements. The proposed system analyzes online
+datasets\levi{which datasets?} gathered from stakeholders and automatically
+generates specialized topics for building discussion forums. User profiles are
+created as a next step that depicts stakeholders interest.\levi{don't get this
+sentence} These profiles also help to create recommendations according to the
+interests of a community of similar stakeholders.\levi{is this the recommender
+part?} For identifying topics, an unsupervised clustering technique is
+applied to unstructured or semi-structured data\levi{what's the difference?}.
+The evaluation  dataset was a collection of 36 feature requests created by
+graduate-level students for an Amazon-like student web-portal system.\\
 
 
 
