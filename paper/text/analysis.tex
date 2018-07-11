@@ -85,10 +85,10 @@ to non-functional requirements. The primary focus of requirements anlysis is
 generally towards the identification and specification of FRs. NFRs are usually
 identified and specified in later development stages which can increase the
 risks of problems during the development life cycle. FRs tend to be more
-straightforward e.g. store and retrieve transaction\emph{transaction?}. On the
+straightforward e.g. store and retrieve transaction\levi{transaction?}. On the
 other side, NFRs are complicated and challenging to implement, making the
 design to meet NFRs or design test case for them\levi{unclear}.
-Different types of requirements are analyzed differently, and and such it is
+Different types of requirements are analyzed differently, and as such it is
 useful to separate them. This distinction helps in managing changes in
 requirements as well as in precisely incorporating them in the development of
 the system. Manually dividing requirements in FRs and NFRs is difficult and
@@ -97,46 +97,59 @@ categorizing the requirements based on the text segment analysis\emph{what is
 this?}. This is ML classification task: give the set of requirements and
 identifying its category.\\
 
-	Mengmeng Lu \etal~ \cite{Lu:2017} automatically classify the user review text
-mobile from application (app) stores  into FR, NFR, and others. It further
-classified NFRs into four categories including reliability, usability,
-portability, and performance. It used supervised machine learning algorithm
-(bagging) for training the classifier. The text trimming used stopwords
-elimination, lemmatization, stemming, and sentences split. The sentences are augmented by several most similar words to the user reviews in the training set and showed that augmented user reviews can lead to better classification results. 
-The machine learning algorithm Bagging is more suitable for NFRs classification from user reviews than Naïve Bayes and J48. It used 6696 raw user reviews from iBooks and 
-4400 raw user reviews from WhatsApp as the dataset.\\
+Mengmeng Lu \etal~ \cite{Lu:2017} automatically classify the text from user
+reviews for (app) stores into FR, NFR, and others. The authors further classify
+NFRs into four categories including reliability, usability, portability, and
+performance. The approach uses a supervised machine learning algorithm
+(bagging)\levi{is bagging an algorithm?} for training the classifier.
+\levi{Bring to preprocessing section: The text trimming used stopwords
+elimination, lemmatization, stemming, and sentences split.} The sentences are
+augmented by several most similar words to the user reviews in the training set
+and showed that augmented user reviews can lead to better classification
+results.\levi{unclear} The machine learning algorithm Bagging is more suitable
+for NFRs classification from user reviews than Naïve Bayes and J48\levi{is this
+conclusion because they tested with multiple algorithms or because it is better
+than the SOA, in which case this should be mentioned in the table}. The authors
+used 6696 raw user reviews from iBooks and 4400 raw user reviews from WhatsApp
+as datasets.\\
 
-	Deoxadez \etal~\cite{Deocadez:2017}performed semi-supervised classification techniques
-for automated classification of FRs and NFRs on user reviews from the app store.
-This study dealt with two problems: 1) minimize annotation effort or label the
-big dataset of user reviews, and 2) classification of FRs and NFRs. The proposed
-solution to solve the first problem used semi-supervised self-labeling
-algorithm. Self-labeling algorithms required a small amount of dataset to get
-comparable results as supervised techniques. Naïve Bayes algorithm was selected
-because of high performance results for classification problem. Features were
-obtained by applying standard text mining technique and additional attribute
-embellishment\levi{what is attribute embellishment?}. For text mining technique Inverse Document Frequency (IDF) transform, Term Frequency (TF) transform, lowercase
-transformation, minimum term frequency, stemmer, and number of words were used. The second stage involved removing numbers, 2- letter words
-and other symbolic characters. It used reviews of top 40 paid and free apps from ten different categories.\\
+Deoxadez \etal~\cite{Deocadez:2017} used semi-supervised classification
+techniques for automated classification of FRs and NFRs from user reviews from
+the app store. This study dealt with two problems: 1) minimizing the annotation
+effort for labelling the big dataset of user reviews, and 2) classification of
+FRs and NFRs. The proposed solution for the first problem used
+the semi-supervised self-labeling algorithm. Self-labeling algorithms required a
+small amount of dataset to get comparable results as supervised techniques. Naïve Bayes
+algorithm was selected because of high performance results for classification
+problem.\levi{this sentence doesn't state anything} \levi{Features were obtained
+by applying standard text mining technique and additional attribute
+embellishment \levi{what is attribute embellishment?}.
+For text mining technique Inverse Document Frequency (IDF) transform, Term Frequency
+(TF) transform, lowercase transformation, minimum term frequency, stemmer, and
+number of words were used.} The second stage involved removing numbers, 2-
+letter words and other symbolic characters.\levi{What is the second stage? Is
+this the second problem?} It used reviews of top 40 paid and free apps from ten
+different categories.\\
 
-	Kutranvoic \etal ~ \cite {Kurtanovic:2017}performed automated analysis on
-software requirements and performed classification on FRs, NFRs and
-subcategories of NFRs using supervised machine learning algorithm(support vector
-machine). Some NFR had negligble requiremtnst in dataset due to this they were
-ignored. The additional dataset of user comments from Amazon was integrated into
-the main dataset to avoid the data imbalance problem in NFR. The predictor used
-text-preprocessing techniques such as removal of punctuations, removal of stop
-words, and lemmatization for feature extraction. All experiments were performed
-on dataset given by RE datatrack i.e. 12 classess and 625 requirements in total.\\
+Kutranvoic \etal ~ \cite {Kurtanovic:2017} performed automated analysis on
+software requirements\levi{which kind?} and performed classification on FRs,
+NFRs and subcategories of NFRs using supervised learning achieved using
+SVM.\levi{make sure we introduce the acronym before}. Some NFRs had negligble
+requirements\levi{what does negligible mean?} in the dataset and due to this
+they were ignored. The additional dataset of user comments\levi{what is this?}
+from Amazon was integrated into the main dataset to avoid the data imbalance
+problem in NFR. \levi{Move to preprocessing section: The predictor used
+text-preprocessing techniques such as removal of punctuations, removal of stop words, and lemmatization for feature
+extraction.} The experiments were performed on a dataset provided by the RE
+datatrack, i.e. 12 classes and 625 requirements in total.\\
 
- 	Abad \etal ~ \cite{Abad:2017} targeted two problems: first is classification of
+ Abad \etal ~ \cite{Abad:2017} targeted two problems: first is classification of
  FR and NFR and second classification of NFR into categories. Preprocessing of
  text performed by applying: POS tagging, Entity tagging and temporal tagging
  .As a next step feature co-occurrence and regular expression used to increase
  the weight of influential words in the datset\levi{don't get it, too much
- detail}. 
-J.48 DT used for the classifying the FR and NFR. For achieving second goal topic Modeling unsupervised algorithm
- LDA and BTM applied. For topic generation differnt algorithms such as
+ detail}. J.48 DT used for the classifying the FR and NFR. For achieving second
+ goal topic Modeling unsupervised algorithm LDA and BTM applied. For topic generation differnt algorithms such as
  clustering, k-means, hybrid clustering and k-means, BNB were applied.The
  results showed BNB worked better out of clustering, k-means, LDA, BTM.
 learnt decision tree to classify the FRs and NFRs and improved results from 
@@ -145,7 +158,7 @@ subclassifcation, Binarized Naïve Bayes (BNB) achieved highest results. The
 preprocessing of text involved, Part of Speech (POS) tagging, entity tagging,
 and temporal tagging.\\
 
-	Garzoli \cite {Garzoli:2013} classified data into five
+Garzoli \cite {Garzoli:2013} classified data into five
 types: FRs, NFRs, design and construction constraints, operator requirements,
 performance requirements.The datset was taken from combat management system of a
 Naval Combat System in general a complex system domain. However, the primary goal
@@ -153,7 +166,7 @@ was to come up with a general architecture for large-scale and adaptive
 requirement analysis. For classification multi VSM model used and for lexical
 and grammatical features BoW + N-words + N-POS achieved highest accuracy.\\
 
-	Wieloch \etal~\cite{Wieloch:2013} introduced methods that enhance the accuracy
+Wieloch \etal~\cite{Wieloch:2013} introduced methods that enhance the accuracy
 of tracing (classifying) requirements which occured frequently across multiple
 projects and/or domains. In the paper, they presented Trace by  Classification
 (TBC),  a machine learning approach in which a classifier is trained to identify
