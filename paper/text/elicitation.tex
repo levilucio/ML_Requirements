@@ -27,21 +27,19 @@ requests are considered for the grouping which helped to sort the
 request and summarize them accordingly. The summarization process contains highly ranked tweets based on likes, sentiment, share etc parameters.
 
 Williams \etal \cite{Williams:2017} performed a similar study on tweets in order
-to classify them as user requirements or not. The study improved results in
-comparison to the existing studies using Naïve Bayes and VSM algorithm. For the learning
-process, manually annotated(labelled) tweets were used\levi{annotated how, which ML
-algorithm was used?}. The authors claim on bases of results that
+to classify them as user requirements or not. It used basic preprocessing techniques and applied VSM on data. For the learning
+process, manually annotated(labelled) tweets were used and \emph{Naive Bayes} algorithm used for classification.\levi{annotated how, which ML
+algorithm was used?}. The authors claimed with help of experiment results that
 software tweets are neutral in nature, meaning sentiment analysis did not
 influence the outcome of the ML algorithm. It shows improved results in comparison to \cite{Guzman:2017}.
 The study used 4000 randomly selected tweets from ten different
 software including Visualstudio, chrome, instagram etc\levi{software what?}.\\
 
 Jiang \etal \cite{Jiang:2014} mined user reviews in mobile application from 
-(app) stores for discovering evolutionary requirements. The author's method
-clustered opinion expressions in the form of a macro network
-topology\levi{explain what kind of clustering}, and combines polarized
-sentimental analysis with economic factors to decide evolutionary
-requirements.\levi{explain} It used two datasets of online reviews: one from the
+(app) stores for discovering evolutionary requirements. It first extracts opinions about software features from reviews. For automated opinion identification syntactic
+relation based propagation approach is used that extracts targets and sentiment words
+iteratively using known and extracted words. After this, it applies k-mean clustering for opinion categorization.
+\levi{explain what kind of clustering}. The proposed system also helps developers to decide requirements related to software revenue by considering economic factors. \levi{explain} It used two datasets of online reviews: one from the
 Karplersky internet security 2011 software package (from Amazon) with 380
 reviews; the other one  comprising 461 reviews for the  TuneIn Radio Pro V3.6
 mobile app (from the app store).\\
