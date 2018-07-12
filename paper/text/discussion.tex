@@ -5,9 +5,9 @@ concretize and summarize in this section. Note that while the pointers we
 provide here informed by the literature review we conducted, this survey is not
 fully systematic (as described in section~\ref{sec:threats_to_validity}) which
 means our conclusions may be revised and/or extended by future surveys of the
-domain.
+domain.\\
 
-Firstly, it is obvious from our survey that \NLP techniques are heavily used
+It is obvious from our survey that \NLP techniques are heavily used
 throughout a majority of the research tacking the application of \ML to
 \RE. This is not surprising and even intuitive. \RE is the area of software
 engineering where natural language is employed more ubiquitously, as \RE
@@ -21,22 +21,54 @@ of a natural-language based tool for requirement engineering that has become the
 reference in many domains. In the techniques we have observed, \NLP is heavily
 used for the preprocessing stages of natural language in order to bring the data to a format
 that can be consumed by a learning algorithm (see
-section~\ref{sec:preprocessing}).
-
-Many of the papers retrieved by our queries apply \NLP to requirements
+section~\ref{sec:preprocessing}). Many of the papers retrieved by our queries apply \NLP to requirements
 engineering but involve no learning (e.g.~\cite{Xiao:2012},~\cite{Deeptimahanti:2011},~\cite{ChengHeLiangLi:2010}, to
 cite a few). We have explicitly excluded such papers from our survey: although
 \NLP tools do sometimes include \ML algorithms, their functionality is used in a black-box
 manner by \RE reserchers and as such cannot be taken into consideration by our
-work.\levi{maybe this last paragraph should go to the protocol part}
+work.\levi{maybe this last paragraph should go to the protocol part}\\
+ 
+The authors of the articles we have processed in our survey of point
+to the idea that \ML can potentially bring about enormous benefits in terms of
+processing and taking decisions based on  large amounts of imprecise and
+ambiguous data~\cite{some citations here}. In the real-world of projects,
+parsing and summarizing requirements is a very time-consuming activity. Also,
+decisions taken by technical stakeholders are often based on imprecise,
+incomplete and noisy information and are supported by rules-of-thumb, experience
+and intutition. \ML is by nature built to handle and cope with such challenges
+-- it based on data and it's main purpose is exactly to build model of patterns
+that humans associate to rules-of-thumb, experience or intutions. Additionally,
+\ML methods often provide a precise degree of certainty regarding the
+correctness of decisions taking during a software engineering project. Such
+measures, although valid regarding the quality of the learning process, allow
+assessing the risk associated to certain steps in the course of a project.\\
 
-\begin{itemize}
-  \item Not better than SOA, comparations with humans, comparison with non-ML
-  techniques
-  \item There are a number of datasets available
-  \item Clustering is on par with classification
-  \item There are more contributions on Elicitation and Analysis
-\end{itemize}
+In the sequence of the previous paragraph, a large set of datasets
+on \RE are available online. We have identified a few of such datasets in
+\tab{summary}. This fact is a cornerstone for the domain, as most \ML
+algorithms existing nowadays are vey data-intensive. One of the authors of this
+survey has recently written a similar article on the application of \ML to
+formal verification~\cite{AmLuBi:2018}, for which the datasets available
+to learn from are typically very small and almost never made public. The authors
+of the article recognize that such scarceness of data is partly due to the niche
+nature of the domain of formal verification, where the datasets are mostly in
+the form of mathematical proofs. Nonetheless, and in spite of the large body of
+work regarding the application of \ML to formal verification, such scarceness of
+data poses a problem not only to the automated learning, but also to the
+scientific validation of such proposals. This is not the case in \RE, where many
+datasets are publicly available on which both learning and validation can be
+done.\\
+
+The majority of the articles we found on the topic of \ML and \RE have to do
+with either the \emph{elicitation} or the \emph{analysis} phases of \RE\levi{add
+some percentages here}. These findings are compatible with the idea that parsing
+requirements texts and classifying the information that is contained in them is
+strenuous for humans and thus it is desirable that such tasks are as automatic
+as possible. The \emph{validation} and \emph{management} phases in \RE also
+imply tasks that can be automated as we have shown through our survey, but
+the state of the art in the domain seems to imply that the first two phases are
+more prioritary. 
+
 
 \input{text/SummaryTable}
 
