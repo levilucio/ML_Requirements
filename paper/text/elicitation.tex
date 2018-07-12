@@ -36,7 +36,7 @@ influence the outcome of the ML algorithm. It shows improved results in comparis
 The study used 4000 randomly selected tweets from ten different
 software including Visualstudio, chrome, instagram etc\levi{software what?}.\\
 
-Jiang \etal \cite{Jiang:2014} mined user reviews in mobile application
+Jiang \etal \cite{Jiang:2014} mined user reviews in mobile application from 
 (app) stores for discovering evolutionary requirements. The author's method
 clustered opinion expressions in the form of a macro network
 topology\levi{explain what kind of clustering}, and combines polarized
@@ -47,24 +47,20 @@ reviews; the other one  comprising 461 reviews for the  TuneIn Radio Pro V3.6
 mobile app (from the app store).\\
 
 Lange \etal\cite{Douglas:S2008} mapped the software requirement elicitation
-process onto an military tool \emph{skiweb} in order to make their organizational 
-decision\levi{which decision?}. The proposed methodology used supervised
+process onto an existing military tool \emph{skiweb} in order to make a decision what action needs to be taken on a military command.\levi{which decision?}. The used software allows users to post events and information. Other users can update and add comment and info. The goal of adding learning capability is to help to find the additional information relevant to the post.  It used supervised
 \emph{Naive Bayes} algorithm to classify the text document to find related
-requirements to thegiven discussion topic \levi{related to what?}. Furthermore, this recommender
+requirements i.e. documents to the discussion topic \levi{related to what?}. Furthermore, proposed recommender
 system\levi{which recommender system?} used topic modeling to identify the key
 stakeholder for whom that requirement is important and allow for further
 analysis\levi{which analysis?}. This study used an internal organizational
 dataset Skiweb Data i.e. wiki, blogs etc.\\
 
-Jha \etal \cite{Jha:2017} discover user requirements by mining feature requests
-submitted to the app store. The requests were classified into three categories:
-\emph{bugs}, \emph{features}, and \emph{junk}. The authors have used SVM and
-Naïve Bayes as classifiers. The study used frame semantic analysis that
-generalize more general contexts\emph{explain frame semantics}. This technique
-produced a slower dimensional model\levi{why slower?} with a smaller number of
-features which help to enhance the prediction capabilities. It combined existing
+Jha \etal \cite{Jha:2017} discover user requirements by mining app store reviews. The requests were classified into three categories:
+\emph{bugs}, \emph{features}, and \emph{junk} by applying Naive Bayes and SVM. The distinction between types of sentences is given by frame semantics \emph{explain frame semantics} instead of text classification methods. It generates frames for each review, rather than each word. These frames are used as classification features. That helped to
+produce a slower dimensional model\levi{why slower?} because of a smaller number of
+features. That also enhance the prediction capabilities. It combined existing
 datasets from past studies and reviews for iOS apps including CreditKarma,
-FitBit, and Gmail.
+Fitbit, and Gmail.
 
 Maalej presents in \cite{Maalej} a study on how to classify app reviews as bug
 reports, feature requests, user experiences, and ratings. The binary classifier
@@ -76,19 +72,16 @@ dataset of 4400 manually annotated reviews from Google Play and the Apple app
 store was used for the study.\\
 
 Herrera \etal \cite{Castro-Herrera:2009} have built a semi-automated\levi{why
-semi-automated?} recommender system to manage broad stakeholder participation in
-the requirements elicitation and prioritization process. On these forums,
-stakeholders can work collaboratively to transform statements of need into sets
-of articulated and prioritized requirements. The proposed system analyzes online
-datasets\levi{which datasets?} gathered from stakeholders and automatically
-generates specialized topics for building discussion forums. User profiles are
-created as a next step, that depicts stakeholders interest.\levi{don't get this
-sentence} These profiles also help to create recommendations according to the
+semi-automated?} recommender system to manage a large number of stakeholders participation in
+the requirements elicitation and prioritization process. In this system, stakeholders can work collaboratively to transform their needs into sets
+of articulated and prioritized requirements. It automatically
+generates specialized topics for building forums for stakeholders collaboration and discussion.  The stakeholder interest depicts from their user profiles, that also help to create recommendations according to the
 interests of a community of similar stakeholders.\levi{is this the recommender
-part?} For identifying topics, an unsupervised clustering technique is
-applied to unstructured or semi-structured data\levi{what's the difference?}.
+part?} For identifying topics, an unsupervised agglomerative clustering algorithm is
+applied to unstructured data\levi{what's the difference?}. The proposed system analyzes online
+datasets\levi{which datasets?} that is gathered from stakeholders in natural language. 
 The evaluation  dataset was a collection of 36 feature requests created by
-graduate-level students for an Amazon-like student web-portal system.\\
+graduate-level students for an Amazon-like student web-portal system.
 
 
 
