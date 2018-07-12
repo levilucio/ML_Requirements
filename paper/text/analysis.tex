@@ -186,14 +186,13 @@ look-and-feel, performance, security, etc). A probability value represented the
 possibility that the new requirement belonged to a certain artifact type
 computed as a function of the occurrence of indicator terms of that type in the
 requirement.\levi{shouldn't this go to the verification/traceability section?}\\
-
 \subsubsection{Requirement Prioritization}
 Complex software system generally has thousands of requirements with multiple
 stakeholders and customers. Each one of them has their own set of requirements
 and opinions and wants their requirements implementation accordingly. However,
 several factors make implementation process of all the requirements infeasible
-and hard. For example project resources, time, budget, different opinion among
-stakeholders, etc. all factors affect the implementation process. Therefore, it
+and hard. For example project resources, time, budget, and different opinion among
+stakeholders etc. effect project implementation. Therefore, it
 is important to make a proper decision for prioritizing requirements considering
 all the factors for the success of the project. Different models exist in the
 literature for prioritization of software requirements such as analytical
@@ -205,37 +204,33 @@ contribution. ML can be used for automated analysis of these large set of
 software requirements prioritization, and it can also help to improve the existing techniques.\\
 
 	Dhingra \etal  \cite{S.Dhingra} predicted the most appropriate technique for
-software requirement prioritization process. The input from the user is taken as
-the characteristic value\levi{what is the characteristic value?} and output the
-most appropriate requirement prioritization method such as AGORA, AHP, etc. Fuzzy interface technique was
-used for prediction of prioritization method based on certain rules. The
-proposed system framework has three phases: training phase, fuzzing inference
-process, testing phase. The drawback of fuzzy approach was the wrong prediction
-for boundary values. It was overcome by adopting decision tree. It learned a
-model using the training dataset. The training dataset was gathered from the
-literature to obtain attributes. These attributes list included consistency,
+software requirement prioritization process. The input from the user was taken as characteristic values (detect consistency, maintain information, not available, or both) for different attributes. These attributes list included consistency,
 traceability, priority basis, rigorous/systematic, distributed stakeholder,
-cognitive aspects, and human experience. DT learned from the dataset and
-predicted the prioritization technique. Out of the 45 test samples, the
+cognitive aspects, and human experience.\levi{what is the characteristic value?} The output was the
+most appropriate requirement prioritization method e.g. AGORA, AHP etc. Fuzzy interface technique was
+used for prediction of prioritization method based on certain rules. The
+proposed system framework had three phases; training phase, fuzzing inference
+process, and testing phase. The drawback of fuzzy approach was the wrong prediction
+for boundary values, which was overcomed by adopting decision trees. DT learned from datasets and
+predicted the most suitable prioritization technique. Out of 45 test samples, the
 framework was able to classify 43 tests accurately.\\
 
-	Avesani \etal\cite{PAvesani} presented the study that dealt with the scalability problems
-that arises in managing the prioritization of a large number of requirements
-specified in AHP technique.  The existing solution to scalability issues used
+	Avesani \etal\cite{PAvesani} presented the study that dealt with the scalability problems which arised in managing the prioritization of a large number of requirements
+specified in AHP technique. The existing solution to scalability issues used
 heuristics. It helped to decide when to stop the pairwise elicitation process.
 The proposed framework outperformed AHP by giving an accurate approximation of
 the final ranking within a limited elicitation effort. It used rank-based
 learning algorithm and produced a ranking of all requirements. This technique
-builds up the solution by looking at examples. The input for the learning
-algorithm are a finite set of requirements, the ranking criteria, initial user
+built up the solution by looking at examples. The input for the learning
+algorithm were a finite set of requirements, the ranking criteria, initial user
 preferences and density function.\\
 
-	The similar study was performed in \cite{7320432}from the same group
+	A similar study was performed in \cite{7320432} from the same group
 \cite{PAvesani} for identification of decision-making issues related to the
 management of risks in Open Source Software adoption in medium and large
-organizations. A  semi-automated system was proposed that used case based
+organizations. A semi-automated system was proposed that used case based
 ranking classification algorithm. The input was priority elicitation of goals by
-the decision maker and risk goal ranking function(predefined ranking criteria
+the decision maker and risk goal ranking function (predefined ranking criteria
 ordering the goal). As an output, it ranked the final risk-based goals.\\
 
 \input{text/analysis_security}
