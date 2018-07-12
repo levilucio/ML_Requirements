@@ -1,4 +1,3 @@
-
 \subsection{Requirements Elicitation and Discovery}
 
 The manual process of requirement elicitation is expensive in terms of
@@ -18,18 +17,18 @@ tasks.\\
 
 Guzman \etal \cite{Guzman:2017} proposed the ALERTme approach for
 classifying, grouping and ranking tweets during the software
-evolution development. Many users share their opinions about various software on Twitter. The huge amount of dataset makes it hard to manually identify tweets that have user requirements. The proposed methodology classify tweets as improvement requests or not, using \emph{Naive Bayes} algorithm. This was the first study of
+evolution development. Many users shared their opinions about various software on Twitter. The huge amount of dataset made it hard to manually identify tweets that contained user requirements. The proposed methodology classified tweets as improvement requests or not, using \emph{Naive Bayes} algorithm. This was the first study of
 its kind that was performed on software related tweets. 
 The classifier was trained with following steps: 1) conversion of
 pre-processed tweets into a VSM model, 2) train a classifier
 on a set of manually annotated tweets, 3) predict the tweets categories using trained classifier. Furthermore, improvement
-requests are considered for the grouping which helped to sort the
-requests and summarize them accordingly. The summarization process contains highly ranked tweets based on parameters including likes, sentiments, and number of shares etc.\\
+requests were considered for the grouping which helped to sort the
+requests and summarize them accordingly. The summarization process contained highly ranked tweets based on parameters including likes, sentiments, and number of shares etc.\\
 
 Williams \etal \cite{Williams:2017} performed a similar study on tweets in order
-to classify them as user requirements or not. It used basic pre-processing techniques and applied VSM on data. For the learning
+to classify them as user requirements. It used basic pre-processing techniques and applied VSM on data. For the learning
 process, manually annotated (labelled) tweets were used and \emph{Naive Bayes} algorithm was applied for classification.\levi{annotated how, which ML
-algorithm was used?}. The authors claimed with the help of experiment results that
+algorithm was used?}. The authors claimed with the help of results that
 software tweets are neutral in nature, meaning sentiment analysis did not
 influence the outcome of the ML algorithm. It showed improved results in comparison to \cite{Guzman:2017}.
 The study used 4000 randomly selected tweets from ten different
@@ -68,7 +67,7 @@ Store were used for the study.\\
 
 Herrera \etal \cite{Castro-Herrera:2009} built a semi-automated\levi{why
 semi-automated?} recommender system to manage a large number of stakeholders participation in
-the requirements elicitation and prioritization process. In this system, stakeholders can work collaboratively to transform their needs into sets
+the requirements elicitation and prioritization process. In this system, stakeholders could work collaboratively to transform their needs into sets
 of articulated and prioritized requirements. It automatically
 generated specialized topics for building forums for stakeholders collaboration and discussion. Stakeholders interests were depicted from their user profiles, that also helped to create recommendations according to the
 interest of a community of similar stakeholders.\levi{is this the recommender
