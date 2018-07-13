@@ -72,111 +72,88 @@ role  label  for  each  word  in  the  sentence and
 
 The success of a system does not solely depend on its functional requirements.
 Like for functional requirements, it also significantly depends on the adherence
-to non-functional requirements. The primary focus of requirements anlysis is
+to non-functional requirements. The primary focus of requirements analysis is
 generally towards the identification and specification of FRs. NFRs are usually
 identified and specified in later development stages which can increase the
-risks of problems during the development life cycle. FRs tend to be more
-straightforward e.g. store and retrieve transaction\levi{transaction?}. On the
-other side, NFRs are complicated and challenging to implement, making the
-design to meet NFRs or design test case for them\levi{unclear}.
-Different types of requirements are analyzed differently, and as such it is
+risks of problems during the development lifecycle. FRs tend to be more
+straightforward e.g. store and retrieve data when a user performs some specific action\levi{transaction?}. On the
+other side, NFRs are complicated and challenging to implement for example making the
+design to meet the NFRs or design test cases for NFRs\levi{unclear}.
+Different types of requirements are analyzed differently, and as such, it is
 useful to separate them. This distinction helps in managing changes in
 requirements as well as in precisely incorporating them in the development of
 the system. Manually dividing requirements in FRs and NFRs is difficult and
-time consuming. Machine learning can be used for reducing the effort and
+time-consuming. Machine learning can be used for reducing the effort and
 categorizing the requirements based on the text segment analysis\emph{what is
 this?}. This is ML classification task: give the set of requirements and
 identifying its category.\\
 
-Mengmeng Lu \etal~ \cite{Lu:2017} automatically classify the text from user
+ Lu \etal~ \cite{Lu:2017} automatically classify the text from user
 reviews for (app) stores into FR, NFR, and others. The authors further classify
 NFRs into four categories including reliability, usability, portability, and
 performance. The approach uses a supervised machine learning algorithm
-(bagging)\levi{is bagging an algorithm?} for training the classifier.
-\levi{Bring to preprocessing section: The text trimming used stopwords
-elimination, lemmatization, stemming, and sentences split.} The sentences are
+\emph{bagging}\levi{is bagging an algorithm?} \tahira{ yes it is from ensemble learning training the classifier.
+\levi{Bring to preprocessing section: The text trimming used standard pre-processing steps. Also,  the sentences are
 augmented by several most similar words to the user reviews in the training set
 and showed that augmented user reviews can lead to better classification
 results.\levi{unclear} The machine learning algorithm Bagging is more suitable
 for NFRs classification from user reviews than Naïve Bayes and J48\levi{is this
 conclusion because they tested with multiple algorithms or because it is better
-than the SOA, in which case this should be mentioned in the table}. The authors
+than the SOA, in which case this should be mentioned in the table} \tahira{ because they tried Naive Bayes and J.48 algorithm}. The authors
 used 6696 raw user reviews from iBooks and 4400 raw user reviews from WhatsApp
 as datasets.\\
 
 Deoxadez \etal~\cite{Deocadez:2017} used semi-supervised classification
 techniques for automated classification of FRs and NFRs from user reviews from
 the app store. This study dealt with two problems: 1) minimizing the annotation
-effort for labelling the big dataset of user reviews, and 2) classification of
-FRs and NFRs. The proposed solution for the first problem used
+effort for labeling the big dataset of user reviews, and 2) classification of
+FRs and NFRs. The proposed solution to the first problem used
 the semi-supervised self-labeling algorithm. Self-labeling algorithms required a
-small amount of dataset to get comparable results as supervised techniques. Naïve Bayes
-algorithm was selected because of high performance results for classification
-problem.\levi{this sentence doesn't state anything} \levi{Features were obtained
-by applying standard text mining technique and additional attribute
-embellishment \levi{what is attribute embellishment?}.
-For text mining technique Inverse Document Frequency (IDF) transform, Term Frequency
-(TF) transform, lowercase transformation, minimum term frequency, stemmer, and
-number of words were used.} The second stage involved removing numbers, 2-
-letter words and other symbolic characters.\levi{What is the second stage? Is
-this the second problem?} It used reviews of top 40 paid and free apps from ten
+small amount of dataset to get comparable results as supervised techniques. Features were obtained
+by applying the standard pre-processing and BoW algorithm. For user reviews classification \emph{Naive Bayes}
+algorithm was selected, because of its general high-performance results in classification
+problems. It used reviews of top 40 paid and free apps from ten
 different categories.\\
 
 Kutranvoic \etal ~ \cite {Kurtanovic:2017} performed automated analysis on
-software requirements\levi{which kind?} and performed classification on FRs,
-NFRs and subcategories of NFRs using supervised learning achieved using
-SVM.\levi{make sure we introduce the acronym before}. Some NFRs had negligble
-requirements\levi{what does negligible mean?} in the dataset and due to this
-they were ignored. The additional dataset of user comments\levi{what is this?}
-from Amazon was integrated into the main dataset to avoid the data imbalance
-problem in NFR. \levi{Move to preprocessing section: The predictor used
-text-preprocessing techniques such as removal of punctuations, removal of stop words, and lemmatization for feature
-extraction.} The experiments were performed on a dataset provided by the RE
-datatrack, i.e. 12 classes and 625 requirements in total.\\
+software requirement documents written in natural language \levi{which kind?} and classify them into FRs,
+NFRs and subcategories of NFRs. The basic pre-processing steps were applied on requirements before applying the ML algorithm. It used a supervised support vector machine (SVM) algorithm for classification.\levi{make sure we introduce the acronym before}. Some NFRs were ignored because of their minor presence in the documents. Also, the dataset was imbalanced that means it was not equally distributed. For avoiding data imbalance problem additional dataset i.e. user comments\levi{what is this?}
+from Amazon was integrated into the main dataset. The basic pre-processing steps were applied on requirements before applying the ML algorithm. The study used data from open source tera PROMISE repository that consists of 625 labeled natural language requirements (255 FRs
+[40.8\%] and 370 NFRs [59.2\%])\\
 
- Abad \etal ~ \cite{Abad:2017} targeted two problems: the first one is the
- classification of FR and NFR and second classification of NFR into categories.
-\levi{Preprocessing of text performed by applying: POS tagging, Entity tagging
-and temporal tagging. As a next step feature co-occurrence and regular
-expression used to increase the weight of influential words in the
-datset\levi{don't get it, too much
- detail}. J.48 DT used for the classifying the FR and NFR.} For achieving the
- second goal topic Modeling unsupervised algorithm LDA and BTM
- applied\levi{unclear}. For topic\levi{which topic?} generation different
- algorithms such as clustering, k-means, hybrid clustering and k-means, BNB were
- applied. The results showed BNB worked better out of clustering, k-means, LDA,
- BTM\levi{what are all the acronyms?}. learnt decision tree to classify the FRs
- and NFRs and improved results from 89\% to 95\% by analyzing the requirements in natural language. For NFRs
-subclassifcation, Binarized Naïve Bayes (BNB) achieved highest results.
-\levi{Move to preprocessing: The preprocessing of text involved, Part of Speech
-(POS) tagging, entity tagging, and temporal tagging.}\\
+ Abad \etal ~ \cite{Abad:2017} targeted two similar problems: the first one is the classification of FR and NFR and the second classification of NFR into categories. It first performed pre-processing for text trimming. Afterward, increased the weight of influential words in the
+dataset using feature co-occurrence and regular
+expression. It learnt J.48 decision tree (DT) for classification of FRs and NFRs. It used  Binarized Naive Bayes (BNB) for sub-classification of NFRs. BNB outperformed among other algorithms such as clustering, k-means, and hybrid clustering and k-means. The study showed that the text pre-processing approaches positively influenced on classification. It improved FRs and NFRs
+ classification accuracy from 89.92\% to 95.04\%. It used reviews of top 40 paid and free apps from ten
+different categories.\\
 
-Garzoli \cite {Garzoli:2013} classified data\levi{which data?} into five types:
+Garzoli \cite {Garzoli:2013} proposed a system for requirement analysis that allowed to identify software functionalities within large collections of requirements written in natural language for requirement analysis. It classified the large dataset into five types:
 FRs, NFRs, \emph{design and construction constraints}, \emph{operator
-requirements} and \emph{performance requirements}. The dataset was taken from
-the combat management system of a Naval Combat System.\levi{what does the
-dataset consist of?} The goal of the study was to come up with a general
-architecture for large-scale and adaptive requirement analysis. For
-classification the multi VSM\levi{is this ML?} model was used and for lexical
-and grammatical features BoW + N-words + N-POS achieved the highest accuracy.\\
+requirements} and \emph{performance requirements}.  The goal of the study was to come up with a general
+architecture for large-scale and adaptive requirement analysis. It used BoW with text mining techniques for lexical and grammatical feature for information retrieval and SVM\levi{is this ML?} model for classification of requirements. The learning classifiers contained 4,727 annotated requirements, related
+to three different scenarios. The dataset was taken from
+the combat management system of a Naval Combat System. The learning classifiers contained 4,727 annotated requirements, related
+to three different scenarios\levi{what does the
+dataset consist of?}\\
 
 Wieloch \etal~\cite{Wieloch:2013} introduced methods that enhance the accuracy
-of tracing (classifying) requirements which occured frequently across multiple
+of tracing (classifying) requirements which occurred frequently across multiple
 projects and/or domains. In the paper, they presented Trace by Classification
 (TBC), a machine learning approach in which a classifier is trained to identify
 and classify requirements and/or other kinds of software artifacts which occur
 relatively frequently across different projects (they call this process
 generating trace links for software artifacts in their research). \levi{Trivial
-preprocessing step, put in preprocessing section:
+preprocessing step put in preprocessing section:
 The first step in their approach was preprocessing to eliminate common stop
 words.} Then the training phase identified a set of indicator
 terms\levi{features?} for each NFR category and the classifier trained by the
 set of identified weighted indicator terms that can be used for the last step which is to classify additional
 artifacts into functional and non-functional (e.g.
-look-and-feel, performance, security, etc). A probability value represented the
-possibility that the new requirement belonged to a certain artifact type
+look-and-feel, performance, security, etc). A probability value represented 
+a possibility that the new requirement belonged to a certain artifact type
 computed as a function of the occurrence of indicator terms of that type in the
-requirement.\levi{shouldn't this go to the verification/traceability section?}\\
+requirement.\levi{shouldn't this go to the verification/traceability section?} \tahira{Parisa added this paper and according to her it just contained tracability in the name.\\
+
 \subsubsection{Requirement Prioritization}
 Complex software system generally has thousands of requirements with multiple
 stakeholders and customers. Each one of them has their own set of requirements
