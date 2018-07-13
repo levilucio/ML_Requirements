@@ -46,29 +46,27 @@ requirements and classify them into 10 different cases: Agentive (The main
 participant of activities), \emph{action} (the main functional operation),
  \emph{objective} (the objects affected by the Action), \emph{agent mode} (the
  modifier or property of the Agentive), \emph{objmod} (the modifier or property
- of the Agentive)\levi{too much detail?}, \emph{locational} (the location or
+ of the Agentive), \emph{locational} (the location or
  destination of an Action), \emph{temporal} (the occurrence time or frequency of
  an Action), \emph{manner} (the way or tool by which an Action is performed),
  \emph{goal} (the purpose to be achieved through the Action) and
  \emph{constraint} (the conditions or constraints of the  \emph{action}). Their
- framework employed techniques of semantic role labeling\levi{explain} and
- machine learning\emph{which kind?} and has four steps: corpus construction, NLP
+ framework employed techniques of semantic role labeling which assigns a 
+role  label  for  each  word  in  the  sentence and
+ machine learning and has four steps: corpus construction, NLP
  preprocessing, feature extraction and EFRF (Extended Functional Requirements
- Frame)\levi{explain} functional cases extraction.
+ Frame) functional cases extraction.
  \emph{Bring to the preprocessing section: For NLP processing they did
  tokenization, lemmatization, part-of-speech tagging (POS tagging) and
  dependency parsing.} The authors trained their bi-directional LSTM-CRF network,
  a variant of Recurrent Neural Networks architecture model, with an E-commerce
  requirements dataset and tested it on requirements of automaker systems. They
  proposed EFRF through analyzing the linguistic characterization of
- SRSs\levi{?}. EFRF consists of the 10 functional requirement types mentioned
+ SRSs. EFRF consists of the 10 functional requirement types mentioned
  above and allows capturing the semantic information in the natural language
- functional requirements. For example, the \emph{agentive} type can be mapped
- to “User” or “System” and the “Constraint” is usually corresponding to the
- “Precondition”\emph{what is this?}. The authors have shown that their
- model trained on an E-commerce requirements dataset can be used to extract
- semantic information\levi{is the goal to extract semantic information or to
- classify functional requirements?} from the requirements of automaker systems.
+ functional requirements. The authors have shown that their
+ model trained on an E-commerce requirements dataset can be used to classify functional requirements and extract
+ semantic information from the requirements of automaker systems.
 
 \subsubsection{Distinguishing Functional from Non functional Requirements}
 
