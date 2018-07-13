@@ -8,6 +8,22 @@ not fully systematic (as described in section~\ref{sec:threats_to_validity}) whi
 means our conclusions may be revised and/or extended by future surveys of the
 domain.
 
+Table \tab{tab:summary} summarizes our findings. It provides partial answers to
+\textbf{RQ2} (``What types of learning methods are used when \ML is applied to
+\RE?'') and \textbf{RQ3} (``Which are the \RE problems that are currently using
+\ML methods?'') in columns \emph{ML Task} and  \emph{themes}, respectively.
+The table also provides partial responses to \textbf{RQ1} (``What is the current
+state of the practice in \ML${\&}$\RE?") and \textbf{RQ4} (``Is using \ML
+methods improving \RE?''). The answer to \textbf{RQ1} seems to be ``at its
+beginning'', given the prevalent lack of comparison with the state of the art
+as can be observed in \tab{tab:summary}. The answer to \textbf{RQ4} is
+``unknown'', given that most of the studies read by us were initial proposals
+with little academic or industrial validation in real software engineering tools or projects.
+
+Note that \tab{tab:summary} provides additional information on which types of
+algorithms are used for each kind of theme, as well as datasets used for
+learning and which are available online.
+
 It is obvious from our survey that \NLP techniques are heavily used
 throughout a majority of the research tacking the application of \ML to
 \RE. This is not surprising and even intuitive. \RE is the area of software
@@ -27,9 +43,9 @@ section~\ref{sec:preprocessing}).
 The authors of the articles we have processed in our survey of point
 to the idea that \ML can potentially bring about enormous benefits in terms of
 processing and taking decisions based on  large amounts of imprecise and
-ambiguous data~\cite{some citations here}. In the real-world of projects,
-parsing and summarizing requirements is a very time-consuming activity. Also,
-decisions taken by technical stakeholders are often based on imprecise,
+ambiguous data\levi{some citations here}. In the real-world of software
+engineering, parsing and summarizing requirements is a very time-consuming
+activity. Also, decisions taken by technical stakeholders are often based on imprecise,
 incomplete and noisy information and are supported by rules-of-thumb, experience
 and intutition. \ML is by nature built to handle and cope with such challenges
 -- it based on data and it's main purpose is exactly to build model of patterns
