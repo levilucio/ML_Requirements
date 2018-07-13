@@ -92,14 +92,14 @@ identifying its category.\\
 reviews for (app) stores into FR, NFR, and others. The authors further classify
 NFRs into four categories including reliability, usability, portability, and
 performance. The approach uses a supervised machine learning algorithm
-\emph{bagging}\levi{is bagging an algorithm?} \tahira{ yes it is from ensemble learning training the classifier.
-\levi{Bring to preprocessing section: The text trimming used standard pre-processing steps. Also,  the sentences are
+\emph{bagging}\levi{is bagging an algorithm?} \tahira{ yes it is from ensemble learning training the classifier.}
+The text trimming used standard pre-processing steps. Also,  the sentences are
 augmented by several most similar words to the user reviews in the training set
 and showed that augmented user reviews can lead to better classification
 results.\levi{unclear} The machine learning algorithm Bagging is more suitable
 for NFRs classification from user reviews than Naïve Bayes and J48\levi{is this
 conclusion because they tested with multiple algorithms or because it is better
-than the SOA, in which case this should be mentioned in the table} \tahira{ because they tried Naive Bayes and J.48 algorithm}. The authors
+than the SOA, in which case this should be mentioned in the table} \tahira{ they tried two classifier Naive Bayes and J.48 and results showed comparison of these two }. The authors
 used 6696 raw user reviews from iBooks and 4400 raw user reviews from WhatsApp
 as datasets.\\
 
@@ -121,9 +121,11 @@ NFRs and subcategories of NFRs. The basic pre-processing steps were applied on r
 from Amazon was integrated into the main dataset. The basic pre-processing steps were applied on requirements before applying the ML algorithm. The study used data from open source tera PROMISE repository that consists of 625 labeled natural language requirements (255 FRs
 [40.8\%] and 370 NFRs [59.2\%])\\
 
- Abad \etal ~ \cite{Abad:2017} targeted two similar problems: the first one is the classification of FR and NFR and the second classification of NFR into categories. It first performed pre-processing for text trimming. Afterward, increased the weight of influential words in the
+ Abad \etal ~ \cite{Abad:2017} targeted two similar problems: the first one is the classification of FR and NFR and the second classification of NFR into categories.
+ It first performed pre-processing for text trimming. Afterward, increased the weight of influential words in the
 dataset using feature co-occurrence and regular
-expression. It learnt J.48 decision tree (DT) for classification of FRs and NFRs. It used  Binarized Naive Bayes (BNB) for sub-classification of NFRs. BNB outperformed among other algorithms such as clustering, k-means, and hybrid clustering and k-means. The study showed that the text pre-processing approaches positively influenced on classification. It improved FRs and NFRs
+expression. It learnt J.48 decision tree (DT) for classification of FRs and NFRs. It used  Binarized Naive Bayes (BNB) for sub-classification of NFRs. BNB outperformed among other algorithms such as clustering, k-means, and hybrid clustering and k-means. 
+The study showed that the text pre-processing approaches positively influenced on classification. It improved FRs and NFRs
  classification accuracy from 89.92\% to 95.04\%. It used reviews of top 40 paid and free apps from ten
 different categories.\\
 
