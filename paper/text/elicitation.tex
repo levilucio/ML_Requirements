@@ -13,9 +13,9 @@ Automated requirement elicitation is helpful in these cases and can
 significantly reduce time, effort, and cost. This is mainly an ML
 \emph{classification} task: give the set of information and identify it as a
 requirement or not. Sometimes \emph{clustering} is also used for auxiliary
-tasks.\\
+tasks.
 
-Guzman \etal \cite{Guzman:2017} proposed the ALERTme approach for
+	Guzman \etal \cite{Guzman:2017} proposed the ALERTme approach for
 classifying, grouping and ranking tweets during the software
 evolution development. Many users shared their opinions about various software on Twitter. The huge amount of dataset made it hard to manually identify tweets that contained user requirements. The proposed methodology classified tweets as improvement requests or not, using \emph{Naive Bayes} algorithm. This was the first study of
 its kind that was performed on software related tweets. 
@@ -23,49 +23,49 @@ The classifier was trained with following steps: 1) conversion of
 pre-processed tweets into a VSM model, 2) train a classifier
 on a set of manually annotated tweets, 3) predict the tweets categories using trained classifier. Furthermore, improvement
 requests were considered for the grouping which helped to sort the
-requests and summarize them accordingly. The summarization process contained highly ranked tweets based on parameters including likes, sentiments, and number of shares etc.\\
+requests and summarize them accordingly. The summarization process contained highly ranked tweets based on parameters including likes, sentiments, and number of shares etc.
 
-Williams \etal \cite{Williams:2017} performed a similar study on tweets in order
+	Williams \etal \cite{Williams:2017} performed a similar study on tweets in order
 to classify them as user requirements. It used basic pre-processing techniques and applied VSM on data. For the learning
 process, manually annotated (labelled) tweets were used and \emph{Naive Bayes} algorithm was applied for classification.\levi{annotated how, which ML
 algorithm was used?}. The authors claimed with the help of results that
 software tweets are neutral in nature, meaning sentiment analysis did not
 influence the outcome of the ML algorithm. It showed improved results in comparison to \cite{Guzman:2017}.
 The study used 4000 randomly selected tweets from ten different
-softwares including Microsoft Visual Studio, Google Chrome, and Instagram etc\levi{software what?}.\\
+softwares including Microsoft Visual Studio, Google Chrome, and Instagram etc\levi{software what?}.
 
-Jiang \etal \cite{Jiang:2014} mined user reviews from 
+	Jiang \etal \cite{Jiang:2014} mined user reviews from 
 app stores for discovering evolutionary requirements. It first extracted opinions about software features from reviews. For automated opinion identification, syntactic
 relation based propagation approach was used that extracted targets and sentiment words
 iteratively using known and extracted words. Afterwards, it applied k-mean clustering for opinion categorization.
 \levi{explain what kind of clustering}. The proposed system also helped developers to decide requirements related to software revenue by considering economic factors. \levi{explain} It used two datasets of online reviews: one from the
 Karplersky internet security 2011 software package (from Amazon) with 380
 reviews; the other one comprising 461 reviews for the  TuneIn Radio Pro V3.6
-mobile app (from the app store).\\
+mobile app (from the app store).
 
-Lange \etal\cite{Douglas:S2008} mapped the software requirement elicitation
+	Lange \etal\cite{Douglas:S2008} mapped the software requirement elicitation
 process onto an existing military tool \emph{skiweb}. Skiweb was used to make decisions about what actions need to be taken on a military command.\levi{which decision?}. Different users posted and updated events and information using this tool. The goal of adding learning capability was to find additional information relevant to user posts. The proposed recommender system used supervised
 \emph{Naive Bayes} algorithm to classify text documents in order to find related
 requirements to the post \levi{related to what?}. Furthermore, it
 \levi{which recommender system?} used topic modeling to identify the key
 stakeholders and suggested them requirements for further analysis according to their interest\levi{which analysis?}. This study used an internal organizational
-dataset Skiweb Data such as wiki, blogs etc.\\
+dataset Skiweb Data such as wiki, blogs etc.
 
-Jha \etal \cite{Jha:2017} discovered user requirements by mining app store reviews. The requests were classified into three categories;
+	Jha \etal \cite{Jha:2017} discovered user requirements by mining app store reviews. The requests were classified into three categories;
 \emph{bugs}, \emph{features}, and \emph{junk}. The proposed methodology applied Naive Bayes and SVM. The distinction between types of sentences was identified by frame semantics \emph{explain frame semantics} instead of text classification methods. It generated frames for each review, rather than each word. Due to small number of features, a slower dimensional model was produced with enhanced prediction capabilities. It combined existing
 datasets from past studies and reviews for iOS apps including CreditKarma,
 Fitbit, and Gmail.
 
-Maalej presented in \cite{Maalej} a study on how to classify app reviews as bug
+	Maalej presented in \cite{Maalej} a study on how to classify app reviews as bug
 reports, feature requests, user experiences, and ratings. It used
 \emph{Naive Bayes} algorithm due to better results in comparison to other algorithms for classification. It also highlighted that binary
 classifier performed better than multi
 classifiers. It used meta model to enhance the classification performance e.g. ratings,
 tense, and sentiment scores etc. A
 dataset of 4400 manually annotated reviews from Google Play Store and the Apple App
-Store were used for the study.\\
+Store were used for the study.
 
-Herrera \etal \cite{Castro-Herrera:2009} built a recommender system to manage a large number of stakeholders participation in
+	Herrera \etal \cite{Castro-Herrera:2009} built a recommender system to manage a large number of stakeholders participation in
 the requirements elicitation and prioritization process. In this system, stakeholders could work collaboratively to transform their needs into sets
 of articulated and prioritized requirements. It automatically
 generated specialized topics for building forums for stakeholders collaboration and discussion. Stakeholders interests were depicted from their user profiles, that also helped to create recommendations according to the
