@@ -8,7 +8,7 @@ generally towards the identification and specification of FRs. NFRs are usually
 identified and specified in later development stages which can increase the
 risks of problems during the development lifecycle. Non-functional requirements may not be explicitly mentioned in a formal
 specification requirements documents even though they exist for all
-systems~\cite{Slankas:2013}in freeform documents like interview notes,
+systems in freeform documents like interview notes,
 meeting minutes.
 All types of requirements are analyzed differently, and as such, it is
 useful to separate them. This distinction helps in managing changes in
@@ -17,8 +17,7 @@ the system. Manual requirement division into FRs, NFRs, and  FRs and NFRs is dif
 time-consuming. 
 Machine learning can be
 useful to support analysts in the error-prone task of manually discovering and
-classifying them which will help to ease further analysis in further processing to analyse. Automatic detection can be used to quickly and effectively
-identifying NFRs in large and complex documents.
+classifying them which will help to ease further analysis in further processing to analyse.
 
 \subsubsection{Identifying Non-Functional Requirements}
 \tahira{Non-functional requirements may not be explicitly mentioned in a formal
@@ -41,8 +40,7 @@ requirements specifications, and user manuals into 14 different NFRs categories 
 \emph{Look and Feel}, \emph{Maintenance}, \emph{Operational}, \emph{Privacy},
 \emph{Recoverability}, \emph{Performance and Scalability}, \emph{Reliability},
 \emph{Security} and \emph{Usability}.}
-Their two-step process: 1) parse natural language and turn sentences into graphs
-2) classify sentences into categories with k-nearest neighbor algorithm led them
+Their two-step process: 1) parse natural language and turn sentences into graphs, 2) classify sentences into categories with k-nearest neighbor algorithm led them
 into finding 20 keywords for each category of NFRs as features for their
 classifier. They trained the NFR classifier
 with a wide variety of open and closed source EHRs (Electronic Health Record),
@@ -56,13 +54,13 @@ used the k-nearest neighbor classifier for grouping non-functional requirements 
 \emph{usability}}
  	Cleland-Huang \etal~\cite{Cleland-Huang2007} explored a similar approach and
 used the k-nearest neighbor classifier for grouping non-functional requirements e.g.
-\emph{availability}, \emph{look-and-feel}, \emph{legal}. For training their classifier they used 15 requirements specifications developed as term projects by master students at DePaul University.
+\emph{availability}, \emph{look-and-feel}, \emph{legal}. For training their classifier, they used 15 requirements specifications developed as term projects by master students at DePaul University.
 
 \subsubsection{Identifying Functional Requirements}
 
 \tahira{Software requirements specifications are usually stated in informal, imprecise and ambiguous natural language, thus analyzing them is a challenging task. However, for satisfying the specifications of a product analyzing functional requirements is a vital task.Automatically extract structured information of functional requirements from Software Requirements Specifications and grouping them into different categories is a machine learning classification task\cite{7949577}.}This
 is a classification problem as from a set of requirements we want to decide
-whether or not requirements belong to a FRs. 
+whether or not requirements belong to FRs. 
 \tahira{Wang \etal~\cite{7949577} applied a combination of machine learning, natural
 language processing, and semantic analysis to automatically extract functional
 requirements and classify them into ten different cases: Agentive (The main
@@ -94,9 +92,8 @@ role  label  for  each  word  in  the  sentence) and
  requirements dataset and tested it on requirements of automaker systems. They
  proposed EFRF through analyzing the linguistic characterization of
  software requirement specifications. EFRF consists of the 10 FRs types mentioned
- above and allows capturing the semantic information in the natural language
- functional requirements. \tahira{The authors have shown that their
- model trained on an E-commerce requirements dataset can be used to classify functional requirements and extract
+ above and allows capturing the semantic information in the natural language. \tahira{The authors have shown that their
+ model trained on an e-commerce requirements dataset can be used to classify functional requirements and extract
  semantic information from the requirements of automaker systems.}\\
 \subsubsection{Distinguishing Functional from Non functional Requirements}
 
@@ -120,15 +117,15 @@ identifying its category.}This
 is a classification problem as from a set of requirements we want to decide
 whether or not requirements belong to a certain class. 
 
- Lu \etal~ \cite{Lu:2017} automatically classify the text from user
-reviews for (app) stores into FR, NFR, and others. The authors further classify
+ Lu \etal~ \cite{Lu:2017} automatically classified text from user
+reviews for (app) stores into FR, NFR, and others. The authors further classified
 NFRs into four categories including reliability, usability, portability, and
-performance. The approach uses a supervised machine learning algorithm
+performance. The approach usesed a supervised machine learning algorithm
 \emph{bagging}\levi{is bagging an algorithm?} \tahira{ yes it is from ensemble learning training the classifier.}
-The text trimming used standard pre-processing steps. Also,  the sentences are
+The text trimming used standard pre-processing steps. Also,  the sentences were
 augmented by several most similar words to the user reviews in the training set
 and showed that augmented user reviews can lead to better classification
-results.\levi{unclear} The machine learning algorithm Bagging is more suitable
+results.\levi{unclear} The machine learning algorithm. Bagging is more suitable
 for NFRs classification from user reviews than Naïve Bayes and J48\levi{is this
 conclusion because they tested with multiple algorithms or because it is better
 than the SOA, in which case this should be mentioned in the table} \tahira{ they tried two classifier Naive Bayes and J.48 and results showed comparison of these two }. The authors
@@ -149,11 +146,11 @@ different categories.
 
 	Kutranvoic \etal ~ \cite {Kurtanovic:2017} performed automated analysis on
 software requirement documents written in natural language \levi{which kind?} and classify them into FRs,
-NFRs and subcategories of NFRs. The basic pre-processing steps were applied on requirements before applying the ML algorithm. It used a supervised support vector machine (SVM) algorithm for classification.\levi{make sure we introduce the acronym before}. Some NFRs were ignored because of their minor presence in the documents. Also, the dataset was imbalanced that means it was not equally distributed. For avoiding data imbalance problem additional dataset i.e. user comments\levi{what is this?}
+NFRs and subcategories of NFRs. The basic pre-processing steps were applied on requirements before applying the ML algorithm. It used a supervised support vector machine (SVM) algorithm for classification. Some NFRs were ignored because of their minor presence in the documents. Also, the dataset was imbalanced that meant it was not equally distributed. For avoiding data imbalance problem additional dataset i.e. user comments\levi{what is this?}
 from Amazon was integrated into the main dataset. The basic pre-processing steps were applied on requirements before applying the ML algorithm. The study used data from open source tera PROMISE repository that consists of 625 labeled natural language requirements (255 FRs
 [40.8\%] and 370 NFRs [59.2\%]).
 
-	Abad \etal ~ \cite{Abad:2017} targeted two similar problems: the first one is the classification of FR and NFR and the second classification of NFR into categories.
+	Abad \etal ~ \cite{Abad:2017} targeted two similar problems: the first one is the classification of FR and NFR, and the second classification of NFR into categories.
  It first performed pre-processing for text trimming. Afterward, increased the weight of influential words in the
 dataset using feature co-occurrence and regular
 expression. It learnt J.48 decision tree (DT) for classification of FRs and NFRs. It used Binarized Naive Bayes (BNB) for sub-classification of NFRs. BNB outperformed among other algorithms such as clustering, k-means, and hybrid clustering and k-means. 
