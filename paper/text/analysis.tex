@@ -1,17 +1,38 @@
 \subsection{Requirements Specification and Analysis}
 
+Software requirements specifications are usually stated in informal, imprecise and ambiguous natural language, thus analyzing them is a challenging task. 
+The success of a system does not solely depend on its functional requirements.
+Like for functional requirements, it also significantly depends on the adherence
+to non-functional requirements. The primary focus of requirements analysis is
+generally towards the identification and specification of FRs. NFRs are usually
+identified and specified in later development stages which can increase the
+risks of problems during the development lifecycle. Non-functional requirements may not be explicitly mentioned in a formal
+specification requirements documents even though they exist for all
+systems~\cite{Slankas:2013}. Moreover, freeform documents like interview notes,
+meeting minutes and scattered requirements specifications include non-functional
+requirements which need to be detected and classified.
+All types of requirements are analyzed differently, and as such, it is
+useful to separate them. This distinction helps in managing changes in
+requirements as well as in precisely incorporating them in the development of
+the system. Manual requirement division into FRs, NFRs, and  FRs and NFRs is difficult and
+time-consuming. 
+Machine learning can be
+useful to support analysts in the error-prone task of manually discovering and
+classifying them which will help to ease further analysis in further processing to analyse. Automatic detection can be used to quickly and effectively
+identifying NFRs in large and complex documents.
+
 \subsubsection{Identifying Non-Functional Requirements}
 
-Non-functional requirements may not be explicitly mentioned in a formal
+\tahira{Non-functional requirements may not be explicitly mentioned in a formal
 specification requirements documents even though they exist for all
 systems~\cite{Slankas:2013}. Moreover, freeform documents like interview notes,
 meeting minutes and scattered requirements specifications include non-functional
 requirements which need to be detected and classified. Machine learning can be
 useful to support analysts in the error-prone task of manually discovering and
 classifying NFRs. Automatic detection can be used to quickly and effectively
-identifying NFRs in large and complex documents \cite{Cleland-Huang2007}. This
+identifying NFRs in large and complex documents \cite{Cleland-Huang2007}}This
 is a classification problem as from a set of requirements we want to decide
-whether or not requirements belong to a certain class. \\
+whether or not requirements belong to NFRs . \\
 
 In a study by Slankas \etal~\cite{Slankas:2013} the authors automatically
 identify and classify sentences in natural language from use agreements, install
@@ -38,7 +59,9 @@ specifications developed as term projects by master students at DePaul Universit
 
 \subsubsection{Identifying Functional Requirements}
 
-Software requirements specifications are usually stated in informal, imprecise and ambiguous natural language, thus analyzing them is a challenging task. However, for satisfying the specifications of a product analyzing functional requirements is a vital task. Automatically extract structured information of functional requirements from Software Requirements Specifications and grouping them into different categories is a machine learning classification task\cite{7949577}. \\
+\tahira{Software requirements specifications are usually stated in informal, imprecise and ambiguous natural language, thus analyzing them is a challenging task. However, for satisfying the specifications of a product analyzing functional requirements is a vital task.Automatically extract structured information of functional requirements from Software Requirements Specifications and grouping them into different categories is a machine learning classification task\cite{7949577}.}This
+is a classification problem as from a set of requirements we want to decide
+whether or not requirements belong to a FRs. 
 
 Wang \etal~\cite{7949577} applied a combination of machine learning, natural
 language processing, and semantic analysis to automatically extract functional
@@ -70,7 +93,7 @@ role  label  for  each  word  in  the  sentence) and
 
 \subsubsection{Distinguishing Functional from Non functional Requirements}
 
-The success of a system does not solely depend on its functional requirements.
+\tahira{The success of a system does not solely depend on its functional requirements.
 Like for functional requirements, it also significantly depends on the adherence
 to non-functional requirements. The primary focus of requirements analysis is
 generally towards the identification and specification of FRs. NFRs are usually
@@ -85,8 +108,10 @@ requirements as well as in precisely incorporating them in the development of
 the system. Manually dividing requirements in FRs and NFRs is difficult and
 time-consuming. Machine learning can be used for reducing the effort and
 categorizing the requirements based on the text segment analysis\emph{what is
-this?}. This is ML classification task: give the set of requirements and
-identifying its category.\\
+this?}This is ML classification task: give the set of requirements and
+identifying its category.}This
+is a classification problem as from a set of requirements we want to decide
+whether or not requirements belong to a certain class. \\
 
  Lu \etal~ \cite{Lu:2017} automatically classify the text from user
 reviews for (app) stores into FR, NFR, and others. The authors further classify

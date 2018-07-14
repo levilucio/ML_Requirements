@@ -1,0 +1,49 @@
+\subsection{Text Prepration for ML}
+\label{sec:preprocessing}
+\levi{summarize preprocessing steps and feature calculation}
+\levi{disclaimer: sometimes features are presented sometimes not}
+\levi{ Stakeholders needs
+(features)\levi{features in this case are just words} are initially preprocessed
+by removing common (stop) terms, and computation of tf-id ,explain tf–idf,
+maybe extract it to a common section, in general explain that features are
+words and the instances are tweets/reviews/\ldots for each term.}
+
+Requirements are written in the natural language such as documents or reviewing
+some application. These can be in a variety of forms from a list of individual
+words, sentences, multiple paragraphs, short texts with special characters or
+others. Before applying a machine learning algorithm on them different steps
+employed to transform words into features such as text mining, natural and langugae processing(NLP). NLP text preprocessing phase relies
+majorly on pre-built dictionaries, databases, and rules. The common
+preprocessing steps in our literature include capitalization, tokenization,
+lemmatization, stop words removal, stemming, part of speech (POS). Tokenization
+is the process of splitting paragraphs into sentences, or sentences into words.
+Capitalization brings everything to lower case for simplicity. Stop words
+removal removes all connecting words such as ``and'', ``the'' or others by
+comparing the text to a list of stopwords. POS takes text and assigns each part of speech to each
+word that helps to build more understanding of a text. Stemming is a process
+where words are reduced to a root by removing the unnecessary suffix e.g. eating
+after stemming is eat. Lemmatization is an alternative approach of stemming is
+able to capture canonical forms based on a word's lemma. It uses part of speech
+and WordNet’s lexical database of English for removing inflection. The word
+better, stemming will fail to provide any lemma but lemmatization would result
+good.
+
+ 	Another way to extract features from the text is Bag of Words (BoW). It is a
+ model used in natural language processing and categorizes documents based on a
+ vocabulary of words and occurrence of words. The common used NLP method is
+ vector space modeling (VSM). It is a way to represent documents into
+ multidimensional space for information retrieval and documents classification
+ and clustering. For example, if you give a query VSM will find relevant items
+ or term from a corpus.
+
+\tahira{ Hollis \etal \cite{Hollis2017} proposed an initial study to automate requirement
+elicitation in Agile environment by providing the list of words and loosely
+formatted list of requirements. The proposed methodology applied text mining
+technique on recorded conversation of the stakeholder and developer
+conversation. It was a short paper and did not provide details.Dong \etal \cite{dong2010} also applied text mining on different form of
+document and resources from internet for gathering requirement. The system
+applied data preprocessing as word segmentation and stop words removal and build
+up the VSM model. Kaiya \etal \cite{Kaiya:2010} proposed a tool to improve the
+domain knowledge ontology for requirement elicitation by using web mining and
+NLP technique. It helped to mine the general concepts to ontology for
+requirements elicitation.}
