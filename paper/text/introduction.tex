@@ -16,8 +16,18 @@
 % \noindent
 % \textbf{RQ5}: How are \ML features extracted/selected to guide \RE tasks?
 % \parisa{just kept the old RQ for comparision}
-Machine learning algorithms are shown to have considerable practical importance in many application domains. Especially in the domains where there are large databases and a need for identifying some consistencies or, domains where the program, needs to adapt itself to changes~\cite{Zhang2002}. Requirements engineering is a critical part of software engineering and it seems appropriate to use machine learning methods for requirements engineering tasks while the requirements specification documents are mainly in natural language and, ML can enhance the performance at some tasks by replicating human processing. \\
-This paper aims to present a survey of how ML is benefiting the existing RE approaches. More precisely, we pursue the following research questions: \\
+Machine learning algorithms have been shown to have considerable practical
+importance in many application domains. This is especially true of domains where
+large databases are available and a need for exploring some kind of consistency
+exists or, domains where a program needs to adapt itself to
+changes~\cite{Zhang2002}. Requirements engineering is a critical part of
+software engineering and it seems appropriate to use machine learning methods
+for requirements engineering tasks. Because requirements specification documents
+are mainly given in natural language, \ML can be useful by emulating human
+processing.
+\\
+This paper aims to present a survey of how ML benefits existing RE
+approaches. More precisely, we pursue the following research questions: \\
 \noindent
 \textbf{RQ1:} What is the current state of the practice in \ML${\&}$\RE?
 
@@ -26,22 +36,42 @@ This paper aims to present a survey of how ML is benefiting the existing RE appr
 \RE?
 
 \noindent
-\textbf{RQ3:} Which are the \RE problems that are currently using \ML methods?
+\textbf{RQ3:} Which are the \RE problems that currently use \ML methods?
 
 \noindent
 \textbf{RQ4:} Is using \ML methods improving \RE?
 
-To achieve our goals we performed a literature review, which was split into data preparation, data collection, and data analysis phase. First, a search string was prepared based on the research questions, then a search was performed over a predefined set of databases and all identified studies were assessed by means of title and abstract. Our literature review is not an exhaustive study of the field rather we are offering a snapshot of the current state-of-the-art by borrowing some techniques from Systematic Literature Review.\\
+To reply to these research questions we have performed a literature review,
+split into data preparation, data collection, and data analysis phase. First, a search string
+was prepared based on the research questions, then a search was performed over a
+predefined set of databases and all identified studies were assessed by means of
+title and abstract. Our literature review is not meant to be an exhaustive study
+of the field -- rather we are offering a snapshot of the current
+state-of-the-art by borrowing some techniques from Systematic Literature
+Reviewing.\\
 The major contributions of this article are as follows:
+
 \begin{itemize}
-    \item We provide an overview of the current state of the art of the challenges \RE faces that may be handled through \ML techniques. Thereby we focus on two important aspects:
+    \item We provide an overview of the current state of the art of some of the
+    challenges \RE faces that may be handled through \ML techniques. We focus on
+    two important aspects:
     \begin{itemize}
-        \item Providing an overview of the \ML problem categories (classification, regression, clustering, etc.) in use for the support of \RE processes (elicitation, analysis, validation and, management).
-        \item Providing an overview of the common \ML approaches (decision tree, K-Nearest Neighbors, Naive Bayesian, etc.) for tackling \RE problems and the data sets if available. 
+        \item Providing an overview of the \ML problem categories
+        (classification, regression, clustering, etc.) in use for the support of
+        \RE tasks (elicitation, analysis, validation and management).
+        \item Providing an overview of the common \ML models (decision tree,
+        K-Nearest Neighbors, Naive Bayesian, etc.) for tackling \RE problems and
+        the data sets if available.
     \end{itemize}
     \item We analyze the literature to discover trends and lessons on the use of \ML in \RE.
 \end{itemize}
-The paper is organized as follows. The rest of this section provides a background knowledge of \ML and \RE. Section \ref{sec:contributions} provides the overview of the issues that handled by \ML in different \RE process steps and, in Section \ref{sec:discussion}, we discuss the major study findings followed by a table for summarizing them. Finally, in Section \ref{sec:threats_to_validity} we state the possible issues that may affect the study validity and in Section\ref{sec:conclusion} we conclude the paper.
+The paper is organized as follows. The rest of this section provides
+background information on \ML and \RE required to understand the remaining of
+the paper. Section \ref{sec:contributions} provides an overview of \RE tasks
+where \ML has been used. In section \ref{sec:discussion} we summarize the major
+findings of our study. Finally, in section \ref{sec:threats_to_validity} we
+state the threats to the validity of our work and section\ref{sec:conclusion}
+concludes the paper.
 \input{text/machine_learning}
 \input{text/req_engineering}
 \input{text/preprocessing}
