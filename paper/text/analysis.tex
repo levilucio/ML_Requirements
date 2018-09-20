@@ -13,8 +13,8 @@ meeting minutes.
 All types of requirements are analyzed differently, and as such, it is
 useful to separate them. This distinction helps in managing changes in
 requirements as well as in precisely incorporating them in the development of
-the system. Manual requirement division into FRs, NFRs, and  FRs and NFRs is difficult and
-time-consuming. 
+the system. Manual requirement division %into FRs, NFRs, and  FRs and NFRs% 
+is difficult and time-consuming. 
 Machine learning can be
 useful to support analysts in the error-prone task of manually discovering and
 classifying them which will help to ease further analysis in further processing to analyse.
@@ -33,7 +33,7 @@ whether or not requirements belong to NFRs .
 
 	In a study by Slankas \etal~\cite{Slankas:2013} the authors automatically
 identify and classify sentences in natural language from use agreements, install
-manuals, regulations, requests for proposals\emph{proposals of what?},
+manuals, regulations,% requests for proposals\emph{proposals of what?},%
 requirements specifications, and user manuals into 14 different NFRs categories such as 
 \emph{Access Control}, \emph{Audit}, \emph{Availability},  and \emph{Legal} etc.
 \tahira{\emph{Access Control}, \emph{Audit}, \emph{Availability},  and \emph{Legal} etc.
@@ -120,13 +120,13 @@ whether or not requirements belong to a certain class.
  Lu \etal~ \cite{Lu:2017} automatically classified text from user
 reviews for (app) stores into FR, NFR, and others. The authors further classified
 NFRs into four categories including reliability, usability, portability, and
-performance. The approach usesed a supervised machine learning algorithm
-\emph{bagging}\levi{is bagging an algorithm?} \tahira{ yes it is from ensemble learning training the classifier.}
+performance. The approach used a supervised machine learning algorithm
+\emph{bagging}.\levi{is bagging an algorithm?} \tahira{ yes it is from ensemble learning training the classifier.}
 The text trimming used standard pre-processing steps. Also,  the sentences were
 augmented by several most similar words to the user reviews in the training set
 and showed that augmented user reviews can lead to better classification
-results.\levi{unclear} The machine learning algorithm. Bagging is more suitable
-for NFRs classification from user reviews than Naïve Bayes and J48\levi{is this
+results.\levi{unclear} %The machine learning algorithm,%                        
+Bagging is more suitable for NFRs classification from user reviews than Naïve Bayes and J48\levi{is this
 conclusion because they tested with multiple algorithms or because it is better
 than the SOA, in which case this should be mentioned in the table} \tahira{ they tried two classifier Naive Bayes and J.48 and results showed comparison of these two }. The authors
 used 6696 raw user reviews from iBooks and 4400 raw user reviews from WhatsApp
@@ -153,7 +153,7 @@ from Amazon was integrated into the main dataset. The basic pre-processing steps
 	Abad \etal ~ \cite{Abad:2017} targeted two similar problems: the first one is the classification of FR and NFR, and the second classification of NFR into categories.
  It first performed pre-processing for text trimming. Afterward, increased the weight of influential words in the
 dataset using feature co-occurrence and regular
-expression. It learnt J.48 decision tree (DT) for classification of FRs and NFRs. It used Binarized Naive Bayes (BNB) for sub-classification of NFRs. BNB outperformed among other algorithms such as clustering, k-means, and hybrid clustering and k-means. 
+expression. It learnt J.48 decision tree (DT) for classification of FRs and NFRs. It used Binarized Naive Bayes (BNB) for sub-classification of NFRs. BNB outperformed among other algorithms such as clustering, k-means, and hybrid clustering. 
 The study showed that the text pre-processing approaches positively influenced on classification. It improved FRs and NFRs
  classification accuracy from 89.92\% to 95.04\%. It used reviews of top 40 paid and free apps from ten
 different categories.
@@ -163,8 +163,7 @@ FRs, NFRs, \emph{design and construction constraints}, \emph{operator
 requirements} and \emph{performance requirements}.  The goal of the study was to come up with a general
 architecture for large-scale and adaptive requirement analysis. It used BoW with text mining techniques for lexical and grammatical feature for information retrieval and SVM\levi{is this ML?} model for classification of requirements. The learning classifiers contained 4,727 annotated requirements, related
 to three different scenarios. The dataset was taken from
-the combat management system of a Naval Combat System. The learning classifiers contained 4,727 annotated requirements, related
-to three different scenarios\levi{what does the
+the combat management system of a Naval Combat System.\levi{what does the
 dataset consist of?}
 
 	Wieloch \etal~\cite{Wieloch:2013} introduced methods that enhance the accuracy
