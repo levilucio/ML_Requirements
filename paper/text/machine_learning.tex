@@ -33,33 +33,36 @@ outputs.
 
 The established literature in the domain (e.g.~\cite{mitchell:1997}) typically
 considers three types of machine learning:
+
 \begin{enumerate}
 \item \textbf{Supervised learning:} consists of learning a function using
 training data including annotations of the outcome of the function to be learned
 (e.g. patient John Doe with a certain number of physiological characteristics
 was diagnosed with cancer). Supervised learning can be roughly subdivided in two
-popular problems:
-\emph{classification} and \emph{regression}. When the output of the function
-being learned is composed of categorical values (i.e. classes), then we have a
+popular problems: \emph{classification} and \emph{regression}. When the output
+of the function being learned is composed of categorical values (i.e. classes), then we have a
 classification problem. The goal is to learn how to link instances or samples
 for a number of parameters to a certain class of values (e.g. healthy patient or
 unhealthy patient). However, if the co-domain of the function being learned
 contains continuous values, then we face a regression problem (e.g. predict the 
 body temperature of a patient given some clinical features of the patient).
 
-\item \textbf{Unsupervised learning:} In some cases, the output of the
-function being learned is not given and we have to find patterns in the training data ``blindly.'' This is called an
-\emph{unsupervised} learning problem. For instance, one may want to cluster
-patients based on their symptoms.
+\item \textbf{Unsupervised learning:} In some cases, the output of the function
+being learned is not given and we have to find patterns in the training data
+``blindly.'' This is called an \emph{unsupervised} learning problem. For
+instance, one may want to cluster patients based on their symptoms.
  
 \item \textbf{Reinforcement Learning:} can be seen as an intermediate
 problem the co-domain of the function being learned is not given but the procedure is guided
 nevertheless. In reinforcement learning, an agent has to find a sequence of
-actions leading to a success. The fact that the sequence leads to a success, is
+actions leading to a success. The fact that the sequence leads to a success is
 not known in advance, but rewards are given to the agent in order for it to know
-if it follows a path to success. Typical examples can be found in gaming, where
-an agent receives a reward when it wins the game. From the different chains of
-actions that led him to a reward, the agent must generalize to find how to
-improve at that same game.
+if it follows a path to success.
+
+%Typical examples can be found in gaming, where
+%an agent receives a reward when it wins the game. From the different chains of
+%actions that led him to a reward, the agent must generalize to find how to
+%improve at that same game.
 
 \end{enumerate}
+
