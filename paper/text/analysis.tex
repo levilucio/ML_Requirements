@@ -33,9 +33,8 @@ whether or not requirements belong to NFRs .
 
 	In a study by Slankas \etal~\cite{Slankas:2013} the authors automatically
 identify and classify sentences in natural language from use agreements, install
-manuals, regulations,% requests for proposals\emph{proposals of what?},%
-requirements specifications, and user manuals into 14 different NFRs categories such as 
-\emph{Access Control}, \emph{Audit}, \emph{Availability},  and \emph{Legal} etc.
+manuals, regulations, requirements specifications and user manuals into 14
+different NFRs categories such as \emph{Access Control}, \emph{Audit}, \emph{Availability},  and \emph{Legal} etc.
 \tahira{\emph{Access Control}, \emph{Audit}, \emph{Availability},  and \emph{Legal} etc.
 \emph{Look and Feel}, \emph{Maintenance}, \emph{Operational}, \emph{Privacy},
 \emph{Recoverability}, \emph{Performance and Scalability}, \emph{Reliability},
@@ -121,11 +120,11 @@ whether or not requirements belong to a certain class.
 reviews for (app) stores into FR, NFR, and others. The authors further classified
 NFRs into four categories including reliability, usability, portability, and
 performance. The approach used a supervised machine learning algorithm
-\emph{bagging}.\levi{is bagging an algorithm?} \tahira{ yes it is from ensemble learning training the classifier.}
-The text trimming used standard pre-processing steps. Also,  the sentences were
-augmented by several most similar words to the user reviews in the training set
-and showed that augmented user reviews can lead to better classification
-results.\levi{unclear} %The machine learning algorithm,%                        
+called \emph{bagging}.\levi{is bagging an algorithm?} \tahira{ yes it is from
+ensemble learning training the classifier.}\levi{I thunk there is a conflict
+with the same word in the preprocessing text.} The text trimming used standard
+pre-processing steps. Also, the sentences were augmented by several most similar
+words to the user reviews in the training set and showed that augmented user reviews can lead to better classification results.\levi{unclear} %The machine learning algorithm,%                        
 Bagging is more suitable for NFRs classification from user reviews than Naïve Bayes and J48\levi{is this
 conclusion because they tested with multiple algorithms or because it is better
 than the SOA, in which case this should be mentioned in the table} \tahira{ they tried two classifier Naive Bayes and J.48 and results showed comparison of these two }. The authors

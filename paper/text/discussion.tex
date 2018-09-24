@@ -4,11 +4,11 @@
 Our survey work implicitly points to a number of trends that we will
 concretize and summarize in this section. Note that while the pointers we
 provide here are informed by the literature review we conducted, this survey is
-not fully systematic (as described in section~\ref{sec:threats_to_validity}) which
-means our conclusions may be revised and/or extended by future surveys of the
+not fully systematic (as described in section~\ref{sec:threats_to_validity}),
+meaning our conclusions may be revised and/or extended by future surveys of the
 domain.
 
-Table \tab{tab:summary} summarizes our findings. It provides partial answers to
+\Tab \ref{tab:summary} summarizes our findings. It provides partial answers to
 \textbf{RQ2} (``What types of learning methods are used when \ML is applied to
 \RE?'') and \textbf{RQ3} (``Which are the \RE problems that are currently using
 \ML methods?'') in columns \emph{ML Task} and  \emph{themes}, respectively.
@@ -16,7 +16,7 @@ The table also provides partial responses to \textbf{RQ1} (``What is the current
 state of the practice in \ML${\&}$\RE?") and \textbf{RQ4} (``Is using \ML
 methods improving \RE?''). The answer to \textbf{RQ1} seems to be ``at its
 beginning'', given the prevalent lack of comparison with the state of the art
-as can be observed in \tab{tab:summary}. The answer to \textbf{RQ4} is
+as can be observed in \tab \ref{tab:summary}. The answer to \textbf{RQ4} is
 ``unknown'', given that most of the studies read by us were initial proposals
 with little academic or industrial validation in real software engineering tools or projects.
 
@@ -33,7 +33,7 @@ clients, certification entities, architects or developers. Although many
 attempts have been done to bring formality to requirements
 engineering~\cite{Teufl17,LucioRCA16}, the \emph{de facto} language between
 technical and non-technical stakeholders for real-world projects continues being
-natural language, and in particular English.
+natural language, in particular, English.
 The IBM Rational \DOORS family~\cite{doors} of tools is an example
 of a natural-language based tool for requirement engineering that has become the
 reference in many domains. In the techniques we have observed, \NLP is heavily
@@ -41,7 +41,7 @@ used for the preprocessing stages of natural language in order to bring the data
 that can be consumed by a learning algorithm (see
 section~\ref{sec:preprocessing}).
  
-The authors of the articles we have processed in our survey of point
+The authors of the articles we have processed in our survey point
 to the idea that \ML can potentially bring about enormous benefits in terms of
 processing and taking decisions based on  large amounts of imprecise and
 ambiguous data\levi{some citations here}. In the real-world of software
@@ -58,8 +58,8 @@ assessing the risk associated to certain steps in the course of a project.
 
 In the sequence of the previous paragraph, a large set of datasets
 on \RE are available online. We have identified a few of such datasets in
-\tab{summary}. This fact is a cornerstone for the domain, as most \ML
-algorithms existing nowadays are vey data-intensive. One of the authors of this
+\tab \ref{summary}. This fact is a cornerstone for the domain, as most \ML
+algorithms existing nowadays are very data-intensive. One of the authors of this
 survey has recently written a similar article on the application of \ML to
 formal verification~\cite{AmLuBi:2018}, for which the datasets available
 to learn from are typically very small and almost never made public. The authors
@@ -87,7 +87,7 @@ the most used \ML task, \emph{clustering} also plays an important role in the
 domain of \ML applied to \RE. This contradicts the results
 in~\cite{AmLuBi:2018}, where \emph{clustering} has almost no expression in work
 that applied \ML to formal verification. We believe this provides support to the
-thesis that \ML is particularly appropriate to \RE -- given \emph{clustering} is
+thesis that \ML is particularly appropriate to \RE, given \emph{clustering} is
 especially useful when mining non-formal data such as free-form text.
 
 \input{text/SummaryTable}
