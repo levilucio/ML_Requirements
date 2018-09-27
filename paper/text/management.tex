@@ -20,7 +20,7 @@ Therefore, they built a complete visual framework to filter requirements from
 stakeholders in a way that architects can make better insightful decisions. They
 suggest training a multi-class SVM model from domain-specific (mechanics,
 electronics, etc.) dictionaries and handbooks. Overall, the paper proposes a
-framework to go from management-oriented requirements to architecture-oriented
+framework to go from management-oriented to architecture-oriented
 requirements in which SVM is only applied in a small part of it.
 
 	\tahira{Software requirements are mostly stated in natural text notations such as user
@@ -38,13 +38,12 @@ general context for understanding the dataset. It used Word2Vec and Ward’s clu
 \item Generate inter-cluster relationships matrix
 \item Visualization Drawing
 \end{itemize} 
-}
-2) zooming in and out mechanisms and 3) filtering techniques to reduce the
-complexity of the data presentation. Possible anticipated applications of this
+}2) zooming in and out mechanisms, 3) filtering techniques to reduce data
+complexity. Possible anticipated applications of this
 visualization are: discovering missing relationships between clusters that may
 result in further user stories, teaching system functionality by exploring
 simplified, manageable chunks, and analyzing expected system changes after
-introducing new sets of user stories.
+new sets of user stories.
 
 \subsubsection{Structuring Documents} 
 
@@ -55,8 +54,8 @@ organized with independent sections which each one contains conceptually
 connected requirements\cite{Ferrari:2013}. Moreover, technical review is a usual
 way to guarantee the quality in natural language specifications. However,
 extensive and comprehensive specifications make it problematic for reviewers to
-find defects, especially consistency or completeness ones. Therefore, use of
-machine learning algorithms can support reviewers with their work by
+find defects, especially consistency or completeness. Therefore, use of
+ML algorithms can support reviewers with their work by
 automatically classifying and clustering the information that is spread over
 many sections of many documents \cite{Ott:2013}.
 
@@ -87,18 +86,18 @@ requirement is conceptually connected with the requirements in the same section
 and sections independence which is each section is conceptually separated from
 the others. based on} Ferrari \etal~\cite{Ferrari:2013} automatically recognize
 the sections in the document that need requirements relatedness and sections
-independence that help to enhance the document structure. The authors defined a
+independence to enhance the document structure. The authors defined a
 novel algorithm named Sliding Head-Tail Component (S-HTC) for clustering the
 requirements according to relatedness (the algorithm is based on known distance
 - Jaccard similarity metric, Levenshtein distance, and the convex combination
 between $\sigma$jac and $\sigma$lev). The algorithm groups together similar
-requirements that are contiguous in the requirements document. The effectiveness
+requirements that are contiguous in the document. The effectiveness
 of the algorithm was evaluated with a test on requirements standard of a railway
 domain (583 requirements).
 
 Based on Rauf \etal~\cite{Rauf:2011} software specification documents usually
 contain instances of logical structures, such as business rules, use cases, and
-functional requirements. Automated identification and extraction of these
+FRs. Automated identification and extraction of these
 instances will benefit requirements management features, like automated
 traceability, template conformance checking, and guided editing. The authors
 planned a framework that gets requirements documents as an input and tries to
