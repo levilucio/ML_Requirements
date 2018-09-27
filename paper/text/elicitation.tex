@@ -9,7 +9,7 @@ identifying user requirements is to mine data obtained from platforms like Twitt
 Google Play Store, and Apple Store etc. by applying ML. These user reviews are not structured requirements
 and contain useful information with extra information and noise that make manual requirement elicitation a difficult and challenging task.
 Automated requirement elicitation is helpful in these cases and can
-significantly reduce time, effort, and cost. This is mainly an ML
+significantly reduce time, effort, and cost. This is mainly a ML
 \emph{classification} task: give the set of information and identify it as a
 requirement or not. Sometimes \emph{clustering} is also used for auxiliary 
 tasks.
@@ -36,17 +36,15 @@ softwares including Microsoft Visual Studio, Google Chrome, and Instagram etc\le
 	Jiang \etal \cite{Jiang:2014} mined user reviews from 
 app stores for discovering evolutionary requirements. It first extracted opinions about software features from reviews. For automated opinion identification, syntactic
 relation based propagation approach was used that extracted targets and sentiment words
-iteratively using known and extracted words. Afterwards, it applied k-mean clustering for opinion categorization.
-\levi{explain what kind of clustering} The proposed system also helped developers to decide requirements related to software revenue by considering economic factors. \levi{explain} It used two datasets of online reviews: one from the
+iteratively using known and extracted words. Afterwards, it applied k-mean clustering for opinion categorization. The proposed system also helped developers to decide requirements related to software revenue by considering economic factors. It used two datasets of online reviews: one from the
 Karplersky internet security 2011 software package (from Amazon) with 380
 reviews; the other one comprising 461 reviews for the  TuneIn Radio Pro V3.6
 mobile app (from the app store).
 
 	Lange \etal\cite{Douglas:S2008} mapped the software requirement elicitation
-process onto an existing military tool \emph{skiweb}. Skiweb was used to make decisions about what actions need to be taken on a military command.\levi{which decision?} Different users posted and updated events and information using this tool. The goal of adding learning capability was to find additional information relevant to user posts. The proposed recommender system used supervised
+process onto an existing military tool \emph{skiweb}. Skiweb was used to make decisions about what actions need to be taken on a military command. Different users posted and updated events and information using this tool. The goal of adding learning capability was to find additional information relevant to user posts. The proposed recommender system used supervised
 \emph{Naive Bayes} algorithm to classify text documents in order to find related
-requirements to the post. Furthermore, it
-\levi{which recommender system?} used topic modeling to identify the key
+requirements to the post. Furthermore, it used topic modeling to identify the key
 stakeholders and suggested them requirements for further analysis according to their interest\levi{which analysis?}. This study used an internal organizational
 dataset Skiweb Data such as wiki and blogs etc.
 
@@ -55,7 +53,7 @@ dataset Skiweb Data such as wiki and blogs etc.
 datasets from past studies and reviews for iOS apps including CreditKarma,
 Fitbit, and Gmail.
 
-	Maalej presented in \cite{Maalej} a study on how to classify app reviews as bug
+	Maalej \etal \cite{Maalej} presented a study on how to classify app reviews as bug
 reports, feature requests, user experiences, and ratings. It used
 \emph{Naive Bayes} algorithm due to better results in comparison to other algorithms for classification. It also highlighted that binary
 classifier performed better than multi

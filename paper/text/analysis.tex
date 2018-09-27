@@ -1,9 +1,8 @@
 \subsection{Requirements Specification and Analysis}
 
 Software requirements specifications are usually stated in informal, imprecise and ambiguous natural language, thus analyzing them is a challenging task. 
-The success of a system does not solely depend on its functional requirements.
-Like for functional requirements, it also significantly depends on the adherence
-to non-functional requirements. The primary focus of requirements analysis is
+The success of a system does not solely depend on its functional requirements, but also significantly relys on the
+adherence to non-functional requirements. The primary focus of requirements analysis is
 generally towards the identification and specification of FRs. NFRs are usually
 identified and specified in later development stages which can increase the
 risks of problems during the development lifecycle. Non-functional requirements may not be explicitly mentioned in a formal
@@ -32,7 +31,7 @@ is a classification problem as from a set of requirements we want to decide
 whether or not requirements belong to NFRs . 
 
 	In a study by Slankas \etal~\cite{Slankas:2013} the authors automatically
-identify and classify sentences in natural language from use agreements, install
+identify and classify sentences in natural language from user agreements, install
 manuals, regulations, requirements specifications and user manuals into 14
 different NFRs categories such as \emph{Access Control}, \emph{Audit}, \emph{Availability},  and \emph{Legal} etc.
 \tahira{\emph{Access Control}, \emph{Audit}, \emph{Availability},  and \emph{Legal} etc.
@@ -123,9 +122,9 @@ ensemble learning training the classifier.}\levi{I thunk there is a conflict
 with the same word in the preprocessing text.} The text trimming used standard
 pre-processing steps. Also, the sentences were augmented by several most similar
 words to the user reviews in the training set and showed that augmented user reviews can lead to better classification results.\levi{unclear} %The machine learning algorithm,%                        
-Bagging is more suitable for NFRs classification from user reviews than Naïve Bayes and J48\levi{is this
+Bagging was more suitable for NFRs classification in the proposed study than Naïve Bayes and J48\levi{is this
 conclusion because they tested with multiple algorithms or because it is better
-than the SOA, in which case this should be mentioned in the table} \tahira{ they tried two classifier Naive Bayes and J.48 and results showed comparison of these two }. The authors
+than the SOA, in which case this should be mentioned in the table} \tahira{ they tried two classifier Naive Bayes and J.48 and results showed comparison of these two}. The authors
 used 6696 raw user reviews from iBooks and 4400 raw user reviews from WhatsApp.
 
 	Deoxadez \etal~\cite{Deocadez:2017} used semi-supervised classification
@@ -150,7 +149,7 @@ from Amazon was integrated into the main dataset. The basic pre-processing steps
 dataset using feature co-occurrence and regular
 expression. It learnt J.48 decision tree (DT) for classification of FRs and NFRs. It used Binarized Naive Bayes (BNB) for sub-classification of NFRs. BNB outperformed among other algorithms such as clustering, k-means, and hybrid clustering. 
 The study showed that the text pre-processing approaches positively influenced on classification. It improved FRs and NFRs
- classification accuracy from 89.92\% to 95.04\%. It used reviews of top 40 paid and free apps from ten
+ classification accuracy from \textit{89.92\% to 95.04\%}. It used reviews of top 40 paid and free apps from ten
 different categories.
 
 	Garzoli \cite {Garzoli:2013} proposed a system for requirement analysis that allowed to identify software functionalities within large collections of requirements written in natural language for requirement analysis. It classified the large dataset into five types:
@@ -165,7 +164,7 @@ dataset consist of?}
 (TBC), a machine learning approach in which a classifier is trained to identify
 and classify requirements and/or other kinds of software artifacts which occur
 relatively frequently across different projects (they call this process
-generating trace links for software artifacts in their research). \levi{Trivial
+generating trace links for software artifacts in their research).\levi{Trivial
 preprocessing step put in preprocessing section:
 The first step in their approach was preprocessing to eliminate common stop
 words.} Then the training phase identified a set of indicator
@@ -187,7 +186,7 @@ is important to make a proper decision for prioritizing requirements considering
 all the factors for the success of the project. Different models exist in the
 literature for prioritization of software requirements such as analytical
 hierarchical process (AHP) \cite{saaty2008}, Goal oriented
-\cite{VanLamsweerde:2001}, cost value approach \cite{Karlsson:1997} etc.In these
+\cite{VanLamsweerde:2001}, cost value approach \cite{Karlsson:1997} etc. In these
 techniques, human input is majorly involved. Qaddoura \etal \cite{R.Qaddoura}
 reviewed the prioritization techniques and also shed light on the ML
 contribution. ML can be used for automated analysis of these large set of
@@ -196,7 +195,7 @@ software requirements prioritization, and it can also help to improve the existi
 	Dhingra \etal  \cite{S.Dhingra} predicted the most appropriate technique for
 software requirement prioritization process. The input from the user was taken as characteristic values (detect consistency, maintain information, not available, or both) for different attributes. These attributes list included consistency,
 traceability, priority basis, rigorous/systematic, distributed stakeholder,
-cognitive aspects, and human experience.\levi{what is the characteristic value?} The output was the
+cognitive aspects, and human experience. The output was the
 most appropriate requirement prioritization method e.g. AGORA, AHP etc. The
 proposed system framework had three phases; training phase, fuzzing inference
 process, and testing phase. The drawback of fuzzy approach was the wrong prediction
