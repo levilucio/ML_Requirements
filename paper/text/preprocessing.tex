@@ -8,35 +8,35 @@ by removing common (stop) terms, and computation of tf-id ,explain tf–idf,
 maybe extract it to a common section, in general explain that features are
 words and the instances are tweets/reviews/\ldots for each term.}
 
-Requirements are written in natural language such as documents or reviewing some
-application\levi{?}. They can appear in a variety of forms such as a list of
-individual words\levi{?}, sentences, multiple paragraphs, short texts with
-special characters or others. Before applying a machine learning algorithm on
-them different steps are employed to transform words \levi{only words?} into
-features, such as text mining or natural language processing (\NLP). This text preprocessing phase
-relies majorly on pre-built dictionaries, databases and rules. The common
-preprocessing steps in the literature we surveyed include
-tokenization, capitalization, lemmatization, stop words removal, stemming and
-part of speech (\POS). Tokenization is the process of splitting paragraphs into sentences, or
-sentences into words. Capitalization brings everything to lower case for
-simplicity. Stop words removal removes connecting words such as ``and'', ``the'' or others by
-comparing the text with a list of stopwords. \POS takes text and assigns each
-part of speech to each word that helps to build more understanding of a
-text\levi{?}. Stemming is a process where words are reduced to a root by
-removing the unnecessary suffix e.g. eating after stemming is eat. Lemmatization is an
-alternative approach to stemming, whichis able to capture canonical forms based
-on a word's lemma. It uses part of speech and WordNet’s lexical database of
-English\levi{add citation} for removing inflections. For example, applying
-stemming to the word ``better'' fails to provide any lemma, applying
-lemmatization to the same word would resultin the word ``good''.
+Requirements are written mostly in natural language. They can appear in a
+variety of forms such as lists of individual words, sentences, paragraphs, short
+texts potentially including special characters, or others. Before applying a
+machine learning algorithm on such data, different steps are employed to
+transform words into features -- such as text mining or natural language
+processing (\NLP). This text preprocessing phase relies majorly on pre-built
+dictionaries, databases and rules. The common preprocessing steps in the
+literature we surveyed include tokenization, capitalization, lemmatization, stop
+words removal, stemming and part of speech (\POS). Tokenization is the process
+of splitting paragraphs into sentences, or sentences into words. Capitalization
+brings everything to lower case for simplicity. Stop words removal removes
+connecting words such as ``and'', ``the'' or others by comparing the text with a
+list of stopwords. \POS takes text and assigns a part of speech (e.g. a noun, a
+verb, an adjective, etc) to each word that helps to build more understanding of
+a text. Stemming is a process where words are reduced to a root by removing the
+unnecessary suffix e.g. eating after stemming is eat. Lemmatization is an alternative approach to stemming,
+whichis able to capture canonical forms based on a word's lemma. It uses part of
+speech and WordNet’s lexical database of English\levi{add citation} for removing
+inflections. For example, applying stemming to the word ``better'' fails to
+provide any lemma, applying lemmatization to the same word would resultin the
+word ``good''.
 
  Another way to extract features from a text is the bag of words (\BOW)
  technique. \BOW categorizes documents based on a dictionary and occurrences of
  words. A commonly used \BOW method is Vector Space Modeling
  (\VSM). \VSM is a way to represent documents in a multidimensional space to
  allow for information retrieval and classification and clustering of documents.
- An example of using \VSM is to query a corpus is order to find relevant items
- or terms\levi{unclear}.
+ An example of using \VSM is to query a corpus in order to find relevant and
+ interconnected (parts of) documents related to specific query terms.
 
 \tahira{ Hollis \etal \cite{Hollis2017} proposed an initial study to automate requirement
 elicitation in Agile environment by providing the list of words and loosely

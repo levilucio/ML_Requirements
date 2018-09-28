@@ -30,7 +30,7 @@
  
 \usepackage{ifthen}
 \newboolean{showcomments} 
-\setboolean{showcomments}{false} % toggle to show or hide comments
+\setboolean{showcomments}{true} % toggle to show or hide comments
 \ifthenelse{\boolean{showcomments}} 
   {\newcommand{\nb}[2]{
     \fcolorbox{gray}{yellow}{\bfseries\sffamily\scriptsize#1}  
@@ -60,6 +60,7 @@
 \newcommand{\POS}{\textsc{Pos}\xspace}
 \newcommand{\BOW}{\textsc{BoW}\xspace}
 \newcommand{\VSM}{\textsc{Vsm}\xspace}
+\newcommand{\SVM}{\textsc{Svm}\xspace}
 
 \newcommand{\fig}{\text{figure}\xspace}
 \newcommand{\sect}{\text{section}\xspace} 
@@ -110,7 +111,7 @@ and management. Furthermore, in these categories, we discuss the specific
 problem solved by \ML, the features and \ML algorithms used as well as datasets,
 when available. We outline lessons learned and envision possible future directions
 for the domain.
-\end{abstract}  
+\end{abstract} 
 
 \begin{IEEEkeywords}
 Requirements Engineering, Machine learning, State of the art, Overview

@@ -1,0 +1,380 @@
+\begin{thebibliography}{10}
+
+\bibitem{Abad:2017}
+Z.~S.~H. Abad, O.~Karras, P.~Ghazi, M.~Glinz, G.~Ruhe, and K.~Schneider.
+\newblock What works better? {A} study of classifying requirements.
+\newblock {\em CoRR}, abs/1707.02358, 2017.
+
+\bibitem{AmLuBi:2018}
+M.~Amrani, L.~L{\'{u}}cio, and A.~Bibal.
+\newblock {ML} + {FV} = {Love}? {A} survey on the application of machine
+  learning to formal verification.
+\newblock {\em CoRR}, abs/1806.03600, 2018.
+
+\bibitem{PAvesani}
+P.~Avesani, C.~Bazzanella, A.~Perini, and A.~Susi.
+\newblock Facing scalability issues in requirements prioritization with machine
+  learning techniques.
+\newblock In {\em 13th IEEE International Conference on Requirements
+  Engineering (RE'05)}, pages 297--305, Aug 2005.
+
+\bibitem{7320432}
+P.~Avesani, A.~Perini, A.~Siena, and A.~Susi.
+\newblock Goals at risk? machine learning at support of early assessment.
+\newblock In {\em 2015 IEEE 23rd International Requirements Engineering
+  Conference (RE)}, pages 252--255, Aug 2015.
+
+\bibitem{Castro-Herrera:2009}
+C.~Castro-Herrera, C.~Duan, J.~Cleland-Huang, and B.~Mobasher.
+\newblock A recommender system for requirements elicitation in large-scale
+  software projects.
+\newblock In {\em Proceedings of the 2009 ACM Symposium on Applied Computing},
+  SAC '09, pages 1419--1426, New York, NY, USA, 2009. ACM.
+
+\bibitem{ChengHeLiangLi:2010}
+H.~Chen, K.~He, P.~Liang, and R.~Li.
+\newblock Text-based requirements preprocessing using nature language
+  processing techniques.
+\newblock In {\em 2010 International Conference On Computer Design and
+  Applications}, volume~1, pages V1--14--V1--18, June 2010.
+
+\bibitem{Cleland-Huang2007}
+J.~Cleland-Huang, R.~Settimi, X.~Zou, and P.~Solc.
+\newblock Automated classification of non-functional requirements.
+\newblock {\em Requirements Engineering}, 12(2):103--120, Apr 2007.
+
+\bibitem{Coughlan:2002}
+J.~Coughlan and R.~D. Macredie.
+\newblock Effective communication in requirements elicitation: A comparison of
+  methodologies.
+\newblock {\em Requir. Eng.}, 7(2):47--60, June 2002.
+
+\bibitem{Davis:1993}
+A.~M. Davis.
+\newblock {\em Software Requirements: Objects, Functions, and States}.
+\newblock Prentice-Hall, Inc., Upper Saddle River, NJ, USA, 1993.
+
+\bibitem{Deeptimahanti:2011}
+D.~K. Deeptimahanti and R.~Sanyal.
+\newblock Semi-automatic generation of uml models from natural language
+  requirements.
+\newblock In {\em Proceedings of the 4th India Software Engineering
+  Conference}, ISEC '11, pages 165--174, New York, NY, USA, 2011. ACM.
+
+\bibitem{Deocadez:2017}
+R.~Deocadez, R.~Harrison, and D.~Rodriguez.
+\newblock Automatically classifying requirements from app stores: A preliminary
+  study.
+\newblock In {\em 2017 IEEE 25th International Requirements Engineering
+  Conference Workshops (REW)}, pages 367--371, Sept 2017.
+
+\bibitem{S.Dhingra}
+S.~Dhingra, S.~G, M.~Madan, and M.~R.
+\newblock Selection of prioritization technique for software requirement using
+  fuzzy logic and decision tree.
+\newblock In {\em 2016 Online International Conference on Green Engineering and
+  Technologies (IC-GET)}, pages 1--11, Nov 2016.
+
+\bibitem{Domingos:2015}
+P.~{D}omingos.
+\newblock {\em {T}he {M}aster {A}lgorithm: {H}ow the {Q}uest for the {U}ltimate
+  {L}earning {M}achine {W}ill {R}emake {O}ur {W}orld}.
+\newblock {B}asic {B}ooks, 2015.
+
+\bibitem{dong2010}
+L.~Dong, X.~Zhang, N.~Ye, and X.~Wan.
+\newblock Research on user requirements elicitation using text association
+  rule.
+\newblock In {\em Intelligence Information Processing and Trusted Computing
+  (IPTC), 2010 International Symposium on}, pages 357--359. IEEE, 2010.
+
+\bibitem{Duan:2007}
+C.~Duan and J.~Cleland-Huang.
+\newblock A clustering technique for early detection of dominant and recessive
+  cross-cutting concerns.
+\newblock In {\em Proceedings of the Early Aspects at ICSE: Workshops in
+  Aspect-Oriented Requirements Engineering and Architecture Design},
+  EARLYASPECTS '07, pages 1--, Washington, DC, USA, 2007. IEEE Computer
+  Society.
+
+\bibitem{Ferrari:2013}
+A.~Ferrari, S.~Gnesi, and G.~Tolomei.
+\newblock Using clustering to improve the structure of natural language
+  requirements documents.
+\newblock In J.~Doerr and A.~L. Opdahl, editors, {\em Requirements Engineering:
+  Foundation for Software Quality}, pages 34--49, Berlin, Heidelberg, 2013.
+  Springer Berlin Heidelberg.
+
+\bibitem{Garzoli:2013}
+F.~Garzoli, D.~Croce, M.~Nardini, F.~Ciambra, and R.~Basili.
+\newblock Robust requirements analysis in complex systems through machine
+  learning.
+\newblock In A.~Moschitti and B.~Plank, editors, {\em Trustworthy Eternal
+  Systems via Evolving Software, Data and Knowledge}, pages 44--58, Berlin,
+  Heidelberg, 2013. Springer Berlin Heidelberg.
+
+\bibitem{Gervasi:2011}
+V.~Gervasi and D.~Zowghi.
+\newblock Mining requirements links.
+\newblock In D.~Berry and X.~Franch, editors, {\em Requirements Engineering:
+  Foundation for Software Quality}, pages 196--201, Berlin, Heidelberg, 2011.
+  Springer Berlin Heidelberg.
+
+\bibitem{Glinz}
+M.~Glinz.
+\newblock On non-functional requirements.
+\newblock In {\em 15th IEEE International Requirements Engineering Conference
+  (RE 2007)}, pages 21--26, Oct 2007.
+
+\bibitem{Guzman:2017}
+E.~Guzman, M.~Ibrahim, and M.~Glinz.
+\newblock A little bird told me: Mining tweets for requirements and software
+  evolution.
+\newblock In {\em 2017 IEEE 25th International Requirements Engineering
+  Conference (RE)}, pages 11--20, Sept 2017.
+
+\bibitem{Hollis2017}
+C.~Hollis and T.~Bhowmik.
+\newblock Automated support to capture verbal just-in-time requirements in
+  agile development: A practitioner view.
+\newblock In {\em 2017 IEEE 25th International Requirements Engineering
+  Conference Workshops (REW)}, pages 419--422, Sept 2017.
+
+\bibitem{doors}
+{IBM}.
+\newblock {The IBM Rational \DOORS family}.
+\newblock \url{https://www.ibm.com/us-en/marketplace/rational-doors}.
+
+\bibitem{Jha:2017}
+N.~Jha and A.~Mahmoud.
+\newblock Mining user requirements from application store reviews using frame
+  semantics.
+\newblock In P.~Gr{\"u}nbacher and A.~Perini, editors, {\em Requirements
+  Engineering: Foundation for Software Quality}, pages 273--287, Cham, 2017.
+  Springer International Publishing.
+
+\bibitem{Jiang:2014}
+W.~Jiang, H.~Ruan, L.~Zhang, P.~Lew, and J.~Jiang.
+\newblock For user-driven software evolution: Requirements elicitation derived
+  from mining online reviews.
+\newblock In V.~S. Tseng, T.~B. Ho, Z.-H. Zhou, A.~L.~P. Chen, and H.-Y. Kao,
+  editors, {\em Advances in Knowledge Discovery and Data Mining}, pages
+  584--595, Cham, 2014. Springer International Publishing.
+
+\bibitem{Jildal:2016}
+R.~Jindal, R.~Malhotra, and A.~Jain.
+\newblock Automated classification of security requirements.
+\newblock In {\em 2016 International Conference on Advances in Computing,
+  Communications and Informatics (ICACCI)}, pages 2027--2033, Sept 2016.
+
+\bibitem{Kaiya:2010}
+H.~Kaiya, Y.~Shimizu, H.~Yasui, K.~Kaijiri, and M.~Saeki.
+\newblock Enhancing domain knowledge for requirements elicitation with web
+  mining.
+\newblock In {\em 2010 Asia Pacific Software Engineering Conference}, pages
+  3--12, Nov 2010.
+
+\bibitem{Karlsson:1997}
+J.~Karlsson and K.~Ryan.
+\newblock A cost-value approach for prioritizing requirements.
+\newblock {\em IEEE Softw.}, 14(5):67--74, Sept. 1997.
+
+\bibitem{Knauss:2011}
+E.~Knauss, S.~Houmb, K.~Schneider, S.~Islam, and J.~J{\"u}rjens.
+\newblock Supporting requirements engineers in recognising security issues.
+\newblock In D.~Berry and X.~Franch, editors, {\em Requirements Engineering:
+  Foundation for Software Quality}, pages 4--18, Berlin, Heidelberg, 2011.
+  Springer Berlin Heidelberg.
+
+\bibitem{Kotonya:1998}
+G.~Kotonya and I.~Sommerville.
+\newblock {\em Requirements Engineering: Processes and Techniques}.
+\newblock Wiley Publishing, 1st edition, 1998.
+
+\bibitem{Kurtanovic:2017}
+Z.~Kurtanović and W.~Maalej.
+\newblock Automatically classifying functional and non-functional requirements
+  using supervised machine learning.
+\newblock In {\em 2017 IEEE 25th International Requirements Engineering
+  Conference (RE)}, pages 490--495, Sept 2017.
+
+\bibitem{Douglas:S2008}
+D.~S. Lange.
+\newblock Text classification and machine learning support for requirements
+  analysis using blogs.
+\newblock In {\em Innovations for Requirement Analysis. From Stakeholders'
+  Needs to Formal Designs}, pages 182--195, Berlin, Heidelberg, 2008. Springer
+  Berlin Heidelberg.
+
+\bibitem{Lu:2017}
+M.~Lu and P.~Liang.
+\newblock Automatic classification of non-functional requirements from
+  augmented app user reviews.
+\newblock In {\em Proceedings of the 21st International Conference on
+  Evaluation and Assessment in Software Engineering}, EASE'17, pages 344--353,
+  New York, NY, USA, 2017. ACM.
+
+\bibitem{Lucassen:2016}
+G.~Lucassen, F.~Dalpiaz, J.~M. E.~M. van~der Werf, and S.~Brinkkemper.
+\newblock Visualizing user story requirements at multiple granularity levels
+  via semantic relatedness.
+\newblock In I.~Comyn-Wattiau, K.~Tanaka, I.-Y. Song, S.~Yamamoto, and
+  M.~Saeki, editors, {\em Conceptual Modeling}, pages 463--478, Cham, 2016.
+  Springer International Publishing.
+
+\bibitem{LucioRCA16}
+L.~L{\'{u}}cio, S.~Rahman, C.-H. Cheng, and A.~Mavin.
+\newblock Just formal enough? automated analysis of ears requirements.
+\newblock In {\em {NASA} Formal Methods - 9th International Symposium, {NFM}
+  2017, Moffett Field, CA, USA, Proceedings}, volume 10227 of {\em Lecture
+  Notes in Computer Science}, pages 427--434. Springer, 2017.
+
+\bibitem{mitchell:1997}
+T.~{M.}~Mitchell.
+\newblock {\em {M}achine {L}earning}.
+\newblock McGraw-Hill, 1997.
+
+\bibitem{Maalej}
+W.~Maalej and H.~Nabil.
+\newblock Bug report, feature request, or simply praise? on automatically
+  classifying app reviews.
+\newblock In {\em 2015 IEEE 23rd International Requirements Engineering
+  Conference (RE)}, pages 116--125, Aug 2015.
+
+\bibitem{Nuseibeh:2000}
+B.~Nuseibeh and S.~Easterbrook.
+\newblock Requirements engineering: A roadmap.
+\newblock In {\em Proceedings of the Conference on The Future of Software
+  Engineering}, ICSE '00, pages 35--46, New York, NY, USA, 2000. ACM.
+
+\bibitem{Ott:2013}
+D.~Ott.
+\newblock Automatic requirement categorization of large natural language
+  specifications at mercedes-benz for review improvements.
+\newblock In J.~Doerr and A.~L. Opdahl, editors, {\em Requirements Engineering:
+  Foundation for Software Quality}, pages 50--64, Berlin, Heidelberg, 2013.
+  Springer Berlin Heidelberg.
+
+\bibitem{Pinqui:2015}
+R.~Pinqui{\'e}, P.~V{\'e}ron, F.~Segonds, and N.~Crou{\'e}.
+\newblock A collaborative requirement mining framework to support oems.
+\newblock In Y.~Luo, editor, {\em Cooperative Design, Visualization, and
+  Engineering}, pages 105--114, Cham, 2015. Springer International Publishing.
+
+\bibitem{R.Qaddoura}
+R.~Qaddoura, A.~Abu-Srhan, M.~H. Qasem, and A.~Hudaib.
+\newblock Requirements prioritization techniques review and analysis.
+\newblock In {\em 2017 International Conference on New Trends in Computing
+  Sciences (ICTCS)}, pages 258--263, Oct 2017.
+
+\bibitem{Rashid:2016}
+A.~Rashid, S.~A.~A. Naqvi, R.~Ramdhany, M.~Edwards, R.~Chitchyan, and M.~A.
+  Babar.
+\newblock Discovering security requirements.
+\newblock In {\em 2016 IEEE/ACM 38th International Conference on Software
+  Engineering (ICSE)}, pages 866--876, May 2016.
+
+\bibitem{Rauf:2011}
+R.~Rauf, M.~Antkiewicz, and K.~Czarnecki.
+\newblock Logical structure extraction from software requirements documents.
+\newblock In {\em 2011 IEEE 19th International Requirements Engineering
+  Conference}, pages 101--110, Aug 2011.
+
+\bibitem{Reddivari:2012}
+S.~Reddivari, Z.~Chen, and N.~Niu.
+\newblock Recvisu: A tool for clustering-based visual exploration of
+  requirements.
+\newblock In {\em 2012 20th IEEE International Requirements Engineering
+  Conference (RE)}, pages 327--328, Sept 2012.
+
+\bibitem{Riaz:2014}
+M.~Riaz, J.~King, J.~Slankas, and L.~Williams.
+\newblock Hidden in plain sight: Automatically identifying security
+  requirements from natural language artifacts.
+\newblock In {\em 2014 IEEE 22nd International Requirements Engineering
+  Conference (RE)}, pages 183--192, Aug 2014.
+
+\bibitem{saaty2008}
+T.~L. Saaty.
+\newblock Decision making with the analytic hierarchy process.
+\newblock {\em International journal of services sciences}, 1(1):83--98, 2008.
+
+\bibitem{Slankas:2013}
+J.~Slankas and L.~Williams.
+\newblock Automated extraction of non-functional requirements in available
+  documentation.
+\newblock In {\em 2013 1st International Workshop on Natural Language Analysis
+  in Software Engineering (NaturaLiSE)}, pages 9--16, May 2013.
+
+\bibitem{StandishReport}
+C.~Standish~Group.
+\newblock The standish group report, 2014.
+
+\bibitem{Sultanov:2013}
+H.~Sultanov and J.~H. Hayes.
+\newblock Application of reinforcement learning to requirements engineering:
+  requirements tracing.
+\newblock In {\em 2013 21st IEEE International Requirements Engineering
+  Conference (RE)}, pages 52--61, July 2013.
+
+\bibitem{Teufl17}
+S.~Teufl.
+\newblock {\em Seamless Model-based Requirements Engineering: Models,
+  Guidelines, Tools}.
+\newblock PhD thesis, Technical University Munich, Germany, 2017.
+
+\bibitem{VanLamsweerde:2001}
+A.~Van~Lamsweerde.
+\newblock Goal-oriented requirements engineering: A guided tour.
+\newblock In {\em Proceedings of the Fifth IEEE International Symposium on
+  Requirements Engineering}, RE '01, pages 249--, Washington, DC, USA, 2001.
+  IEEE Computer Society.
+
+\bibitem{7949577}
+Y.~Wang and J.~Zhang.
+\newblock Experiment on automatic functional requirements analysis with the
+  efrfs semantic cases.
+\newblock In {\em 2016 International Conference on Progress in Informatics and
+  Computing (PIC)}, pages 636--642, Dec 2016.
+
+\bibitem{Wieloch:2013}
+M.~Wieloch, S.~Amornborvornwong, and J.~Cleland-Huang.
+\newblock Trace-by-classification: A machine learning approach to generate
+  trace links for frequently occurring software artifacts.
+\newblock In {\em 2013 7th International Workshop on Traceability in Emerging
+  Forms of Software Engineering (TEFSE)}, pages 110--114, May 2013.
+
+\bibitem{Williams:2017}
+G.~Williams and A.~Mahmoud.
+\newblock Mining twitter feeds for software user requirements.
+\newblock In {\em 2017 IEEE 25th International Requirements Engineering
+  Conference (RE)}, pages 1--10, Sept 2017.
+
+\bibitem{Winkler:2016}
+J.~Winkler and A.~Vogelsang.
+\newblock Automatic classification of requirements based on convolutional
+  neural networks.
+\newblock In {\em 2016 IEEE 24th International Requirements Engineering
+  Conference Workshops (REW)}, pages 39--45, Sept 2016.
+
+\bibitem{Xiao:2012}
+X.~Xiao, A.~Paradkar, S.~Thummalapenta, and T.~Xie.
+\newblock Automated extraction of security policies from natural-language
+  software documents.
+\newblock In {\em Proceedings of the ACM SIGSOFT 20th International Symposium
+  on the Foundations of Software Engineering}, FSE '12, pages 12:1--12:11, New
+  York, NY, USA, 2012. ACM.
+
+\bibitem{Zhang2002}
+D.~Zhang and J.~J.~P. Tsai.
+\newblock Machine learning and software engineering.
+\newblock In {\em 14th IEEE International Conference on Tools with Artificial
+  Intelligence, 2002. (ICTAI 2002). Proceedings.}, pages 22--29, 2002.
+
+\bibitem{Zowghi2005}
+D.~Zowghi and C.~Coulin.
+\newblock {\em Requirements Elicitation: A Survey of Techniques, Approaches,
+  and Tools}, pages 19--46.
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 2005.
+
+\end{thebibliography}

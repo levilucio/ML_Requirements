@@ -54,56 +54,54 @@ system also helped developers deciding on requirements related to software
 revenue, by considering economic factors. The work used two datasets of online
 reviews: one from the Karplersky internet security 2011 software package (from Amazon) with 380
 reviews; the other one comprising 461 reviews for the TuneIn Radio Pro V3.6
-mobile app (from the app store\levi{Apple's?}).
+mobile app (from the app store).
 
-Lange \etal\cite{Douglas:S2008} mapped the software requirement elicitation
-process onto an existing military tool \emph{skiweb}. Skiweb is used to make
-decisions about what actions need to be taken on a military
-command\levi{during action?}.
-Different users posted and updated events and information using this tool. The goal of
-adding learning capabilities was to find additional information relevant to user
-posts. The proposed recommender system used supervised \emph{Naive Bayes}
-algorithm to classify text documents in order to find related requirements to
-the post. Furthermore, it used topic modeling to identify the key stakeholders
-and suggested them requirements for further analysis according to their
-interest\levi{which analysis?}. This study used an internal organizational
-dataset Skiweb Data such as wiki and blogs etc.\levi{this paragraph is unclear,
-see with Tahira}
+Lange \etal\cite{Douglas:S2008} used a machine-learning based software
+requirement elicitation process while extending an existing military tool called
+\emph{skiweb}.  Different users posted and updated military events and
+information using this tool. The goal of adding learning capabilities to
+\emph{skiweb} was mine information from user posts. The proposed recommender
+system used the supervised \emph{Naive Bayes} algorithm to classify text
+documents in order to find related requirements to the post. Furthermore, it used topic
+modeling to identify the key stakeholders and suggested them other requirements
+for further analysis according to their interests. This study used an internal
+organizational dataset Skiweb Data such as wiki and blogs etc
 
 Jha \etal \cite{Jha:2017} discovered user requirements by mining app store
 reviews. The requests were classified into three categories; \emph{bugs},
 \emph{features} and \emph{junk}. The methodology proposed by the authors used
 Naive Bayes and \SVM algorithms. The distinction between types of sentences was
-identified by frame semantics \emph{explain frame semantics}, instead of text
+identified by frame semantics \levi{cite} which, as the name indicates, performs
+a more semantic classification than the typical syntactic-oriented text
 classification methods. For each review frames were generated, rather than for
-words. Due to small number of features, a slower\levi{slower than what?}
-dimensional model was produced with enhanced prediction capabilities. The
-study combined existing datasets from past studies and reviews for iOS apps
-including CreditKarma, Fitbit, and Gmail.
+words. Due to small number of features, a lower dimensional model was
+produced with enhanced prediction capabilities. The study combined existing
+datasets from past studies and reviews for iOS apps including CreditKarma,
+Fitbit, and Gmail.
 
 Maalej \etal presents in \cite{Maalej} a study on how to classify app reviews as
 bug reports, feature requests, user experiences or ratings. The authors used a
 \emph{Naive Bayes} algorithm after comparing several algorithms for
 classification. They also highlight that binary classifiers performed better
-than multi classifiers\levi{what is the difference betwee binary and multi}. It
-used meta model to enhance the classification performance e.g.
-ratings, tense, and sentiment scores etc. A dataset of 4400 manually annotated
-reviews from Google Play Store and the Apple App Store were used for the study.
+than multi classifiers. It used a meta model to enhance the performance of the
+classification, which includes ratings, tense, and sentiment scores etc. A
+dataset of 4400 manually annotated reviews from Google Play Store and the Apple
+App Store were used for the study.
 
 Herrera \etal \cite{Castro-Herrera:2009} built a recommender system to manage a
-the participation of a number of stakeholders in the requirements
-elicitation and prioritization process. In this system, stakeholders could work collaboratively
-to transform their needs into sets of articulated and prioritized requirements.
+the participation of a number of stakeholders in the requirements elicitation
+and prioritization process. In this system, stakeholders could work
+collaboratively to transform their needs into sets of articulated and
+prioritized requirements.
 The system automatically generates specialized topics for building forums for
 stakeholder collaboration and discussion. The stakeholders' interests are
 extracted from their user profiles, which also helped in creating
-recommendations according to the interest of a community of similar stakeholders.\levi{is this the
-recommender part?} In order to identify topics, an unsupervised agglomerative
-clustering algorithm was applied to unstructured data\levi{what's the
-difference?}. The proposed system analyzed online datasets\levi{which datasets?}
-that were gathered from stakeholders in natural language.
-The evaluation dataset was a collection of 36 feature requests created by
-graduate-level students for an Amazon-like student web-portal system.
+recommendations according to the interest of a community of similar
+stakeholders. In order to identify topics, an unsupervised agglomerative
+clustering algorithm was applied to unstructured data. The proposed system
+analyzed online datasets (in natural language) that were gathered from
+stakeholders. The evaluation dataset was a collection of 36 feature requests
+created by graduate-level students for an Amazon-like student web-portal system.
 
 
 

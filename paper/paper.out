@@ -1,0 +1,21 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Machine Learning}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Requirements Engineering}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Text Preparation}{section.1}% 4
+\BOOKMARK [1][-]{section.2}{Contributions}{}% 5
+\BOOKMARK [2][-]{subsection.2.1}{Requirements Elicitation and Discovery}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.2}{Requirements Specification and Analysis}{section.2}% 7
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Identifying Non-Functional Requirements}{subsection.2.2}% 8
+\BOOKMARK [3][-]{subsubsection.2.2.2}{Identifying Functional Requirements}{subsection.2.2}% 9
+\BOOKMARK [3][-]{subsubsection.2.2.3}{Distinguishing Functional from Non functional Requirements}{subsection.2.2}% 10
+\BOOKMARK [3][-]{subsubsection.2.2.4}{Requirement Prioritization}{subsection.2.2}% 11
+\BOOKMARK [3][-]{subsubsection.2.2.5}{Security Requirements}{subsection.2.2}% 12
+\BOOKMARK [2][-]{subsection.2.3}{Requirements Validation}{section.2}% 13
+\BOOKMARK [3][-]{subsubsection.2.3.1}{Traceability}{subsection.2.3}% 14
+\BOOKMARK [2][-]{subsection.2.4}{Requirements Management}{section.2}% 15
+\BOOKMARK [3][-]{subsubsection.2.4.1}{Visualization}{subsection.2.4}% 16
+\BOOKMARK [3][-]{subsubsection.2.4.2}{Structuring Documents}{subsection.2.4}% 17
+\BOOKMARK [1][-]{section.3}{Discussion}{}% 18
+\BOOKMARK [1][-]{section.4}{Threats to Validity}{}% 19
+\BOOKMARK [1][-]{section.5}{Conclusion}{}% 20
+\BOOKMARK [1][-]{section*.2}{References}{}% 21
