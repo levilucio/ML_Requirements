@@ -23,7 +23,7 @@ classifying them which will help to ease further analysis in further processing 
 specification requirements documents even though they exist for all
 systems~\cite{Slankas:2013}. Moreover, freeform documents like interview notes,
 meeting minutes and scattered requirements specifications include non-functional
-requirements which need to be detected and classified. Machine learning can be
+requirements which need to be detected and classified. \ML can be
 useful to support analysts in the error-prone task of manually discovering and
 classifying NFRs. Automatic detection can be used to quickly and effectively
 identifying NFRs in large and complex documents \cite{Cleland-Huang2007}}This
@@ -54,10 +54,10 @@ used the k-nearest neighbor classifier for grouping NFRs e.g.
 used the k-nearest neighbor classifier for grouping NFRs e.g.
 \emph{availability}, \emph{look-and-feel}, \emph{legal}. For training their classifier, they used 15 requirements specifications developed as term projects by master students at DePaul University.
 \subsubsection{Identifying Functional Requirements}
-\tahira{Software requirements specifications are usually stated in informal, imprecise and ambiguous natural language, thus analyzing them is a challenging task. However, for satisfying the specifications of a product analyzing functional requirements is a vital task.Automatically extract structured information of functional requirements from Software Requirements Specifications and grouping them into different categories is a machine learning classification task\cite{7949577}.}This
+\tahira{Software requirements specifications are usually stated in informal, imprecise and ambiguous natural language, thus analyzing them is a challenging task. However, for satisfying the specifications of a product analyzing functional requirements is a vital task.Automatically extract structured information of functional requirements from Software Requirements Specifications and grouping them into different categories is a \ML classification task\cite{7949577}.}This
 is a classification problem as from a set of requirements we want to decide
 whether or not requirements belong to FRs. 
-\tahira{Wang \etal~\cite{7949577} applied a combination of machine learning, natural
+\tahira{Wang \etal~\cite{7949577} applied a combination of \ML, natural
 language processing, and semantic analysis to automatically extract functional
 requirements and classify them into ten different cases: Agentive (The main
 participant of activities), \emph{action} (the main functional operation),
@@ -75,12 +75,12 @@ role  label  for  each  word  in  the  sentence) and machine learning and has fo
  tokenization, lemmatization, part-of-speech tagging (POS tagging) and
  dependency parsing.}}
 
-	Wang \etal~\cite{7949577} applied a combination of machine learning, natural
+	Wang \etal~\cite{7949577} applied a combination of \ML, natural
 language processing, and semantic analysis to automatically extract functional
 requirements and classify them into ten different cases e.g. action, objective, goal, temporal, and constraints etc. Their
  framework employed techniques of semantic role labeling (which assigns a 
 role  label  for  each  word  in  the  sentence) and
- machine learning and has four steps: corpus construction, NLP
+ \ML has four steps: corpus construction, NLP
  preprocessing, feature extraction and EFRF (Extended Functional Requirements
  Frame) functional cases extraction.
  The authors trained their bi-directional LSTM-CRF network,
@@ -106,7 +106,7 @@ Different types of requirements are analyzed differently, and as such, it is
 useful to separate them. This distinction helps in managing changes in
 requirements as well as in precisely incorporating them in the development of
 the system. Manually dividing requirements in FRs and NFRs is difficult and
-time-consuming. Machine learning can be used for reducing the effort and
+time-consuming. \ML can be used for reducing the effort and
 categorizing the requirements based on the text segment analysis\emph{what is
 this?}This is ML classification task: give the set of requirements and
 identifying its category.}This
@@ -116,7 +116,7 @@ whether or not requirements belong to a certain class.
  Lu \etal~ \cite{Lu:2017} automatically classified text from user
 reviews for (app) stores into FR, NFR, and others. The authors further classified
 NFRs into four categories including reliability, usability, portability, and
-performance. The approach used a supervised machine learning algorithm
+performance. The approach used a supervised algorithm
 called \emph{bagging}.\levi{is bagging an algorithm?} \tahira{ yes it is from
 ensemble learning training the classifier.}\levi{I thunk there is a conflict
 with the same word in the preprocessing text.} The text trimming used standard
@@ -140,7 +140,7 @@ problems. It used reviews of top 40 paid and free apps from ten categories.
 
 	Kutranvoic \etal ~ \cite {Kurtanovic:2017} performed automated analysis on
 software requirement documents written in natural language \levi{which kind?} and classify them into FRs,
-NFRs and subcategories of NFRs. The basic pre-processing steps were applied on requirements before applying the ML algorithm. It used a supervised support vector machine (SVM) algorithm for classification. Some NFRs were ignored because of their minor presence in the documents. Also, the dataset was imbalanced that meant it was not equally distributed. For avoiding data imbalance problem additional dataset i.e. user comments\levi{what is this?}
+NFRs and subcategories of NFRs. The basic pre-processing steps were applied on requirements before applying the ML algorithm. It used supervised \SVM algorithm for classification. Some NFRs were ignored because of their minor presence in the documents. Also, the dataset was imbalanced that meant it was not equally distributed. For avoiding data imbalance problem additional dataset i.e. user comments\levi{what is this?}
 from Amazon was integrated into the main dataset. The basic pre-processing steps were applied on requirements before applying the ML algorithm. The study used data from open source tera PROMISE repository that consists of 625 labeled natural language requirements (255 FRs
 [40.8\%] and 370 NFRs [59.2\%]).
 
@@ -161,7 +161,7 @@ the Naval Combat Managment System.\levi{what does the
 dataset consist of?}
 
 	Wieloch \etal~\cite{Wieloch:2013} presented Trace by Classification
-(TBC), a machine learning approach in which a classifier is trained to identify
+(TBC), a \ML approach in which a classifier is trained to identify
 and classify requirements and/or other kinds of software artifacts which occur
 relatively frequently across different projects (they call this process
 generating trace links for software artifacts in their research).\levi{Trivial
