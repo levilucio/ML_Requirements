@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.4)  28 SEP 2018 10:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.4)  1 OCT 2018 15:55
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -1262,33 +1262,33 @@ Now handling font encoding PD1 ...
    defining Unicode char U+2423 (decimal 9251)
 )
 
-Package csquotes Warning: Load 'inputenc' before 'csquotes' on input line 83.
+Package csquotes Warning: Load 'inputenc' before 'csquotes' on input line 85.
 
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
 (./paper.aux)
 \openout1 = `paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 83.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 83.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 85.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 85.
  (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
 
 -- Lines per column: 56 (exact).
 (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
@@ -1324,7 +1324,7 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 83.
+Package hyperref Info: Link coloring OFF on input line 85.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1334,27 +1334,27 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count193
 )
-LaTeX Info: Redefining \ref on input line 83.
-LaTeX Info: Redefining \pageref on input line 83.
-LaTeX Info: Redefining \nameref on input line 83.
+LaTeX Info: Redefining \ref on input line 85.
+LaTeX Info: Redefining \pageref on input line 85.
+LaTeX Info: Redefining \nameref on input line 85.
 
 (./paper.out) (./paper.out)
 \@outlinefile=\write3
 \openout3 = `paper.out'.
 
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 101.
-LaTeX Font Info:    Try loading font information for U+msa on input line 101.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 103.
+LaTeX Font Info:    Try loading font information for U+msa on input line 103.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 101.
+LaTeX Font Info:    Try loading font information for U+msb on input line 103.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/sc' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/sc' tried instead on input line 103.
+(Font)              Font shape `OT1/ptm/b/sc' tried instead on input line 105.
 
 (./text/introduction.tex
 Underfull \hbox (badness 2486) in paragraph at lines 64--67
@@ -1366,47 +1366,15 @@ tex/updmap/pdftex.map}
 
 
 ]) (./text/req_engineering.tex) (./text/preprocessing.tex
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 3.
-(/usr/local/texlive/2016/texmf-dist/tex/latex/psnfss/ot1phv.fd
-File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
-)
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 3.
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <7> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 3.
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2]))
 (./text/contributions.tex (./text/elicitation.tex [3]) (./text/analysis.tex
-Underfull \hbox (badness 10000) in paragraph at lines 29--32
- \OT1/ptm/m/it/10 1) Iden-ti-fy-ing Non-Functional Re-quire-ments: [][][] [][][
-][]
- []
+[4] [5] (./text/analysis_security.tex)) (./text/validation.tex
+Underfull \vbox (badness 1424) has occurred while \output is active []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 29--32
-\U/msa/m/n/10 I$[]\OT1/ptm/m/n/10 Non-functional re-quire-ments may not be ex-p
-lic-itly
- []
-
-
-Underfull \hbox (badness 6461) in paragraph at lines 29--32
-\OT1/ptm/m/n/10 and scat-tered re-quire-ments spec-i-fi-ca-tions in-clude non-
- []
-
-
-Underfull \hbox (badness 1590) in paragraph at lines 29--32
-\OT1/ptm/m/n/10 functional re-quire-ments which need to be de-tected and
- []
-
-
-Underfull \hbox (badness 3536) in paragraph at lines 29--32
-\OT1/ptm/m/n/10 clas-si-fied. Ma-chine learn-ing can be use-ful to sup-port
- []
-
-[4] [5] [6] (./text/analysis_security.tex)) (./text/validation.tex)
-(./text/management.tex [7] [8])) (./text/discussion.tex [9]
+)
+(./text/management.tex [6])) (./text/discussion.tex [7]
 (./text/SummaryTable.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/sc' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/sc' tried instead on input line 8.
@@ -1421,10 +1389,8 @@ Overfull \hbox (15.04218pt too wide) in paragraph at lines 5--63
  [][] 
  []
 
-)) (./text/threats_validity.tex) (./text/conclusion.tex) (./paper.bbl [10]
-Underfull \vbox (badness 1960) has occurred while \output is active []
-
- [11])
+)) (./text/threats_validity.tex [8]) (./text/conclusion.tex) (./paper.bbl
+[9] [10])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -1436,25 +1402,25 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 128.
-[12
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 130.
+[11
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 128.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 130.
  (./paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 128.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 128.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 130.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 130.
 Package rerunfilecheck Info: File `paper.out' has not changed.
 (rerunfilecheck)             Checksum: 9D129B915CA68C4CE73E165BF3A5D7E3;1516.
  ) 
 Here is how much of TeX's memory you used:
- 18836 strings out of 493014
- 324398 string characters out of 6133351
- 422290 words of memory out of 5000000
- 21988 multiletter control sequences out of 15000+600000
- 59544 words of font info for 115 fonts, out of 8000000 for 9000
+ 18780 strings out of 493014
+ 323612 string characters out of 6133351
+ 421253 words of memory out of 5000000
+ 21938 multiletter control sequences out of 15000+600000
+ 57375 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,17n,42p,10415b,511s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 40i,17n,42p,10415b,510s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1471,16 +1437,14 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
 live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texl
 ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texliv
 e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/
-2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texl
-ive/2016/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/201
-6/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf-di
-st/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/
-type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/urw/
-times/utmri8a.pfb>
-Output written on paper.pdf (12 pages, 191295 bytes).
+2016/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2016/texmf
+-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2016/texmf-dist/fon
+ts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/u
+rw/times/utmri8a.pfb>
+Output written on paper.pdf (11 pages, 165542 bytes).
 PDF statistics:
- 391 PDF objects out of 1000 (max. 8388607)
- 364 compressed objects within 4 object streams
- 100 named destinations out of 1000 (max. 500000)
+ 370 PDF objects out of 1000 (max. 8388607)
+ 346 compressed objects within 4 object streams
+ 99 named destinations out of 1000 (max. 500000)
  169 words of extra memory for PDF output out of 10000 (max. 10000000)
 
