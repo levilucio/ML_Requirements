@@ -1,83 +1,97 @@
 \subsection{Requirements Management}
 
+\levi{summarize requirements management here}
+
 \subsubsection{Visualization}
 
-Natural language requirement documents can be hard to comprehend and analyze. Similarly, stakeholders have to review and understand requirements for large and complex systems.  In these scenarios, basic information visualizations, like charts and graphs have been used in requirements engineering. These visualizations are usually applied to improve textual requirements with summarization that combined large amounts of information into a single representation for quick consumption by stakeholders\cite{Reddivari:2012}. Machine learning is useful in discovering visualized groups of large numbers of requirements. In research both clustering and classification methods were used for this purpose.
+Natural language requirement documents can be hard to comprehend and analyze.
+Stakeholders have to review and understand requirements for large and
+complex systems. In these scenarios, basic information visualizations, like
+charts and graphs have been used in requirements engineering. These
+visualizations are usually applied to textual requirements in order to summarize
+them. Summarization combines large amounts of information into a
+single representation for quick consumption by stakeholders\cite{Reddivari:2012}.
+Machine learning is useful to visualize and to group of large numbers of
+requirements. In the research we surveyed both clustering and classification
+methods were used for this purpose.
 
-The ReCVisu (Requirements Clustering Visualization) tool by Reddivari
-\etal is presented in~\cite{Reddivari:2012}. ReCVisu, an exploration tool based
-on quantitative visualizations helps requirements engineers understand the nature
-of the requirements in a visual form. In ReCVisu, the dependence graph consists
-of requirements artifacts as nodes and the textual similarities as edges. The
+The ReCVisu (Requirements Clustering Visualization) tool is presented
+in~\cite{Reddivari:2012}. ReCVisu, an exploration tool based on quantitative
+visualizations helps requirements engineers in understanding the nature of the
+requirements in a visual form. In ReCVisu, the dependence graph consists of
+requirements artifacts as nodes and the textual similarities as edges. The
 automatic grouping of requirements into clusters can help in areas such as
 uncovering the requirements structure, navigating around the requirements space,
-modularizing crosscutting concerns, and understanding requirements interactions
+modularizing crosscutting concerns and understanding requirements interactions
 and evolution.
 
-Pinqui \etal~\cite{Pinqui:2015} recognize the enormous volume of requirements as
-big data with which companies struggle to make strategic decisions early on.
-Therefore, they built a complete visual framework to filter requirements from
-stakeholders in a way that architects can make better insightful decisions. They
-suggest training a multi-class SVM model from domain-specific (mechanics,
-electronics, etc.) dictionaries and handbooks. Overall, the paper proposes a
-framework to go from management-oriented to architecture-oriented
-requirements in which SVM is only applied in a small part of it.
+Pinqui \etal~\cite{Pinqui:2015} recognize that volume of requirements as big
+data with which companies struggle to make strategic decisions early on is
+enourmous. To aid in solving this problem, they have built a complete visual
+framework to filter requirements from stakeholders in such a way that architects
+can better make insightful decisions. They suggest training a multi-class SVM
+model from domain-specific (mechanics, electronics, etc.) dictionaries and handbooks.
+Overall, the authors propose a framework to go from management-oriented to
+architecture-oriented requirements in which SVM is only applied in a small part
+of it.
 
-	\tahira{Software requirements are mostly stated in natural text notations such as user
-stories which is making it hard for people to develop an accurate mental image
-of the most relevant entities and relationships.}
-Lucassen \etal~\cite{Lucassen:2016} introduced an automated method for
-visualizing requirements at different levels of granularity. Their visualization method from
-user stories consists of 1) the generation of an overview which provides a
-general context for understanding the dataset. It used Word2Vec and Ward’s clustering algorithm to build up inter cluster relationship matrix of concepts from the dataset.\parisa{suggestions for which part to remove for summarizing it?!} 
+\tahira{Software requirements are mostly stated in natural text notations such
+as user stories which is making it hard for people to develop an accurate mental
+image of the most relevant entities and relationships.} Lucassen
+\etal~\cite{Lucassen:2016} introduced an automated method for visualizing
+requirements at different levels of granularity. Their visualization method of
+user stories consists of the following steps 1) the generation of an overview
+which provides a general context for understanding the dataset. The authors have
+used  used Word2Vec and Ward’s clustering algorithm to build up inter cluster
+relationship matrix of concepts from the dataset.\parisa{suggestions for which part to remove for summarizing
+it?!}
 \tahira{\begin{itemize}
-\item Extract a set of relevant concepts from the user stories and their relationships 
-\item Calculate the semantic similarity by using skip-gram implementation word2vec
-\item Utilize Ward’s clustering algorithm to group all the concepts according to their similarity 
-\item Identify the concept which is most similar to the collection of concepts in a cluster
-\item Generate inter-cluster relationships matrix
-\item Visualization Drawing
+\item Extract a set of relevant concepts from the user stories and their
+relationships \item Calculate the semantic similarity by using skip-gram
+implementation word2vec \item Utilize Ward’s clustering algorithm to group all
+the concepts according to their similarity \item Identify the concept which is
+most similar to the collection of concepts in a cluster \item Generate
+inter-cluster relationships matrix \item Visualization Drawing
 \end{itemize} 
 }2) zooming in and out mechanisms, 3) filtering techniques to reduce data
-complexity. Possible anticipated applications of this
-visualization are: discovering missing relationships between clusters that may
-result in further user stories, teaching system functionality by exploring
-simplified, manageable chunks, and analyzing expected system changes after
-new sets of user stories.
+complexity. Possible anticipated applications of this visualization are:
+discovering missing relationships between clusters that may result in further
+user stories; teaching system functionality by exploring simplified' manageable
+chunks; and analyzing expected system changes after new sets of user stories.
 
 \subsubsection{Structuring Documents} 
 
-Requirements of the system are usually presented in natural language documents.
+Requirements for a system are usually presented in natural language documents.
 These documents often require proper structuring for a better overall
 understanding of the requirements. For this purpose, the document should be
-organized with independent sections which each one contains conceptually
-connected requirements\cite{Ferrari:2013}. Moreover, technical review is a usual
-way to guarantee the quality in natural language specifications. However,
-extensive and comprehensive specifications make it problematic for reviewers to
-find defects, especially consistency or completeness. Therefore, use of
-ML algorithms can support reviewers with their work by
-automatically classifying and clustering the information that is spread over
-many sections of many documents \cite{Ott:2013}.
+organized in independent sections, where each one contains conceptually
+connected requirements\cite{Ferrari:2013}. Moreover, technical reviews are
+typically used to guarantee the quality in natural language specifications.
+However, extensive and comprehensive specifications make it problematic for
+reviewers to find defects, especially in what regards consistency or
+completeness. Therefore, \ML algorithms can support reviewers in their work by
+automatically classifying and clustering information that is spread over many
+sections of many documents \cite{Ott:2013}.
 
 Duan \etal~\cite{Duan:2007} used hierarchical automated clustering technique for
-detecting cross-cutting concerns as it is beneficial for the process of
-requirements analysis and architectural design. The reported experiments in this
-paper were supported by two tool sets, Poirot, a web-based tool designed to
-generate traces between various software engineering artifacts which was applied
-to compute similarity scores between requirements and a developed prototype
-tool, capable of reading structured requirements specification and generated
-similarity scores and then clustering requirements.
+detecting cross-cutting concerns that are beneficial for the process of
+requirements analysis and architectural design. The reported experiments in
+their work were supported by two tool sets, Poirot\levi{two or one?}, a
+web-based tool designed to generate traces between various software engineering
+artifacts which was applied to compute similarity scores between requirements
+and a developed prototype tool, capable of reading structured requirements
+specification and generated similarity scores and then clustering requirements.
 
 \tahira{Requirements engineering process results are usually documented in the natural language specifications. In most cases, these documents not only contain requirements but also some additional information such as explanations, summaries, and figures. As it is important to differentiate between relevant requirements and other auxiliary content it is often the case that requirements engineers manually label each element of the specification document.}
 Winkler \etal~\cite{Winkler:2016} applied convolutional neural networks to
-automatically classify content elements of a natural language requirements
-specification as “requirement” or “information”.\parisa{requirements elicitation
-or management?} Their approach increases the quality of requirements
-specifications as it distinguishes important content for activities. For
-converting natural language into a vector representation word2vec method is
-used. A set of 10.000 content elements extracted from 89 requirements
-specifications of an industry partner used for training the network through the
-use of Tensorflow library using stochastic gradient descent.
+automatically classify the content elements of natural language requirements
+specifications as “requirement” or “information”.\parisa{requirements
+elicitation or management?} The authors claim their approach increases the
+quality of requirements specifications as it distinguishes content that is relevant for specific
+software construction activities. For converting natural language into a vector
+representation the word2vec method is used. A set of 10.000 content elements
+extracted from 89 requirements specifications of an industry partner were used
+for training the network through the use of Tensorflow library using stochastic gradient descent.
 
 \tahira{For having a better understanding the natural language requirements
 specification documents should be properly structured. two quality
@@ -85,38 +99,38 @@ characteristics of such a document are requirements relatedness which is each
 requirement is conceptually connected with the requirements in the same section
 and sections independence which is each section is conceptually separated from
 the others. based on} Ferrari \etal~\cite{Ferrari:2013} automatically recognize
-the sections in the document that need requirements relatedness and sections
-independence to enhance the document structure. The authors defined a
+the sections in a document that should be related or
+independent in to enhance the document structure. The authors have defined a
 novel algorithm named Sliding Head-Tail Component (S-HTC) for clustering the
-requirements according to relatedness (the algorithm is based on known distance
-- Jaccard similarity metric, Levenshtein distance, and the convex combination
-between $\sigma$jac and $\sigma$lev). The algorithm groups together similar
-requirements that are contiguous in the document. The effectiveness
-of the algorithm was evaluated with a test on requirements standard of a railway
-domain (583 requirements).
+requirements according to their relatedness (the algorithm is based on known
+distances -- the Jaccard similarity metric, the Levenshtein distance, and the
+a combination of both). The algorithm groups together similar
+requirements that should appear contiguously in the document. The
+effectiveness of the algorithm has been evaluated on a case-study from the
+railway domain (583 requirements).
 
-Based on Rauf \etal~\cite{Rauf:2011} software specification documents usually
-contain instances of logical structures, such as business rules, use cases, and
-FRs. Automated identification and extraction of these
-instances will benefit requirements management features, like automated
-traceability, template conformance checking, and guided editing. The authors
-planned a framework that gets requirements documents as an input and tries to
-develop a template for the general structure of it by specifying logical
-structures in terms of their content, textual rendering, and variability and
-then the extracting the instances of such structures from rich-text documents.
+According to the work of Rauf \etal~\cite{Rauf:2011}, software specification
+documents usually contain instances of logical structures, such as business rules, use cases and
+\FRs. Automated identification and extraction of these instances benefits
+requirements management in fields such as automated traceability, template
+conformance checking and guided editing. The authors have built a framework that
+used requirements documents as an input and attempts to build a template for
+a general structure of the document. This is achieved by specifying
+logical structures in terms of their content, textual rendering and variability,
+and then the extracting the instances of such structures from rich-text documents.
 
 Ott \etal~\cite{Ott:2013} automatically classified and extracted requirements
-with related information which are spread over many sections over many documents
-by the use of Multinomial Naive Bayes and Support Vector Machines classification
-algorithms as it will be helpful for reviewers with their work. As their input,
-they have used two German automotive specifications (Mercedes-Benz) which
-describe the functional and non-functional requirements of a Doors Closure
-Module (DCU). A specification and its referenced documents often sum up to 3,000
-pages at Mercedes-Benz. Their method collects requirements of related
-information into classes, which they call topic landscape and later they built a
-tool, ReCaRe (Review with Categorized Requirements) which is the realization of
-the topic landscape based on eclipse with a data connection to IBM Rational
-DOORS.
+containing related information, which are spread over many sections of many
+documents. For such a task they use the Multinomial Naive Bayes and Support
+Vector Machines classification algorithms. As input for their studies, they have
+used two requirements specifications from the automotive domain which describe
+the functional and non-functional requirements of a \DOORS Closure Module. A
+specification and its referenced documents often sum up to 3,000 pages at
+Mercedes-Benz (the case-study provider). Their method collects related
+requirements into classes, which the authors call topic landscape. The
+authors have built a tool, ReCaRe (Review with Categorized Requirements), an
+Eclipse-based realization of the topic landscape, including a data connection
+between IBM Rational and \DOORS.
 
 
 
