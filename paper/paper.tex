@@ -25,12 +25,12 @@
 \pdfcompresslevel=9 
 %\DeclareGraphicsExtensions{.png}  
 \graphicspath{{img/}{svg/}} 
-
+ 
  
  
 \usepackage{ifthen}
 \newboolean{showcomments} 
-\setboolean{showcomments}{false} % toggle to show or hide comments
+\setboolean{showcomments}{true} % toggle to show or hide comments
 \ifthenelse{\boolean{showcomments}} 
   {\newcommand{\nb}[2]{
     \fcolorbox{gray}{yellow}{\bfseries\sffamily\scriptsize#1}  
