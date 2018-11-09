@@ -18,17 +18,17 @@ dictionaries, databases and rules. The common preprocessing steps in the
 literature we surveyed include tokenization, capitalization, lemmatization, stop
 words removal, stemming and part of speech (\POS). Tokenization is the process
 of splitting paragraphs into sentences, or sentences into words. Capitalization
-brings everything to lower case for simplicity. Stop words removal removes
-connecting words such as ``and'', ``the'' or others by comparing the text with a
-list of stopwords. \POS takes text and assigns a part of speech (e.g. a noun, a
-verb, an adjective, etc) to each word that helps to build more understanding of
-a text. Stemming is a process where words are reduced to a root by removing the
-unnecessary suffix e.g. eating after stemming is eat. Lemmatization is an alternative approach to stemming,
-whichis able to capture canonical forms based on a word's lemma. It uses part of
-speech and WordNet’s lexical database of English\levi{add citation} for removing
-inflections. For example, applying stemming to the word ``better'' fails to
-provide any lemma, applying lemmatization to the same word would resultin the
-word ``good''.
+brings all words in a text to lower case for simplicity. Stop words removal
+removes connecting words such as ``and'', ``the'' or others by comparing the
+text with a list of stopwords. \POS takes text and assigns a part of speech
+(e.g. a noun, a verb, an adjective, etc) to each word that helps to build the
+understanding of a text. Stemming is a process where words are reduced to a root
+by removing the unnecessary suffixes -- e.g. ``eating'' after stemming becomes
+``eat''. Lemmatization is an alternative approach to stemming, which is able to
+capture canonical forms based on a word's lemma. It uses part of speech and WordNet’s
+lexical database of English for removing inflections. For
+example, applying stemming to the word ``better'' fails to provide any lemma,
+while applying lemmatization to the same word would result in the word ``good''.
 
  Another way to extract features from a text is the bag of words (\BOW)
  technique. \BOW categorizes documents based on a dictionary and occurrences of

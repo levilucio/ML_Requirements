@@ -3,7 +3,7 @@
 Due to the orthogonal character of their impact on a system, \emph{security}
 requirements are notoriously difficult to identify, objectify and
 quantify~\cite{Rashid:2016}. Also during requirement specification, it very
-often happens that security requirements are masked by FRs (but can be
+often happens that security requirements are masked by \FRs (but can be
 deduced from the context of the domain the system operates in)~\cite{Riaz:2014}.
 Because of this, it often happens in practice that security requirements are
 only marginally tackled during system construction, paving the way
@@ -13,21 +13,21 @@ of text that describe security requirements. This is a \emph{classification}
 problem: given a text, identify which parts of it correspond to which type of
 security issues.
 
-	Jindal\etal~\cite{Jildal:2016} automatically learn decision trees that can be
+Jindal\etal~\cite{Jildal:2016} automatically learn decision trees that can be
 used to classify security requirements as \emph{authentication}, \emph{access
 control}, \emph{encryption} or \emph{data integrity}. Preprocessing of the data
 is done by stemming relevant terms and the \emph{features} used
 are such terms.
 
-	Riaz and her colleagues~\cite{Riaz:2014} use the k-nearest neighbors algoritm to
-classify sentences in requirements documents as \emph{confidentiality},
+Riaz and her colleagues~\cite{Riaz:2014} use the k-nearest neighbors algorithm
+to classify sentences in requirements documents as \emph{confidentiality},
 \emph{integrity}, \emph{authentication}, \emph{availability},
 \emph{accountability} or \emph{privacy} requirements. In order to find adequate
 sentences and provide context to the classifier, the authors start by finding a
 type for each sentence among the possibilities \emph{title}, \emph{list start},
-\emph{list element} or \emph{normal sentence}. For the classification the
+\emph{list element} or \emph{normal sentence}. For the classification, the
 authors use the number of word transformations needed to go from one term in one sentence to a term in
-another sentence. The classifier is trained using requirements sentences from
+another sentence. The classifier is trained using requirement sentences from
 the healthcare domain that are manually classified. A particularity of the
 approach is that each security requirement type is associated to a template that
 helps in translating the security requirements into functional requirements in

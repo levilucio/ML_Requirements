@@ -4,8 +4,8 @@ The manual process of requirement elicitation is expensive in terms of effort
 and resources. A project's success majorly depends on the precise identification
 of stakeholder's expectations and requirements for their desired system. A
 possibility to do requirements elicitation is to mine available datasets, e.g.
-social media, requirement documents or  app store reviews. This mining process
-is performed with help of different techniques such as \NLP and text mining
+social media, requirement documents or  Apple Store reviews. This mining
+process is performed with help of different techniques such as \NLP and text mining
 \cite{Hollis2017}\cite{dong2010}. The latest trend for identifying
 user requirements is to mine data obtained from platforms such as Twitter,
 Google Play Store or the Apple Store, by applying \ML techniques. While user
@@ -21,30 +21,29 @@ auxiliary tasks.
 \subsubsection{Elicitation of Requirements from External Sources}
 
 Guzman \etal \cite{Guzman:2017} proposed the ALERTme approach for classifying,
-grouping and ranking tweets during software evolution. Many users shared their
-opinions about various software on Twitter. The large amount of datasets made it
-hard to manually identify tweets that contained user requirements. The proposed
-methodology classified tweets as improvement requests or not, using the
-\emph{Naive Bayes} algorithm. This was the first study of its kind.
-The classifier was trained according to the following steps: 1) conversion of
-the pre-processed tweets into a \VSM model, 2) training of a classifier on a set
+grouping and ranking tweets during software evolution. Many users share their
+opinions about various software on Twitter. The large amount of datasets makes
+it hard to manually identify tweets that contain user requirements. The proposed
+methodology classifies tweets as improvement requests or not, using the
+\emph{Naive Bayes} algorithm. To the best of our knowledge, this is the first
+study of its kind. The classifier was trained according to the following steps:
+1) conversion of the pre-processed tweets into a \VSM model, 2) training of a classifier on a set
 of manually annotated tweets, 3) classifying tweets in categories by using the
 trained classifier. Furthermore, improvement requests were considered during
-tweet grouping, which helped in sort and summarizing the requests. The
-results summarization process contained highly ranked tweets based on
-parameters such as the number of ``likes'', sentiment, number of shares among
+tweet grouping, which helped in sorting and summarizing the requests. The
+results of the summarization process contained highly ranked tweets based on
+parameters such as the number of ``likes'', sentiment, number of shares, among
 others.
 
 Williams \etal \cite{Williams:2017} operated a similar study on tweets in order
 to classify them as user requirements. The authors used basic pre-processing
-techniques and applied the \VSM on the data. For the learning process, manually
-annotated (labelled) tweets and the \emph{Naive Bayes} algorithm was used for
-performing the classification. Based on the results, the authors claime in their
+techniques and applied the \VSM technique on the data. For the learning process,
+manually annotated (labelled) tweets and the \emph{Naive Bayes} algorithm was used for
+performing the classification. Based on the results, the authors claim in their
 work that software tweets are neutral in nature -- meaning sentiment analysis
 did not influence the outcome of the ML algorithm. Also, the work showed
-improved results when compared comparison to \cite{Guzman:2017}.
-The study used 4000 randomly selected tweets from ten different software
-including Microsoft Visual Studio, Google Chrome and Instagram.
+improved results when compared to \cite{Guzman:2017}. The study used 4000
+randomly selected tweets from ten different software including Microsoft Visual Studio, Google Chrome and Instagram.
 
 Jiang \etal \cite{Jiang:2014} mined user reviews from app stores for discovering
 evolutionary requirements. The authors first extracted opinions about software
@@ -58,46 +57,46 @@ reviews: one from the Karplersky internet security 2011 software package (from A
 reviews; the other one comprising 461 reviews for the TuneIn Radio Pro V3.6
 mobile app (from the app store).
 
-Lange \etal\cite{Douglas:S2008} used a \ML based software
+Lange \etal\cite{Douglas:S2008} used an \ML-based software
 requirement elicitation process while extending an existing military tool called
 \emph{skiweb}.  Different users posted and updated military events and
 information using this tool. The goal of adding learning capabilities to
-\emph{skiweb} was mine information from user posts. The proposed recommender
+\emph{skiweb} was mining information from user posts. The proposed recommender
 system used the supervised \emph{Naive Bayes} algorithm to classify text
 documents in order to find related requirements to the post. Furthermore, it used topic
 modeling to identify the key stakeholders and suggested them other requirements
 for further analysis according to their interests. This study used an internal
-organizational dataset Skiweb Data such as wiki and blogs etc
+organizational dataset Skiweb Data such as wiki and blogs.
 
 Jha \etal \cite{Jha:2017} discovered user requirements by mining app store
 reviews. The requests were classified into three categories; \emph{bugs},
-\emph{features} and \emph{junk}. The methodology proposed by the authors used
-Naive Bayes and \SVM algorithms. The distinction between types of sentences was
-identified by frame semantics \levi{cite} which, as the name indicates, performs
+\emph{features} and \emph{junk}. The methodology proposed by the authors uses
+the \emph{Naive Bayes} and \SVM algorithms. The distinction between types of
+sentences was identified by frame semantics \levi{cite} which, as the name indicates, performs
 a more semantic classification than the typical syntactic-oriented text
 classification methods. For each review frames were generated, rather than for
-words. Due to small number of features, a lower dimensional model was
-produced with enhanced prediction capabilities. The study combined existing
+words. Due to the small number of features required by frames, a lower
+dimensional model was produced with enhanced prediction capabilities. The study combined existing
 datasets from past studies and reviews for iOS apps including CreditKarma,
-Fitbit, and Gmail.
+Fitbit and Gmail.
 
 Maalej \etal presents in \cite{Maalej} a study on how to classify app reviews as
 bug reports, feature requests, user experiences or ratings. The authors used a
 \emph{Naive Bayes} algorithm after comparing several algorithms for
 classification. They also highlight that binary classifiers performed better
-than multi classifiers. It used a meta model to enhance the performance of the
-classification, which includes ratings, tense, and sentiment scores etc. A
+than multi classifiers. The work uses a metamodel to enhance the performance of
+the classification, which includes ratings, tense or sentiment scores. A
 dataset of 4400 manually annotated reviews from Google Play Store and the Apple
 App Store were used.
 
 Herrera \etal \cite{Castro-Herrera:2009} built a recommender system to manage a
 the participation of a number of stakeholders in the requirements elicitation
-and prioritization process. In this system, stakeholders could work
+and prioritization process. In this system, stakeholders can work
 collaboratively to transform their needs into sets of articulated and
 prioritized requirements.
 The system automatically generates specialized topics for building forums for
 stakeholder collaboration and discussion. The stakeholders' interests are
-extracted from their user profiles, which also helped in creating
+extracted from their user profiles, which also helps in creating
 recommendations according to the interest of a community of similar
 stakeholders. In order to identify topics, an unsupervised agglomerative
 clustering algorithm was applied to unstructured data. The proposed system

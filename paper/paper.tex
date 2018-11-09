@@ -4,12 +4,12 @@
 \usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{algorithmic}
-\usepackage{graphicx}
+\usepackage{graphicx} 
 \usepackage{textcomp}
 \usepackage{xcolor}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
-
+ 
 \usepackage{calc, amssymb, amstext, amsmath}
 \usepackage{boxedminipage, xspace, here, float}
 \usepackage{epsfig, graphics, graphicx, xcolor, color, setspace, tabularx, multirow}
@@ -30,7 +30,7 @@
  
 \usepackage{ifthen}
 \newboolean{showcomments} 
-\setboolean{showcomments}{true} % toggle to show or hide comments
+\setboolean{showcomments}{false} % toggle to show or hide comments
 \ifthenelse{\boolean{showcomments}} 
   {\newcommand{\nb}[2]{
     \fcolorbox{gray}{yellow}{\bfseries\sffamily\scriptsize#1}  
@@ -125,7 +125,7 @@ Requirements Engineering, Machine learning, State of the art, Overview
 \input{text/discussion} 
 \input{text/threats_validity}   
 \input{text/conclusion} 
-  
+   
 \bibliographystyle{abbrv} 
 \bibliography{./ml_req}  
 
